@@ -1,0 +1,317 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 18% 8%, rgba(106, 0, 255, 0.44), transparent 36rem),
+    radial-gradient(ellipse at 50% 6%, rgba(255, 61, 255, 0.22), transparent 34rem),
+    radial-gradient(ellipse at 82% 0%, rgba(251, 191, 36, 0.2), transparent 30rem),
+    radial-gradient(ellipse at 55% 38%, rgba(178, 0, 255, 0.34), transparent 44rem),
+    linear-gradient(135deg, #0a0617 0%, #170431 38%, #080314 100%);
+  color: #fff;
+  font-family: var(--font-inter), ui-sans-serif, system-ui;
+}
+
+::selection {
+  background: rgba(246, 201, 111, 0.35);
+  color: #fff;
+}
+
+.section-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.premium-border {
+  border: 1px solid rgba(255, 108, 240, 0.2);
+  background:
+    linear-gradient(145deg, rgba(106, 0, 255, 0.18), rgba(255, 61, 255, 0.08), rgba(251, 191, 36, 0.045)),
+    rgba(10, 6, 23, 0.86);
+  backdrop-filter: blur(22px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 22px 70px rgba(106, 0, 255, 0.22);
+}
+
+.gold-line {
+  background: linear-gradient(90deg, transparent, rgba(248, 207, 120, 0.88), transparent);
+}
+
+.nova-grid {
+  background-image:
+    linear-gradient(rgba(255, 108, 240, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(106, 0, 255, 0.07) 1px, transparent 1px);
+  background-size: 68px 68px;
+  mask-image: linear-gradient(to bottom, black, transparent 78%);
+}
+
+.soft-card {
+  border: 1px solid rgba(255, 108, 240, 0.18);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.085), rgba(255, 61, 255, 0.035)),
+    rgba(10, 6, 23, 0.76);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(106, 0, 255, 0.74), rgba(255, 61, 255, 0.7), rgba(251, 191, 36, 0.58));
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.hero-orb {
+  background:
+    radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.78), transparent 0.6rem),
+    radial-gradient(circle at 63% 31%, rgba(255, 255, 255, 0.72), transparent 0.55rem),
+    radial-gradient(circle at 50% 48%, rgba(168, 85, 247, 0.9), transparent 3.7rem),
+    linear-gradient(145deg, #ffffff, #c084fc 44%, #2d0b5f 100%);
+}
+
+.neural-field {
+  background-image:
+    radial-gradient(circle, rgba(255, 108, 240, 0.42) 0 2px, transparent 2.5px),
+    linear-gradient(120deg, transparent 0 18%, rgba(255, 61, 255, 0.16) 18.2%, transparent 18.6% 47%, rgba(106, 0, 255, 0.14) 47.2%, transparent 47.6%),
+    linear-gradient(35deg, transparent 0 24%, rgba(192, 132, 252, 0.12) 24.2%, transparent 24.6% 64%, rgba(255, 108, 240, 0.12) 64.2%, transparent 64.6%);
+  background-size: 90px 90px, 220px 220px, 260px 260px;
+}
+
+@keyframes phoneFloat {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-8px);
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    opacity: 0.72;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.018);
+  }
+}
+
+@keyframes chatEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes cardDrift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes onlinePulse {
+  0%,
+  100% {
+    box-shadow: 0 0 14px rgba(110, 231, 183, 0.72);
+  }
+  50% {
+    box-shadow: 0 0 26px rgba(110, 231, 183, 1);
+  }
+}
+
+@keyframes typingDots {
+  0%,
+  80%,
+  100% {
+    opacity: 0.35;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes sceneCycle {
+  0%,
+  28% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  31%,
+  100% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+@keyframes selectorCycle {
+  0%,
+  28% {
+    background: linear-gradient(135deg, rgba(192, 132, 252, 0.95), rgba(255, 61, 255, 0.78));
+    border-color: rgba(255, 108, 240, 0.72);
+    color: #ffffff;
+  }
+  31%,
+  100% {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.62);
+  }
+}
+
+.phone-live {
+  animation: phoneFloat 6.5s ease-in-out infinite;
+}
+
+.phone-glow-live {
+  animation: glowPulse 4.6s ease-in-out infinite;
+}
+
+.chat-live {
+  opacity: 0;
+  animation: chatEnter 0.65s ease-out forwards;
+}
+
+.card-live {
+  animation: cardDrift 5.4s ease-in-out infinite;
+}
+
+.online-live {
+  animation: onlinePulse 2.6s ease-in-out infinite;
+}
+
+.typing-dot {
+  animation: typingDots 1.2s ease-in-out infinite;
+}
+
+.wa-scene {
+  animation: sceneCycle 18s ease-in-out infinite;
+}
+
+.wa-selector {
+  animation: selectorCycle 18s ease-in-out infinite;
+}
+
+@keyframes chatDeckCycle {
+  0%,
+  28% {
+    transform: translateY(0);
+  }
+  33%,
+  61% {
+    transform: translateY(-500px);
+  }
+  66%,
+  94% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes headerAvatarCycle {
+  0%,
+  28% {
+    transform: translateY(0);
+  }
+  33%,
+  61% {
+    transform: translateY(-40px);
+  }
+  66%,
+  94% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes headerTitleCycle {
+  0%,
+  28% {
+    transform: translateY(0);
+  }
+  33%,
+  61% {
+    transform: translateY(-20px);
+  }
+  66%,
+  94% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes messageCycle {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  4%,
+  28% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  33%,
+  100% {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.99);
+  }
+}
+
+.chat-deck-live {
+  animation: chatDeckCycle 18s ease-in-out infinite;
+}
+
+.header-avatar-live {
+  animation: headerAvatarCycle 18s ease-in-out infinite;
+}
+
+.header-title-live {
+  animation: headerTitleCycle 18s ease-in-out infinite;
+}
+
+.message-live {
+  opacity: 0;
+  animation: messageCycle 18s ease-out infinite both;
+}
