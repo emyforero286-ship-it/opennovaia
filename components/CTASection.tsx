@@ -11,9 +11,9 @@ export function CTASection() {
           <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-nova-gold to-transparent" />
           <div className="absolute right-0 top-0 h-full w-1/2 bg-[radial-gradient(ellipse_at_center,rgba(255,108,240,0.24),transparent_65%)]" />
           <div className="relative max-w-3xl">
-            <p className="text-sm font-black uppercase tracking-[0.28em] text-nova-gold">Demo estrategica</p>
+            <p className="text-sm font-black uppercase tracking-[0.28em] text-nova-gold">Demo estratégica</p>
             <h2 className="mt-5 text-4xl font-black leading-tight sm:text-5xl">
-              Convierte tu operacion en una red de agentes IA.
+              Convierte tu operación en una red de agentes IA.
             </h2>
             <p className="mt-5 text-lg leading-8 text-white/[0.72]">
               Agenda una demo y recibe una propuesta clara para automatizar ventas, soporte y tareas operativas con agentes neurales.

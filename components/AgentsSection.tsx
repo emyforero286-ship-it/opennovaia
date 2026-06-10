@@ -17,7 +17,7 @@ const agents = [
     name: "Nova Ops",
     label: "Operaciones",
     icon: "03",
-    copy: "Automatiza tareas internas, conecta herramientas, resume informacion critica y libera horas de trabajo manual."
+    copy: "Automatiza tareas internas, conecta herramientas, resume información crítica y libera horas de trabajo manual."
   }
 ];
 
@@ -29,7 +29,7 @@ export function AgentsSection() {
       <SectionHeader
         eyebrow="Agentes"
         title="Agentes neurales entrenados para producir resultados."
-        description="Cada agente trabaja con tus reglas, tu tono, tus datos y objetivos de negocio claros: vender mas, responder mejor y operar con menos friccion."
+        description="Cada agente trabaja con tus reglas, tu tono, tus datos y objetivos de negocio claros: vender más, responder mejor y operar con menos fricción."
       />
 
       <div className="mt-14 grid gap-5 md:grid-cols-3">

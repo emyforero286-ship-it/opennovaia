@@ -9,7 +9,7 @@ export function Footer() {
           <div className="flex items-center gap-3">
             <NeuralLogo compact size="sm" />
           </div>
-          <p className="mt-3">Agentes neurales para vender mas, responder 24/7 y automatizar operaciones empresariales.</p>
+          <p className="mt-3">Agentes neurales para vender más, responder 24/7 y automatizar operaciones empresariales.</p>
           <p className="mt-2">{siteConfig.contactEmail}</p>
         </div>
         <div className="flex flex-wrap gap-5">

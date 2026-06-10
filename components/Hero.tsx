@@ -21,8 +21,8 @@ export function Hero() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-lg leading-8 text-white/[0.68]">
-            Implementamos asistentes inteligentes para ventas, atencion al cliente,
-            soporte y procesos empresariales. Menos trabajo manual, mas conversiones y respuestas inmediatas.
+            Implementamos asistentes inteligentes para ventas, atención al cliente,
+            soporte y procesos empresariales. Menos trabajo manual, más conversiones y respuestas inmediatas.
           </p>
 
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">

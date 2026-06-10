@@ -1,10 +1,10 @@
 import { SectionHeader } from "./SectionHeader";
 
 const steps = [
-  ["01", "Analizamos", "Encontramos procesos repetitivos, cuellos de botella y oportunidades con retorno rapido."],
+  ["01", "Analizamos", "Encontramos procesos repetitivos, cuellos de botella y oportunidades con retorno rápido."],
   ["02", "Disenamos", "Definimos tono, reglas, datos, canales y objetivos medibles para cada agente."],
   ["03", "Entrenamos", "Conectamos conocimiento, conversaciones, CRM y herramientas internas."],
-  ["04", "Implementamos", "Lanzamos agentes en produccion con seguimiento, escalamiento y control humano."],
+  ["04", "Implementamos", "Lanzamos agentes en producción con seguimiento, escalamiento y control humano."],
   ["05", "Optimizamos", "Medimos ventas, velocidad de respuesta, productividad y calidad para mejorar cada semana."]
 ];
 
@@ -16,8 +16,8 @@ export function ProcessSection() {
       <div className="section-shell relative">
         <SectionHeader
           eyebrow="Como funciona"
-          title="De procesos manuales a una operacion neural."
-          description="Un metodo claro para pasar de tareas repetitivas a agentes conectados, medibles y listos para escalar."
+          title="De procesos manuales a una operación neural."
+          description="Un método claro para pasar de tareas repetitivas a agentes conectados, medibles y listos para escalar."
         />
 
         <div className="relative mt-14 grid gap-5 lg:grid-cols-5">

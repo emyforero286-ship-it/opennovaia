@@ -1,9 +1,9 @@
 const features = [
-  ["Atencion automatica 24/7", "M12 6v6l4 2"],
+  ["Atención automática 24/7", "M12 6v6l4 2"],
   ["Respuestas instantaneas", "M13 2L4 14h7l-2 8 9-12h-7l2-8z"],
-  ["Mas ventas y conversiones", "M4 19V9m6 10V5m6 14v-7m3 0H3"],
-  ["Integracion con WhatsApp, Instagram y web", "M7 8h10M7 12h5m9 0a9 9 0 1 1-4.2-7.6"],
-  ["Implementacion rapida", "M5 19c6-1 10-5 11-14 4 1 8 5 9 11-9-1-13 4-11 14z"],
+  ["Más ventas y conversiones", "M4 19V9m6 10V5m6 14v-7m3 0H3"],
+  ["Integración con WhatsApp, Instagram y web", "M7 8h10M7 12h5m9 0a9 9 0 1 1-4.2-7.6"],
+  ["Implementacion rápida", "M5 19c6-1 10-5 11-14 4 1 8 5 9 11-9-1-13 4-11 14z"],
   ["Soporte en espanol", "M4 13v-2a8 8 0 0 1 16 0v2M6 13v5H4a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2h2v5zm14 0h-2V8h2a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2z"]
 ];
 

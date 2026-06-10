@@ -5,18 +5,18 @@ const conversations = [
     messages: [
       { text: "Hola, necesito reponer inventario para esta semana.", side: "in", time: "03:28 p. m." },
       { text: "Tengo stock disponible y puedo separar tu pedido ahora.", side: "out", time: "03:29 p. m." },
-      { text: "Perfecto. Envia la cotizacion al correo de compras.", side: "in", time: "03:30 p. m." },
-      { text: "Listo. Cotizacion enviada y seguimiento creado para manana.", side: "out", time: "03:30 p. m." }
+      { text: "Perfecto. Envía la cotización al correo de compras.", side: "in", time: "03:30 p. m." },
+      { text: "Listo. Cotizacion enviada y seguimiento creado para mañana.", side: "out", time: "03:30 p. m." }
     ]
   },
   {
-    company: "Clinica Dental Sonrisa",
+    company: "Clínica Dental Sonrisa",
     initials: "CS",
     messages: [
       { text: "Buenas tardes, quiero agendar una limpieza dental.", side: "in", time: "11:12 a. m." },
-      { text: "Claro. Tenemos disponibilidad manana a las 10:00 a. m. o 4:30 p. m.", side: "out", time: "11:12 a. m." },
-      { text: "La de 4:30 esta bien.", side: "in", time: "11:13 a. m." },
-      { text: "Tu cita quedo confirmada. Te enviaremos recordatorio automatico.", side: "out", time: "11:13 a. m." }
+      { text: "Claro. Tenemos disponibilidad mañana a las 10:00 a. m. o 4:30 p. m.", side: "out", time: "11:12 a. m." },
+      { text: "La de 4:30 está bien.", side: "in", time: "11:13 a. m." },
+      { text: "Tu cita quedó confirmada. Te enviaremos recordatorio automático.", side: "out", time: "11:13 a. m." }
     ]
   },
   {
@@ -24,9 +24,9 @@ const conversations = [
     initials: "FI",
     messages: [
       { text: "Muy bien, pueden entregar esta semana?", side: "out", time: "03:34 p. m." },
-      { text: "Si. Tenemos stock completo. Entrega en 24-48 horas habiles en toda la region.", side: "in", time: "03:34 p. m." },
-      { text: "Si confirmo, necesito la cotizacion para mostrarsela al dueno de la obra.", side: "out", time: "03:34 p. m." },
-      { text: "Perfecto. Aqui tienes tu cotizacion oficial lista para presentar.", side: "in", time: "03:34 p. m." }
+      { text: "Sí. Tenemos stock completo. Entrega en 24-48 horas hábiles en toda la región.", side: "in", time: "03:34 p. m." },
+      { text: "Sí confirmo, necesito la cotización para mostrarsela al dueño de la obra.", side: "out", time: "03:34 p. m." },
+      { text: "Perfecto. Aquí tienes tu cotización oficial lista para presentar.", side: "in", time: "03:34 p. m." }
     ]
   }
 ];
@@ -69,7 +69,7 @@ export function RobotHeroVisual() {
                     ))}
                     </div>
                   </div>
-                  <p className="text-xs text-white/80">en linea - Agente IA</p>
+                  <p className="text-xs text-white/80">en línea - Agente IA</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-white">
@@ -96,7 +96,7 @@ export function RobotHeroVisual() {
                     >
                       <p>{message.text}</p>
                       <p className="mt-1 text-right text-[10px] text-white/[0.58]">
-                        {message.time} {message.side === "out" ? "leido" : ""}
+                        {message.time} {message.side === "out" ? "leído" : ""}
                       </p>
                     </div>
                   ))}
@@ -118,10 +118,10 @@ export function RobotHeroVisual() {
                 </div>
                 <button
                   type="button"
-                  aria-label="Enviar mensaje de demostracion"
+                  aria-label="Envíar mensaje de demostración"
                   className="grid h-10 w-10 place-items-center rounded-full bg-gradient-to-r from-nova-gold to-nova-amber text-xs font-black text-nova-black shadow-gold"
                 >
-                  Enviar
+                  Envíar
                 </button>
               </div>
               <div className="grid grid-cols-3 gap-2">

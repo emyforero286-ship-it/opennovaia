@@ -12,7 +12,7 @@ const testimonials = [
   },
   {
     quote:
-      "Ahora soporte responde 24/7, operaciones recibe resumenes claros y ventas trabaja con prospectos mejor priorizados.",
+      "Ahora soporte responde 24/7, operaciones recibe resúmenes claros y ventas trabaja con prospectos mejor priorizados.",
     author: "Andres Vidal",
     role: "Director de Operaciones",
     image: "/testimonials/andres-vidal-avatar.png"
@@ -23,7 +23,7 @@ function RatingBadge() {
   return (
     <div className="mx-auto mb-6 inline-flex items-center justify-center gap-2 rounded-full border border-nova-gold/25 bg-white/80 px-4 py-2 shadow-[0_12px_32px_rgba(251,191,36,0.16)]">
       <span className="text-lg font-black text-[#130824]">5.0</span>
-      <div className="flex items-center gap-1.5 text-nova-gold drop-shadow-[0_0_10px_rgba(251,191,36,0.26)]" aria-label="Calificacion 5 de 5 estrellas">
+      <div className="flex items-center gap-1.5 text-nova-gold drop-shadow-[0_0_10px_rgba(251,191,36,0.26)]" aria-label="Calificación 5 de 5 estrellas">
         {Array.from({ length: 5 }).map((_, index) => (
           <svg
             key={index}
@@ -45,12 +45,12 @@ export function TestimonialsSection() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(192,132,252,0.14),transparent_50%)]" />
       <div className="section-shell relative">
         <p className="mx-auto mb-5 max-w-3xl text-center text-sm font-black uppercase tracking-[0.28em] text-nova-violet">
-          Empresas que ya automatizan su atencion y ventas con OpenNovaIA
+          Empresas que ya automatizan su atención y ventas con OpenNovaIA
         </p>
         <SectionHeader
           eyebrow="Testimonios"
           title="Resultados que se sienten en ventas y operaciones."
-          description="Empresas con mas velocidad de respuesta, mas productividad y conversaciones que se convierten en oportunidades."
+          description="Empresas con más velocidad de respuesta, más productividad y conversaciones que se convierten en oportunidades."
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-2">

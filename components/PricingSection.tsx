@@ -6,19 +6,19 @@ const plans = [
     name: "Starter",
     price: "$199.000 COP",
     tag: "Entrada",
-    description: "Tu primer empleado IA por menos de $7.000 al dia.",
+    description: "Tu primer empleado IA por menos de $7.000 al día.",
     microBenefit: "Ahorra hasta 20 horas de trabajo al mes.",
-    idealFor: ["Freelancers", "Coaches", "Inmobiliarias pequenas", "Consultores", "Negocios locales"],
+    idealFor: ["Freelancers", "Coaches", "Inmobiliarias pequeñas", "Consultores", "Negocios locales"],
     features: [
       "1 Agente IA entrenado con tu negocio",
       "WhatsApp Business",
       "Widget Web",
       "CRM Inteligente",
-      "Captura automatica de leads",
-      "Atencion 24/7",
+      "Captura automática de leads",
+      "Atención 24/7",
       "Base de conocimiento",
-      "Hasta 2.500 creditos mensuales",
-      "Analitica basica",
+      "Hasta 2.500 créditos mensuales",
+      "Analítica básica",
       "2 usuarios",
       "Soporte por correo"
     ],
@@ -30,20 +30,20 @@ const plans = [
     price: "$599.000 COP",
     tag: "MÁS POPULAR",
     featured: true,
-    description: "El plan mas elegido para automatizar ventas y atencion.",
-    microBenefit: "Convierte mas conversaciones en oportunidades.",
-    idealFor: ["PYMES", "Clinicas", "Academias", "E-commerce", "Empresas en crecimiento"],
+    description: "El plan más elegido para automatizar ventas y atención.",
+    microBenefit: "Convierte más conversaciones en oportunidades.",
+    idealFor: ["PYMES", "Clínicas", "Academias", "E-commerce", "Empresas en crecimiento"],
     features: [
       "5 Agentes IA",
       "WhatsApp + Widget Web",
       "CRM avanzado",
       "Embudos de ventas",
-      "Seguimiento automatico",
-      "Calificacion automatica de leads",
-      "Hasta 8.000 creditos mensuales",
+      "Seguimiento automático",
+      "Calificación automática de leads",
+      "Hasta 8.000 créditos mensuales",
       "Hasta 10 subclientes",
       "Reportes avanzados",
-      "Integracion con Zapier y Make",
+      "Integración con Zapier y Make",
       "Correo con tu marca",
       "Soporte prioritario"
     ],
@@ -55,8 +55,8 @@ const plans = [
     price: "$1.990.000 COP",
     tag: "Enterprise",
     dark: true,
-    description: "Escala una operacion completa de IA con tu propia marca.",
-    microBenefit: "Opera multiples clientes desde una sola plataforma.",
+    description: "Escala una operación completa de IA con tu propia marca.",
+    microBenefit: "Opera múltiples clientes desde una sola plataforma.",
     idealFor: ["Agencias", "Empresas consolidadas", "Operaciones multi-cliente", "Equipos comerciales grandes"],
     features: [
       "15 Agentes IA",
@@ -69,7 +69,7 @@ const plans = [
       "Logo personalizado",
       "Colores personalizados",
       "Dominio propio",
-      "40.000 creditos mensuales",
+      "40.000 créditos mensuales",
       "Subclientes ilimitados",
       "API empresarial",
       "Soporte WhatsApp dedicado",
@@ -88,7 +88,7 @@ export function PricingSection() {
         <SectionHeader
           eyebrow="Planes flexibles"
           title="Elige el plan para automatizar tu crecimiento."
-          description="Growth es la opcion recomendada para convertir mas conversaciones en clientes, reducir trabajo manual y responder 24/7."
+          description="Growth es la opción recomendada para convertir más conversaciones en clientes, reducir trabajo manual y responder 24/7."
         />
 
         <div className="mt-14 grid items-stretch gap-5 lg:grid-cols-3">
