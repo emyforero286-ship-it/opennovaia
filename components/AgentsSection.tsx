@@ -33,7 +33,7 @@ export function AgentsSection() {
       />
 
       <div className="mt-14 grid gap-5 md:grid-cols-3">
-        {agents.map((agent, index) => (
+        {agents.map((agent) => (
           <article key={agent.name} className="group relative overflow-hidden rounded-lg border border-[#eadcff] bg-white p-6 shadow-[0_20px_60px_rgba(76,29,149,0.1)] transition duration-300 hover:-translate-y-2 hover:border-nova-fuchsia/35 hover:shadow-[0_26px_80px_rgba(168,85,247,0.18)]">
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-nova-fuchsia/80 to-transparent" />
             <div className="absolute -right-16 -top-16 h-36 w-36 rounded-full bg-nova-fuchsia/15 blur-3xl transition duration-500 group-hover:bg-nova-pink/25" />

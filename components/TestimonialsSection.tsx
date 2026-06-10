@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { SectionHeader } from "./SectionHeader";
 
 const testimonials = [
@@ -6,14 +8,14 @@ const testimonials = [
       "OpenNovaIA redujo nuestro tiempo de respuesta de horas a minutos y aumento las solicitudes calificadas del equipo comercial.",
     author: "Laura Mendez",
     role: "Gerente Comercial",
-    image: "/testimonials/laura-mendez.png"
+    image: "/testimonials/laura-mendez-avatar.png"
   },
   {
     quote:
       "Ahora soporte responde 24/7, operaciones recibe resumenes claros y ventas trabaja con prospectos mejor priorizados.",
     author: "Andres Vidal",
     role: "Director de Operaciones",
-    image: "/testimonials/andres-vidal.png"
+    image: "/testimonials/andres-vidal-avatar.png"
   }
 ];
 
@@ -60,14 +62,16 @@ export function TestimonialsSection() {
               <RatingBadge />
 
               <blockquote className="mx-auto max-w-xl text-xl font-medium leading-8 text-[#24143a]">
-                "{testimonial.quote}"
+                &ldquo;{testimonial.quote}&rdquo;
               </blockquote>
 
               <figcaption className="mt-9 border-t border-[#eadcff] pt-7">
                 <div className="mx-auto mb-5 h-20 w-20 overflow-hidden rounded-full border border-nova-lilac/45 bg-white shadow-[0_16px_42px_rgba(168,85,247,0.24)]">
-                  <img
+                  <Image
                     src={testimonial.image}
                     alt={`Foto de ${testimonial.author}`}
+                    width={80}
+                    height={80}
                     className="h-full w-full object-cover object-center"
                   />
                 </div>

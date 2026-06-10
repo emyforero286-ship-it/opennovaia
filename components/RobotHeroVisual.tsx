@@ -116,7 +116,11 @@ export function RobotHeroVisual() {
                 <div className="h-10 flex-1 rounded-full bg-white/[0.08] px-4 py-2 text-sm text-white/[0.45]">
                   Escribe un mensaje...
                 </div>
-                <button className="grid h-10 w-10 place-items-center rounded-full bg-gradient-to-r from-nova-gold to-nova-amber text-xs font-black text-nova-black shadow-gold">
+                <button
+                  type="button"
+                  aria-label="Enviar mensaje de demostracion"
+                  className="grid h-10 w-10 place-items-center rounded-full bg-gradient-to-r from-nova-gold to-nova-amber text-xs font-black text-nova-black shadow-gold"
+                >
                   Enviar
                 </button>
               </div>
