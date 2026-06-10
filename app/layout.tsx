@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Inter } from "next/font/google";
+import { JsonLd } from "@/components/JsonLd";
 import { siteConfig } from "@/config/site";
 import "./globals.css";
 
@@ -11,18 +12,37 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "OpenNovaIA | Agentes de IA que automatizan ventas, soporte y operaciones",
+  title: "OpenNovaIA | Agentes de IA para Automatizar Empresas 24/7",
   description:
-    "Implementa agentes de IA con identidad neural para vender mas, responder 24/7 y automatizar procesos empresariales sin aumentar tu equipo.",
-  metadataBase: new URL(`https://${siteConfig.domain}`),
+    "Automatizamos ventas, atención al cliente y procesos empresariales mediante agentes de inteligencia artificial disponibles 24/7.",
+  keywords: [
+    "agentes de IA",
+    "automatización empresarial",
+    "chatbots IA",
+    "inteligencia artificial para empresas",
+    "automatización WhatsApp",
+    "asistentes virtuales IA",
+    "IA para negocios",
+    "OpenNovaIA"
+  ],
+  creator: "OpenNovaIA",
+  publisher: "OpenNovaIA",
+  metadataBase: new URL("https://opennovaia.com"),
+  alternates: {
+    canonical: "https://opennovaia.com"
+  },
+  robots: {
+    index: true,
+    follow: true
+  },
   icons: {
     icon: "/icon.svg"
   },
   openGraph: {
-    title: "OpenNovaIA | Neural AI Agents",
+    title: "OpenNovaIA | Agentes de IA para Automatizar Empresas 24/7",
     description:
-      "Agentes de IA para empresas que buscan mas ventas, atencion 24/7, eficiencia operativa y automatizacion premium.",
-    url: `https://${siteConfig.domain}`,
+      "Automatizamos ventas, atención al cliente y procesos empresariales mediante agentes de inteligencia artificial disponibles 24/7.",
+    url: "https://opennovaia.com",
     siteName: siteConfig.siteName,
     images: [
       {
@@ -37,9 +57,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OpenNovaIA | Neural AI Agents",
+    title: "OpenNovaIA | Agentes de IA para Automatizar Empresas 24/7",
     description:
-      "Automatiza ventas, soporte y operaciones con agentes de IA conectados a tu negocio.",
+      "Automatizamos ventas, atención al cliente y procesos empresariales mediante agentes de inteligencia artificial disponibles 24/7.",
     images: ["/opengraph-image"]
   }
 };
@@ -51,7 +71,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={inter.variable}>{children}</body>
+      <body className={inter.variable}>
+        <JsonLd />
+        {children}
+      </body>
     </html>
   );
 }
