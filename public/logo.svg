@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-label="OpenNovaIA Logo">
+  <defs>
+    <linearGradient id="neural-gradient-logo" x1="20" x2="220" y1="80" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6A00FF" />
+      <stop offset="0.48" stop-color="#B200FF" />
+      <stop offset="0.72" stop-color="#FF3DFF" />
+      <stop offset="1" stop-color="#FF6CF0" />
+    </linearGradient>
+    <filter id="neural-glow-logo" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <path
+    d="M28 80C52 34 88 34 120 80C152 126 188 126 212 80C188 34 152 34 120 80C88 126 52 126 28 80Z"
+    fill="none"
+    stroke="url(#neural-gradient-logo)"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="9"
+    filter="url(#neural-glow-logo)"
+  />
+  <path
+    d="M40 80C62 48 89 49 120 80C151 111 178 112 200 80"
+    fill="none"
+    stroke="#ffffff"
+    stroke-opacity="0.28"
+    stroke-width="1.5"
+  />
+  <path
+    d="M46 59L72 78L95 52L120 80L146 54L171 79L198 61M47 101L72 78L95 107L120 80L146 108L171 79L198 100"
+    fill="none"
+    stroke="#C084FC"
+    stroke-opacity="0.48"
+    stroke-width="1.4"
+  />
+  <circle cx="40" cy="80" r="4.2" fill="#fff" stroke="#FF3DFF" stroke-width="2" filter="url(#neural-glow-logo)" />
+  <circle cx="58" cy="57" r="4.2" fill="#fff" stroke="#FF3DFF" stroke-width="2" filter="url(#neural-glow-logo)" />
+  <circle cx="72" cy="78" r="4.2" fill="#fff" stroke="#FF3DFF" stroke-width="2" filter="url(#neural-glow-logo)" />
+  <circle cx="88" cy="47" r="4.2" fill="#fff" stroke="#FF3DFF" stroke-width="2" filter="url(#neural-glow-logo)" />
+  <circle cx="96" cy="107" r="4.2" fill="#fff" stroke="#FF3DFF" stroke-width="2" filter="url(#neural-glow-logo)" />
+  <circle cx="120" cy="80" r="6" fill="#fff" stroke="#FF3DFF" stroke-width="2" filter="url(#neural-glow-logo)" />
+  <circle cx="144" cy="54" r="4.2" fill="#fff" stroke="#FF3DFF" stroke-width="2" filter="url(#neural-glow-logo)" />
+  <circle cx="150" cy="108" r="4.2" fill="#fff" stroke="#FF3DFF" stroke-width="2" filter="url(#neural-glow-logo)" />
+  <circle cx="171" cy="79" r="4.2" fill="#fff" stroke="#FF3DFF" stroke-width="2" filter="url(#neural-glow-logo)" />
+  <circle cx="188" cy="51" r="4.2" fill="#fff" stroke="#FF3DFF" stroke-width="2" filter="url(#neural-glow-logo)" />
+  <circle cx="200" cy="80" r="4.2" fill="#fff" stroke="#FF3DFF" stroke-width="2" filter="url(#neural-glow-logo)" />
+  <circle cx="188" cy="109" r="4.2" fill="#fff" stroke="#FF3DFF" stroke-width="2" filter="url(#neural-glow-logo)" />
+  <circle cx="120" cy="80" r="10" fill="#FBBF24" opacity="0.88" filter="url(#neural-glow-logo)" />
+</svg>

@@ -3,7 +3,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "OpenNovaIA",
   url: "https://opennovaia.com",
-  logo: "https://opennovaia.com/icon.svg",
+  logo: "https://opennovaia.com/logo.svg",
   description:
     "Agencia de inteligencia artificial especializada en agentes IA, automatización empresarial y atención 24/7.",
   email: "hello@opennovaia.com"

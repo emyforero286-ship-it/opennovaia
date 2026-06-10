@@ -48,10 +48,10 @@ export const metadata: Metadata = {
     siteName: siteConfig.siteName,
     images: [
       {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "OpenNovaIA neural infinity logo"
+        url: "/logo.svg",
+        width: 240,
+        height: 160,
+        alt: "OpenNovaIA Logo"
       }
     ],
     locale: "es_ES",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "OpenNovaIA | Agentes de IA para Automatizar Empresas 24/7",
     description:
       "Automatizamos ventas, atención al cliente y procesos empresariales mediante agentes de inteligencia artificial disponibles 24/7.",
-    images: ["/opengraph-image"]
+    images: ["/logo.svg"]
   }
 };
 

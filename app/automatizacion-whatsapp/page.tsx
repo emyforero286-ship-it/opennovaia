@@ -14,6 +14,14 @@ export const metadata: Metadata = {
       "Automatiza conversaciones, seguimiento de clientes y atención comercial mediante inteligencia artificial integrada con WhatsApp.",
     url: "https://opennovaia.com/automatizacion-whatsapp",
     siteName: "OpenNovaIA",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 240,
+        height: 160,
+        alt: "OpenNovaIA Logo"
+      }
+    ],
     locale: "es_ES",
     type: "website"
   },
@@ -21,7 +29,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Automatización de WhatsApp con IA | OpenNovaIA",
     description:
-      "Automatiza conversaciones, seguimiento de clientes y atención comercial mediante inteligencia artificial integrada con WhatsApp."
+      "Automatiza conversaciones, seguimiento de clientes y atención comercial mediante inteligencia artificial integrada con WhatsApp.",
+    images: ["/logo.svg"]
   }
 };
 

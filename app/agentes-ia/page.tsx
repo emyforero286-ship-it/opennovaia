@@ -14,6 +14,14 @@ export const metadata: Metadata = {
       "Implementamos agentes de inteligencia artificial para automatizar ventas, soporte y operaciones empresariales disponibles 24/7.",
     url: "https://opennovaia.com/agentes-ia",
     siteName: "OpenNovaIA",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 240,
+        height: 160,
+        alt: "OpenNovaIA Logo"
+      }
+    ],
     locale: "es_ES",
     type: "website"
   },
@@ -21,7 +29,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Agentes de IA para Empresas | OpenNovaIA",
     description:
-      "Implementamos agentes de inteligencia artificial para automatizar ventas, soporte y operaciones empresariales disponibles 24/7."
+      "Implementamos agentes de inteligencia artificial para automatizar ventas, soporte y operaciones empresariales disponibles 24/7.",
+    images: ["/logo.svg"]
   }
 };
 
