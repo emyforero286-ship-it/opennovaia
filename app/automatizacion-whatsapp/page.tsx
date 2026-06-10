@@ -56,9 +56,54 @@ const integrationSteps = [
   "Medimos conversaciones, leads, velocidad de respuesta y oportunidades."
 ];
 
+const faqs = [
+  {
+    question: "¿Qué es la automatización de WhatsApp con IA?",
+    answer:
+      "Es la implementación de un agente inteligente que responde conversaciones, captura información, guía clientes y ejecuta seguimientos comerciales desde WhatsApp Business."
+  },
+  {
+    question: "¿Puedo automatizar respuestas de clientes?",
+    answer:
+      "Sí. OpenNovaIA permite automatizar respuestas frecuentes, orientación comercial, información de servicios, reservas, disponibilidad y próximos pasos sin depender de atención manual permanente."
+  },
+  {
+    question: "¿Sirve para ventas y soporte?",
+    answer:
+      "Sí. La automatización de WhatsApp con IA puede atender prospectos, calificar leads, resolver dudas, hacer seguimiento y apoyar soporte comercial o de servicio."
+  },
+  {
+    question: "¿Funciona con WhatsApp Business?",
+    answer:
+      "Sí. La solución está pensada para integrarse con procesos comerciales que usan WhatsApp Business como canal principal de atención, ventas y seguimiento."
+  },
+  {
+    question: "¿Puede capturar leads automáticamente?",
+    answer:
+      "Sí. El agente puede solicitar datos clave, identificar intención de compra, registrar oportunidades y preparar la información para el equipo comercial."
+  }
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer
+    }
+  }))
+};
+
 export default function AutomatizacionWhatsappPage() {
   return (
     <main className="relative overflow-hidden bg-nova-black text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <div className="nova-grid absolute inset-0 opacity-50" aria-hidden="true" />
       <div className="neural-field absolute inset-0 opacity-24" aria-hidden="true" />
       <div className="absolute left-0 top-0 h-[540px] w-[50vw] bg-[radial-gradient(ellipse_at_center,rgba(106,0,255,0.45),transparent_64%)] blur-2xl" />
@@ -190,6 +235,29 @@ export default function AutomatizacionWhatsappPage() {
                   {index + 1}
                 </span>
                 <p className="text-base font-bold leading-7 text-[#2a1741]">{step}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="relative bg-white py-24 text-[#130824]">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(192,132,252,0.14),transparent_52%)]" />
+        <div className="section-shell relative">
+          <p className="text-center text-sm font-black uppercase tracking-[0.22em] text-nova-violet">
+            Preguntas frecuentes
+          </p>
+          <h2 className="mx-auto mt-4 max-w-3xl text-center text-4xl font-black leading-tight sm:text-5xl">
+            Lo esencial sobre automatización de WhatsApp con IA.
+          </h2>
+          <div className="mx-auto mt-12 grid max-w-4xl gap-4">
+            {faqs.map((faq) => (
+              <article
+                key={faq.question}
+                className="rounded-lg border border-[#eadcff] bg-[#fbf7ff] p-6 shadow-[0_20px_60px_rgba(76,29,149,0.08)]"
+              >
+                <h3 className="text-xl font-black text-[#211033]">{faq.question}</h3>
+                <p className="mt-3 text-base leading-7 text-[#5a476f]">{faq.answer}</p>
               </article>
             ))}
           </div>
