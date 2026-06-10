@@ -36,7 +36,9 @@ export const metadata: Metadata = {
     follow: true
   },
   icons: {
-    icon: "/icon.svg"
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png"
   },
   openGraph: {
     title: "OpenNovaIA | Agentes de IA para Automatizar Empresas 24/7",
