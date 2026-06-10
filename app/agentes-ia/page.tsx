@@ -166,6 +166,17 @@ export default function AgentesIaPage() {
             Implementamos la estrategia, entrenamiento y automatización para que tu empresa responda 24/7,
             capture leads y opere con menos fricción.
           </p>
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-[#6c5b7d]">
+            Si tu canal principal es WhatsApp, también puedes{" "}
+            <Link href="/automatizacion-whatsapp" className="font-black text-nova-violet transition hover:text-nova-bright">
+              ver automatización de WhatsApp
+            </Link>
+            . Para regresar a la experiencia principal,{" "}
+            <Link href="/" className="font-black text-nova-violet transition hover:text-nova-bright">
+              vuelve a OpenNovaIA
+            </Link>
+            .
+          </p>
           <Link
             href="/#planes"
             className="mt-9 inline-flex rounded-full bg-gradient-to-r from-nova-gold to-nova-amber px-8 py-4 text-sm font-black text-nova-black shadow-gold transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_90px_rgba(251,191,36,0.42)]"

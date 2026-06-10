@@ -32,6 +32,17 @@ export function CTASection() {
                 Comparar planes
               </a>
             </div>
+            <p className="mt-6 text-sm leading-6 text-white/55">
+              Tambi&eacute;n puedes{" "}
+              <a href="/agentes-ia" className="font-bold text-nova-lilac transition hover:text-white">
+                conocer nuestros Agentes de IA
+              </a>{" "}
+              o ver la{" "}
+              <a href="/automatizacion-whatsapp" className="font-bold text-nova-gold transition hover:text-white">
+                automatizaci&oacute;n de WhatsApp
+              </a>
+              .
+            </p>
           </div>
         </div>
       </div>

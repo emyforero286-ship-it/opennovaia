@@ -206,6 +206,17 @@ export default function AutomatizacionWhatsappPage() {
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#5a476f]">
             Implementamos agentes de IA para responder clientes, capturar leads y ejecutar seguimientos comerciales 24/7.
           </p>
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-[#6c5b7d]">
+            Si quieres automatizar más canales y procesos,{" "}
+            <Link href="/agentes-ia" className="font-black text-nova-violet transition hover:text-nova-bright">
+              conoce nuestros Agentes de IA
+            </Link>
+            . También puedes{" "}
+            <Link href="/" className="font-black text-nova-violet transition hover:text-nova-bright">
+              volver a OpenNovaIA
+            </Link>
+            .
+          </p>
           <Link
             href="/#planes"
             className="mt-9 inline-flex rounded-full bg-gradient-to-r from-nova-gold to-nova-amber px-8 py-4 text-sm font-black text-nova-black shadow-gold transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_90px_rgba(251,191,36,0.42)]"
