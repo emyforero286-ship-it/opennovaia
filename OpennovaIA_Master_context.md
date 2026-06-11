@@ -209,11 +209,13 @@ Rutas principales:
 - `/`
 - `/agentes-ia`
 - `/automatizacion-whatsapp`
+- `/casos-de-exito`
 
 Páginas SEO creadas/optimizadas:
 
 - `app/agentes-ia/page.tsx`
 - `app/automatizacion-whatsapp/page.tsx`
+- `app/casos-de-exito/page.tsx`
 
 Enlaces internos SEO:
 
@@ -221,6 +223,45 @@ Enlaces internos SEO:
 - La landing principal enlaza hacia `/automatizacion-whatsapp`.
 - `/agentes-ia` enlaza hacia `/automatizacion-whatsapp` y `/`.
 - `/automatizacion-whatsapp` enlaza hacia `/agentes-ia` y `/`.
+- `/casos-de-exito` enlaza hacia `/`, `/agentes-ia` y `/automatizacion-whatsapp`.
+- El Footer enlaza hacia `/casos-de-exito`.
+
+## Página Casos de Éxito
+
+Ruta:
+
+- `/casos-de-exito`
+
+Archivo:
+
+- `app/casos-de-exito/page.tsx`
+
+Objetivo:
+
+- Aumentar confianza, autoridad y conversión mostrando casos piloto, escenarios de implementación y estructura de prueba social.
+- Preparar la página para publicar futuros casos reales de clientes cuando existan datos verificables.
+
+Regla editorial:
+
+- No inventar clientes reales.
+- No usar testimonios falsos.
+- No afirmar resultados reales si no existen.
+- Usar lenguaje prudente como "casos piloto", "escenarios de implementación", "resultados esperados", "casos modelo" y "próximamente publicaremos casos reales".
+
+Secciones creadas:
+
+- Hero con CTA a demo y planes.
+- Sección de confianza con métricas orientativas.
+- Casos modelo para e-commerce, clínica/salud e inmobiliaria.
+- Sección "Cómo medimos el éxito".
+- Sección de transparencia: "Resultados reales, no promesas vacías".
+- CTA final para solicitar demo.
+
+Schema agregado:
+
+- WebPage Schema.
+- BreadcrumbList Schema.
+- ItemList Schema para casos modelo.
 
 ## Pricing
 
@@ -359,6 +400,7 @@ Schema:
 - Service Schema activo para agentes IA.
 - FAQPage JSON-LD específico para `/agentes-ia`.
 - FAQPage JSON-LD específico para `/automatizacion-whatsapp`.
+- WebPage, BreadcrumbList e ItemList JSON-LD específico para `/casos-de-exito`.
 
 Google Search Console:
 
@@ -466,12 +508,12 @@ Comando dev:
 
 ## Próximos Pasos Recomendados
 
-- Crear página `/casos-de-exito`.
 - Crear blog SEO en `/blog`.
 - Crear Google Business Profile.
 - Crear LinkedIn Company Page.
 - Usar `https://opennovaia.com/logo.png` como imagen oficial en WhatsApp Channel y perfiles sociales.
 - Conseguir primeros casos piloto y testimonios.
+- Reemplazar casos modelo de `/casos-de-exito` por casos reales cuando existan datos verificables.
 - Validar despliegue final en Vercel.
 - Probar Open Graph en Facebook, LinkedIn y WhatsApp.
 - Revisar performance con Lighthouse.
@@ -533,6 +575,9 @@ Formato sugerido:
 
 ### 2026-06-11
 
+- Se creó la página SEO `/casos-de-exito` con casos modelo, métricas prudentes, sección de transparencia y CTA final.
+- Se agregó schema WebPage, BreadcrumbList e ItemList para `/casos-de-exito`.
+- Se agregó `/casos-de-exito` al sitemap y al Footer como enlace interno SEO.
 - MASTER_CONTEXT actualizado con avances recientes de branding, SEO, estructura comercial, assets públicos, páginas actuales, estrategia Colombia y próximos pasos.
 - Se documentaron los assets públicos `public/logo.svg` y `public/logo.png`.
 - Se documentaron FAQ SEO, enlaces internos, schema y metadata con logo público.
@@ -557,10 +602,10 @@ Formato sugerido:
 
 ## Pendientes
 
-- Crear `/casos-de-exito`.
 - Crear `/blog`.
 - Crear Google Business Profile.
 - Crear LinkedIn Company Page.
+- Publicar casos reales en `/casos-de-exito` cuando existan resultados verificables.
 - Probar URLs públicas de logo después del redeploy:
   - https://opennovaia.com/logo.svg
   - https://opennovaia.com/logo.png
