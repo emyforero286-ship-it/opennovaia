@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
+import { blogPosts } from "@/data/blogPosts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const routes: MetadataRoute.Sitemap = [
     {
       url: "https://opennovaia.com",
       lastModified: new Date(),
@@ -27,4 +28,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85
     }
   ];
+
+  const blogRoutes: MetadataRoute.Sitemap = [
+    {
+      url: "https://opennovaia.com/blog",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.85
+    },
+    ...blogPosts.map((post) => ({
+      url: `https://opennovaia.com/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: "monthly" as const,
+      priority: 0.75
+    }))
+  ];
+
+  return [...routes, ...blogRoutes];
 }

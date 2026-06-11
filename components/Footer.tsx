@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { NeuralLogo } from "./NeuralLogo";
 import { siteConfig } from "@/config/site";
 
@@ -15,7 +16,8 @@ export function Footer() {
         <div className="flex flex-wrap gap-5">
           <a href="#agentes" className="transition hover:text-white">Agentes</a>
           <a href="#industrias" className="transition hover:text-white">Industrias</a>
-          <a href="/casos-de-exito" className="transition hover:text-white">Casos de éxito</a>
+          <Link href="/casos-de-exito" className="transition hover:text-white">Casos de éxito</Link>
+          <Link href="/blog" className="transition hover:text-white">Blog</Link>
           <a href="#planes" className="transition hover:text-white">Planes</a>
           <a href={`mailto:${siteConfig.contactEmail}`} className="transition hover:text-white">Contacto</a>
         </div>

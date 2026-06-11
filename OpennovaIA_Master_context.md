@@ -210,12 +210,17 @@ Rutas principales:
 - `/agentes-ia`
 - `/automatizacion-whatsapp`
 - `/casos-de-exito`
+- `/blog`
+- `/blog/[slug]`
 
 Páginas SEO creadas/optimizadas:
 
 - `app/agentes-ia/page.tsx`
 - `app/automatizacion-whatsapp/page.tsx`
 - `app/casos-de-exito/page.tsx`
+- `app/blog/page.tsx`
+- `app/blog/[slug]/page.tsx`
+- `data/blogPosts.ts`
 
 Enlaces internos SEO:
 
@@ -225,6 +230,8 @@ Enlaces internos SEO:
 - `/automatizacion-whatsapp` enlaza hacia `/agentes-ia` y `/`.
 - `/casos-de-exito` enlaza hacia `/`, `/agentes-ia` y `/automatizacion-whatsapp`.
 - El Footer enlaza hacia `/casos-de-exito`.
+- El Footer enlaza hacia `/blog`.
+- Los artículos del blog enlazan hacia `/`, `/agentes-ia`, `/automatizacion-whatsapp` y `/casos-de-exito`.
 
 ## Página Casos de Éxito
 
@@ -262,6 +269,56 @@ Schema agregado:
 - WebPage Schema.
 - BreadcrumbList Schema.
 - ItemList Schema para casos modelo.
+
+## Blog SEO
+
+Ruta principal:
+
+- `/blog`
+
+Ruta dinámica:
+
+- `/blog/[slug]`
+
+Archivos:
+
+- `app/blog/page.tsx`
+- `app/blog/[slug]/page.tsx`
+- `data/blogPosts.ts`
+
+Objetivo:
+
+- Publicar guías, estrategias y casos de uso sobre agentes IA, automatización por WhatsApp y automatización empresarial en Colombia.
+- Aumentar autoridad SEO y enlazado interno hacia páginas comerciales.
+
+Artículos iniciales:
+
+- `que-es-un-agente-ia-para-whatsapp`
+- `automatizar-atencion-al-cliente-colombia`
+- `agentes-ia-para-clinicas`
+- `agentes-ia-para-inmobiliarias`
+- `agentes-ia-para-ecommerce`
+
+SEO incluido:
+
+- Metadata dinámica por artículo.
+- Canonical por artículo.
+- Open Graph por artículo.
+- Twitter Card por artículo.
+- Keywords por artículo.
+- Article JSON-LD por artículo.
+- BreadcrumbList JSON-LD por artículo.
+- FAQPage JSON-LD cuando el artículo incluye FAQ.
+- Sitemap actualizado con `/blog` y cada artículo.
+
+Reglas para futuros artículos:
+
+- No inventar estadísticas.
+- No afirmar resultados reales sin evidencia.
+- Mantener tono profesional, claro y comercial.
+- Incluir enlaces internos naturales hacia `/`, `/agentes-ia`, `/automatizacion-whatsapp` y `/casos-de-exito`.
+- Mantener H1 único, H2 claros y contenido orientado a intención de búsqueda.
+- Mantener foco inicial en Colombia, WhatsApp, web, CRM y procesos empresariales.
 
 ## Pricing
 
@@ -401,6 +458,7 @@ Schema:
 - FAQPage JSON-LD específico para `/agentes-ia`.
 - FAQPage JSON-LD específico para `/automatizacion-whatsapp`.
 - WebPage, BreadcrumbList e ItemList JSON-LD específico para `/casos-de-exito`.
+- Article, BreadcrumbList y FAQPage JSON-LD para artículos de `/blog/[slug]`.
 
 Google Search Console:
 
@@ -508,12 +566,12 @@ Comando dev:
 
 ## Próximos Pasos Recomendados
 
-- Crear blog SEO en `/blog`.
 - Crear Google Business Profile.
 - Crear LinkedIn Company Page.
 - Usar `https://opennovaia.com/logo.png` como imagen oficial en WhatsApp Channel y perfiles sociales.
 - Conseguir primeros casos piloto y testimonios.
 - Reemplazar casos modelo de `/casos-de-exito` por casos reales cuando existan datos verificables.
+- Ampliar el blog con nuevos artículos SEO por industria y por intención comercial.
 - Validar despliegue final en Vercel.
 - Probar Open Graph en Facebook, LinkedIn y WhatsApp.
 - Revisar performance con Lighthouse.
@@ -575,6 +633,11 @@ Formato sugerido:
 
 ### 2026-06-11
 
+- Se creó la arquitectura SEO del blog con `/blog` y `/blog/[slug]`.
+- Se creó `data/blogPosts.ts` como fuente tipada para artículos.
+- Se publicaron 5 artículos iniciales sobre WhatsApp IA, atención al cliente, clínicas, inmobiliarias y ecommerce.
+- Se agregó metadata dinámica, Article Schema, BreadcrumbList Schema y FAQPage Schema para artículos.
+- Se agregó `/blog` y cada artículo al sitemap, además del enlace Blog en el Footer.
 - Se creó la página SEO `/casos-de-exito` con casos modelo, métricas prudentes, sección de transparencia y CTA final.
 - Se agregó schema WebPage, BreadcrumbList e ItemList para `/casos-de-exito`.
 - Se agregó `/casos-de-exito` al sitemap y al Footer como enlace interno SEO.
@@ -602,9 +665,9 @@ Formato sugerido:
 
 ## Pendientes
 
-- Crear `/blog`.
 - Crear Google Business Profile.
 - Crear LinkedIn Company Page.
+- Crear más artículos para `/blog`.
 - Publicar casos reales en `/casos-de-exito` cuando existan resultados verificables.
 - Probar URLs públicas de logo después del redeploy:
   - https://opennovaia.com/logo.svg
