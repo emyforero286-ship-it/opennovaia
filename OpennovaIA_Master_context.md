@@ -1,6 +1,6 @@
 # OpenNovaIA - Master Context
 
-Última actualización: 2026-06-11
+Última actualización: 2026-06-12
 
 ## Proyecto
 
@@ -213,6 +213,19 @@ Rutas principales:
 - `/blog`
 - `/blog/[slug]`
 
+Páginas SEO principales completadas:
+
+- `/`
+- `/agentes-ia`
+- `/automatizacion-whatsapp`
+
+Páginas SEO pendientes que todavía NO existen:
+
+- `/chatbots-ia`
+- `/agente-whatsapp-ia`
+- `/automatizacion-empresarial`
+- `/asistente-virtual-ia`
+
 Páginas SEO creadas/optimizadas:
 
 - `app/agentes-ia/page.tsx`
@@ -420,6 +433,10 @@ Regla:
 
 ## SEO Técnico
 
+Estado:
+
+- SEO técnico base completado.
+
 Archivos SEO actuales:
 
 - `app/sitemap.ts`
@@ -427,6 +444,21 @@ Archivos SEO actuales:
 - `app/opengraph-image.tsx`
 - `app/layout.tsx`
 - `components/JsonLd.tsx`
+
+Elementos completados:
+
+- Metadata optimizada.
+- `sitemap.xml`.
+- `robots.txt`.
+- Canonical.
+- Open Graph.
+- Twitter Cards.
+- Favicon.
+- Apple touch icon.
+- Schema.org Organization.
+- Schema.org Service.
+- FAQ Schema en páginas SEO.
+- Enlaces internos SEO.
 
 Sitemap:
 
@@ -462,14 +494,80 @@ Schema:
 
 Google Search Console:
 
+- Google Search Console verificado.
+- Sitemap enviado.
 - Ya se solicitó indexación de `/agentes-ia`.
 - Ya se solicitó indexación de `/automatizacion-whatsapp`.
+- Indexación solicitada para páginas SEO principales.
 
 Verificaciones recientes:
 
 - `npm run lint`: pasó.
 - `npm run build`: pasó.
 - Push a GitHub completado en `origin/main`.
+
+## Google Business Profile
+
+Estado:
+
+- Perfil creado para OpenNovaIA.
+
+Configuración:
+
+- Categoría: Empresa de software.
+- Sitio web conectado: https://opennovaia.com
+- Servicios agregados.
+- Fotos corporativas agregadas.
+- Descripción agregada.
+- Áreas de servicio configuradas para Colombia y ciudades principales.
+
+Pendiente relacionado:
+
+- Conseguir primeras reseñas reales.
+- Mantener publicaciones y fotos actualizadas.
+
+## Google Analytics 4
+
+Estado:
+
+- Google Analytics 4 implementado.
+
+Propiedad:
+
+- OpenNovaIA Web
+
+Measurement ID:
+
+- `G-G1HCYVBYWT`
+
+Implementación técnica:
+
+- Variable de entorno en Vercel: `NEXT_PUBLIC_GA_ID`.
+- Ejemplo local/documentación: `.env.example`.
+- Componente: `components/GoogleAnalytics.tsx`.
+- Integración en `app/layout.tsx`.
+- Carga mediante `next/script`.
+- Analytics solo carga si existe `NEXT_PUBLIC_GA_ID`.
+- Compatible con Vercel.
+
+Deploy:
+
+- Redeploy realizado.
+- Analytics empezó a recibir usuarios activos.
+
+Pendientes relacionados:
+
+- Verificar Analytics en tiempo real.
+- Medir eventos de conversión.
+- Configurar clics en CTAs como eventos.
+
+## Optimizaciones Realizadas
+
+- Corrección de encoding/mojibake UTF-8.
+- Optimización de imágenes de testimonios.
+- Accesibilidad básica mejorada.
+- Enlaces internos SEO entre `/`, `/agentes-ia` y `/automatizacion-whatsapp`.
+- Build y lint pasando correctamente.
 
 ## Estudio de Mercado Colombia
 
@@ -561,18 +659,27 @@ Comando dev:
 
 ## Commits Recientes
 
+- `b5ae8f1` Add Google Analytics 4
+- `6d1c070` feat: add SEO blog architecture
+- `cf684f4` feat: add case studies page
 - `d4fd8c8` Add FAQ SEO sections
 - `309dda7` feat: create public logo assets for branding and SEO
 
 ## Próximos Pasos Recomendados
 
-- Crear Google Business Profile.
 - Crear LinkedIn Company Page.
 - Usar `https://opennovaia.com/logo.png` como imagen oficial en WhatsApp Channel y perfiles sociales.
 - Conseguir primeros casos piloto y testimonios.
 - Reemplazar casos modelo de `/casos-de-exito` por casos reales cuando existan datos verificables.
 - Ampliar el blog con nuevos artículos SEO por industria y por intención comercial.
-- Validar despliegue final en Vercel.
+- Crear `/chatbots-ia`.
+- Crear `/agente-whatsapp-ia`.
+- Crear `/automatizacion-empresarial`.
+- Crear `/asistente-virtual-ia`.
+- Medir eventos de conversión.
+- Configurar clics en CTAs como eventos.
+- Conseguir primeras reseñas en Google Business Profile.
+- Conseguir backlinks.
 - Probar Open Graph en Facebook, LinkedIn y WhatsApp.
 - Revisar performance con Lighthouse.
 - Definir sistema de captación de leads.
@@ -598,6 +705,15 @@ Antes de modificar:
 6. Ejecutar build al finalizar si el usuario lo pide o si el cambio afecta producción.
 7. Corregir errores antes de terminar.
 8. Mantener compatibilidad con Vercel.
+
+Reglas actuales:
+
+- No rediseñar la landing principal sin autorización.
+- Mantener identidad visual premium morado/lila/dorado.
+- No tocar componentes visuales aprobados salvo instrucción explícita.
+- Hacer cambios incrementales.
+- Ejecutar `npm run lint` y `npm run build` después de cambios SEO.
+- Subir cambios a GitHub cuando el usuario lo indique o cuando sea parte de la tarea.
 
 ## Archivos que no deben subirse
 
@@ -630,6 +746,17 @@ Formato sugerido:
 ```
 
 ## Historial
+
+### 2026-06-12
+
+- MASTER_CONTEXT actualizado con estado posterior a SEO técnico, Google Business Profile y Google Analytics 4.
+- Se documentó Google Search Console verificado, sitemap enviado e indexación solicitada.
+- Se documentó Google Business Profile creado para OpenNovaIA como Empresa de software.
+- Se documentó Google Analytics 4 con propiedad OpenNovaIA Web y Measurement ID `G-G1HCYVBYWT`.
+- Se documentó la variable de entorno `NEXT_PUBLIC_GA_ID`, `.env.example`, `components/GoogleAnalytics.tsx` y actualización de `app/layout.tsx`.
+- Se documentó que Analytics empezó a recibir usuarios activos.
+- Se aclaró que todavía no existen `/chatbots-ia`, `/agente-whatsapp-ia`, `/automatizacion-empresarial` ni `/asistente-virtual-ia`.
+- Se actualizaron reglas actuales y pendientes de conversión, reseñas, backlinks y futuras páginas SEO.
 
 ### 2026-06-11
 
@@ -665,9 +792,18 @@ Formato sugerido:
 
 ## Pendientes
 
-- Crear Google Business Profile.
 - Crear LinkedIn Company Page.
 - Crear más artículos para `/blog`.
+- Crear `/chatbots-ia`.
+- Crear `/agente-whatsapp-ia`.
+- Crear `/automatizacion-empresarial`.
+- Crear `/asistente-virtual-ia`.
+- Verificar Analytics en tiempo real.
+- Medir eventos de conversión.
+- Configurar clics en CTAs como eventos.
+- Conseguir primeras reseñas en Google Business Profile.
+- Conseguir backlinks.
+- Crear estrategia de contenido/blog más adelante.
 - Publicar casos reales en `/casos-de-exito` cuando existan resultados verificables.
 - Probar URLs públicas de logo después del redeploy:
   - https://opennovaia.com/logo.svg
