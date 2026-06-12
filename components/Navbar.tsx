@@ -1,4 +1,5 @@
 import { NeuralLogo } from "./NeuralLogo";
+import { TrackableLink } from "./TrackableLink";
 
 const navItems = [
   { label: "Inicio", href: "#" },
@@ -28,12 +29,14 @@ export function Navbar() {
           ))}
         </div>
 
-        <a
+        <TrackableLink
           href="#contacto"
+          eventName="reserve_demo_click"
+          eventLabel="Reservar demo"
           className="rounded-full border border-nova-gold/45 bg-gradient-to-r from-nova-gold to-nova-amber px-5 py-3 text-sm font-bold text-nova-black shadow-gold transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_70px_rgba(251,191,36,0.42)]"
         >
           Reservar demo
-        </a>
+        </TrackableLink>
       </nav>
     </header>
   );

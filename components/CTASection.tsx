@@ -1,4 +1,5 @@
 import { siteConfig } from "@/config/site";
+import { TrackableLink } from "./TrackableLink";
 
 export function CTASection() {
   return (
@@ -25,12 +26,14 @@ export function CTASection() {
               >
                 Agendar demo gratis
               </a>
-              <a
+              <TrackableLink
                 href="#planes"
+                eventName="view_plans_click"
+                eventLabel="Comparar planes"
                 className="inline-flex rounded-full border border-nova-lilac/35 bg-white/[0.045] px-7 py-4 text-sm font-bold text-white transition duration-300 hover:-translate-y-1 hover:border-nova-gold/50 hover:bg-white/[0.08]"
               >
                 Comparar planes
-              </a>
+              </TrackableLink>
             </div>
             <p className="mt-6 text-sm leading-6 text-white/55">
               Tambi&eacute;n puedes{" "}

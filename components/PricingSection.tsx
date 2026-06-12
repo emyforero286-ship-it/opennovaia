@@ -1,4 +1,6 @@
+import { PricingSectionViewTracker } from "./PricingSectionViewTracker";
 import { SectionHeader } from "./SectionHeader";
+import { TrackableLink } from "./TrackableLink";
 
 const plans = [
   {
@@ -83,6 +85,7 @@ const plans = [
 export function PricingSection() {
   return (
     <section id="planes" className="relative overflow-hidden bg-[#fbf7ff] py-24 text-[#130824]">
+      <PricingSectionViewTracker />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_right,rgba(251,191,36,0.16),transparent_42%),radial-gradient(ellipse_at_left,rgba(192,132,252,0.22),transparent_50%)]" />
       <div className="section-shell relative">
         <SectionHeader
@@ -193,8 +196,10 @@ export function PricingSection() {
                 Agente adicional: {plan.additionalAgent}
               </div>
 
-              <a
+              <TrackableLink
                 href="#contacto"
+                eventName="activate_agent_click"
+                eventLabel={`Activar mi Agente IA - ${plan.name}`}
                 className={`mt-auto block rounded-full px-5 py-3 text-center text-sm font-black transition duration-300 ${
                   plan.featured
                     ? "bg-gradient-to-r from-nova-gold to-nova-amber text-nova-black shadow-gold hover:-translate-y-1 hover:shadow-[0_24px_80px_rgba(251,191,36,0.42)]"
@@ -204,7 +209,7 @@ export function PricingSection() {
                 }`}
               >
                 Activar mi Agente IA
-              </a>
+              </TrackableLink>
             </article>
           ))}
         </div>

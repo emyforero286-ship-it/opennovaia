@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { TrackableLink } from "@/components/TrackableLink";
 
 export const metadata: Metadata = {
   title: "Casos de Éxito | OpenNovaIA",
@@ -168,12 +169,14 @@ export default function CasosDeExitoPage() {
             >
               Solicitar demo
             </Link>
-            <Link
+            <TrackableLink
               href="/#planes"
+              eventName="view_plans_click"
+              eventLabel="Ver planes"
               className="rounded-full border border-nova-pink/35 bg-white/[0.045] px-7 py-4 text-center text-sm font-bold text-white shadow-glow transition duration-300 hover:-translate-y-1 hover:border-nova-fuchsia/70 hover:bg-nova-fuchsia/10"
             >
               Ver planes
-            </Link>
+            </TrackableLink>
           </div>
           <div className="mt-8 flex flex-wrap gap-4 text-sm text-white/58">
             <Link href="/" className="font-bold text-nova-lilac transition hover:text-white">

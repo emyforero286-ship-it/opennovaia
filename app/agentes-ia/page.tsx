@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { TrackableLink } from "@/components/TrackableLink";
 
 export const metadata: Metadata = {
   title: "Agentes de IA para Empresas | OpenNovaIA",
@@ -124,12 +125,14 @@ export default function AgentesIaPage() {
             capturar oportunidades y reducir trabajo manual en procesos empresariales.
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-            <Link
+            <TrackableLink
               href="/#planes"
+              eventName="activate_agent_click"
+              eventLabel="Activar mi Agente IA"
               className="rounded-full bg-gradient-to-r from-nova-gold to-nova-amber px-7 py-4 text-center text-sm font-black text-nova-black shadow-gold transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_90px_rgba(251,191,36,0.42)]"
             >
               Activar mi Agente IA
-            </Link>
+            </TrackableLink>
             <Link
               href="/#proceso"
               className="rounded-full border border-nova-pink/35 bg-white/[0.045] px-7 py-4 text-center text-sm font-bold text-white shadow-glow transition duration-300 hover:-translate-y-1 hover:border-nova-fuchsia/70 hover:bg-nova-fuchsia/10"
@@ -254,12 +257,14 @@ export default function AgentesIaPage() {
             </Link>
             .
           </p>
-          <Link
+          <TrackableLink
             href="/#planes"
+            eventName="activate_agent_click"
+            eventLabel="Activar mi Agente IA"
             className="mt-9 inline-flex rounded-full bg-gradient-to-r from-nova-gold to-nova-amber px-8 py-4 text-sm font-black text-nova-black shadow-gold transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_90px_rgba(251,191,36,0.42)]"
           >
             Activar mi Agente IA
-          </Link>
+          </TrackableLink>
         </div>
       </section>
     </main>
