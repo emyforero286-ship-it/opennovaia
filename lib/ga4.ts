@@ -9,7 +9,8 @@ export type GA4EventName =
   | "proposal_cta_click"
   | "funnel_page_view"
   | "demo_from_funnel_click"
-  | "proposal_from_funnel_click";
+  | "proposal_from_funnel_click"
+  | "pricing_from_funnel_click";
 
 type GA4EventParams = Record<string, string | number | boolean | undefined>;
 

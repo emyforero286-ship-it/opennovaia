@@ -3,16 +3,16 @@ import { FunnelPageViewTracker } from "@/components/FunnelPageViewTracker";
 import { TrackableLink } from "@/components/TrackableLink";
 
 export const metadata: Metadata = {
-  title: "Embudo de Ventas OpenNovaIA v1",
+  title: "Embudo Automatizado OpenNovaIA v1",
   description:
-    "Conoce el flujo comercial de OpenNovaIA desde tráfico, landing y demo hasta propuesta, pago, KronoCloud y activación del agente IA.",
+    "Conoce el embudo automatizado de OpenNovaIA: tráfico, landing, demo automática, precios, pago, KronoCloud y activación de agentes IA.",
   alternates: {
     canonical: "https://opennovaia.com/embudo"
   },
   openGraph: {
-    title: "Embudo de Ventas OpenNovaIA v1",
+    title: "Embudo Automatizado OpenNovaIA v1",
     description:
-      "Flujo comercial para convertir conversaciones en clientes activos con agentes IA, demo, propuesta y activación en KronoCloud.",
+      "Flujo automatizado para convertir visitantes en clientes activos con agentes IA, pago y activación en KronoCloud.",
     url: "https://opennovaia.com/embudo",
     siteName: "OpenNovaIA",
     images: [
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Embudo de Ventas OpenNovaIA v1",
+    title: "Embudo Automatizado OpenNovaIA v1",
     description:
-      "Flujo comercial para convertir conversaciones en clientes activos con agentes IA, demo, propuesta y activación en KronoCloud.",
+      "Flujo automatizado para convertir visitantes en clientes activos con agentes IA, pago y activación en KronoCloud.",
     images: ["/logo.svg"]
   }
 };
@@ -39,116 +39,81 @@ const phases = [
   {
     name: "Tráfico",
     objective:
-      "Atraer prospectos desde Google, Instagram, Facebook, Google Business, referidos y SEO.",
+      "Atraer usuarios desde Instagram, Facebook, Google, Google Business Profile, SEO y referidos.",
     happens:
-      "La persona descubre OpenNovaIA por búsqueda, contenido, redes, perfil de negocio o recomendación.",
+      "La persona ve una publicación, anuncio o resultado de búsqueda y entra a OpenNovaIA.",
     opennovaia:
-      "Optimizar contenido, mensajes, SEO, publicaciones, prueba social y llamadas a la demo.",
+      "Crear contenido, anuncios, SEO, perfiles confiables y mensajes que conecten con problemas reales de ventas y atención.",
     client:
-      "Identificar si tiene problemas de atención, ventas, seguimiento o procesos repetitivos.",
-    metric: "Visitas, clics, fuentes de tráfico."
+      "Reconocer una necesidad de automatización y entrar a la web para entender la solución.",
+    metric: "Fuente de tráfico, visitas, clics, CTR."
   },
   {
     name: "Landing",
-    objective: "Generar confianza y llevar al visitante a la demo.",
+    objective: "Generar confianza y explicar el valor de OpenNovaIA.",
     happens:
-      "El prospecto entiende la propuesta de valor, revisa planes, beneficios, testimonios y casos modelo.",
+      "El visitante entiende que puede automatizar ventas, atención y procesos con agentes IA.",
     opennovaia:
-      "Mantener una landing clara, rápida, persuasiva y orientada a conversión.",
+      "Presentar valor, beneficios, planes, prueba social y rutas claras hacia demo automática y precios.",
     client:
-      "Explorar la oferta y decidir si vale la pena ver una demo aplicada a su negocio.",
-    metric: "Clics en CTA, visitas a planes, tiempo en página."
+      "Explorar la oferta, comparar valor y avanzar hacia la demo o la sección de planes.",
+    metric: "Tiempo en página, clics en CTA, scroll, visitas a planes."
   },
   {
-    name: "Demo",
-    objective:
-      "Mostrar cómo un agente IA puede automatizar atención, ventas y seguimiento.",
+    name: "Demo automática",
+    objective: "Que la web explique y muestre el valor sin intervención humana.",
     happens:
-      "Se revisa el negocio, se detectan oportunidades y se muestra un flujo posible del agente IA.",
+      "El usuario ve cómo funciona un agente IA, qué automatiza, qué resultados puede generar y cómo se activa.",
     opennovaia:
-      "Escuchar, diagnosticar, mostrar una ruta simple y recomendar el siguiente paso.",
+      "Mantener una demo clara, persuasiva y orientada a mostrar el antes, el después y el siguiente paso.",
     client:
-      "Compartir contexto real del negocio, canales actuales y principales cuellos de botella.",
-    metric: "Demos agendadas, demos asistidas."
+      "Consumir la demo, entender el caso de uso y decidir si quiere avanzar a precios o activación.",
+    metric: "Visitas a /demo, clics en CTA de demo, tiempo en demo."
   },
   {
-    name: "Propuesta",
-    objective:
-      "Enviar una oferta clara con plan recomendado, precio, beneficios e implementación.",
+    name: "Precios",
+    objective: "Que el usuario compare Starter, Growth y Elite y elija el plan adecuado.",
     happens:
-      "El prospecto recibe una propuesta profesional con alcance, beneficios, plan y próximos pasos.",
+      "El usuario revisa beneficios, precios, créditos, agentes incluidos y decide avanzar.",
     opennovaia:
-      "Personalizar la propuesta, explicar valor de negocio y dejar claro cómo iniciar.",
+      "Mostrar planes claros, diferenciar Growth como opción recomendada y reducir dudas antes del pago.",
     client:
-      "Revisar alcance, presupuesto, prioridad y responsables de decisión.",
-    metric: "Propuestas enviadas, propuestas abiertas."
-  },
-  {
-    name: "Seguimiento",
-    objective: "Mantener contacto sin presionar y resolver dudas.",
-    happens:
-      "OpenNovaIA acompaña la decisión con mensajes útiles, claridad y objeciones resueltas.",
-    opennovaia:
-      "Dar seguimiento elegante, recordar beneficios concretos y resolver fricciones.",
-    client:
-      "Responder dudas, validar internamente y confirmar si quiere avanzar.",
-    metric: "Respuestas al seguimiento, objeciones resueltas, intención de compra."
+      "Elegir el plan que mejor se ajusta a su negocio, canales y volumen de atención.",
+    metric: "pricing_section_view, view_plans_click, activate_agent_click."
   },
   {
     name: "Pago",
-    objective: "Confirmar el plan y recibir el pago.",
+    objective: "Convertir al visitante en cliente.",
     happens:
-      "El cliente elige plan, confirma condiciones y realiza el pago acordado.",
+      "El usuario paga el plan elegido mediante el sistema definido.",
     opennovaia:
-      "Enviar instrucciones claras, confirmar recepción y preparar la activación.",
+      "Ofrecer un proceso de pago simple, confiable, medible y conectado al siguiente paso de activación.",
     client:
-      "Seleccionar plan, realizar pago y entregar datos administrativos necesarios.",
-    metric: "Pagos recibidos, tasa de cierre."
+      "Confirmar el plan, completar el pago y avanzar al acceso de la plataforma.",
+    metric: "Clics de pago, pagos iniciados, pagos completados."
   },
   {
     name: "KronoCloud",
-    objective: "Crear cuenta, configurar cliente y preparar agentes IA.",
+    objective:
+      "Llevar al cliente al sistema donde se registra, inicia sesión o activa su cuenta.",
     happens:
-      "Se crea la cuenta, se organiza la base de conocimiento y se preparan agentes, canales y flujos.",
+      "Después del pago, el cliente accede a KronoCloud para gestionar su agente IA.",
     opennovaia:
-      "Configurar cliente, cargar información, preparar agentes IA y validar integraciones.",
+      "Conectar pago, cuenta, acceso y configuración inicial dentro del flujo operativo.",
     client:
-      "Entregar información del negocio, preguntas frecuentes, servicios y criterios de atención.",
-    metric: "Cuentas creadas, agentes configurados."
+      "Registrarse, iniciar sesión o activar la cuenta para empezar la configuración.",
+    metric: "Registros, inicios de sesión, cuentas activadas."
   },
   {
     name: "Activación",
-    objective: "Entregar el agente funcionando, capacitación inicial y soporte.",
+    objective: "Que el cliente tenga su agente funcionando.",
     happens:
-      "El agente entra en operación, el equipo aprende a usarlo y se miden primeras conversaciones.",
+      "El cliente completa datos, configura su negocio, activa agentes y empieza a usar la plataforma.",
     opennovaia:
-      "Acompañar activación, ajustar respuestas, medir desempeño y solicitar feedback.",
+      "Guiar la activación, medir uso, detectar fricción y facilitar que el cliente llegue a valor rápido.",
     client:
-      "Usar el agente, revisar conversaciones y reportar oportunidades de mejora.",
-    metric: "Cliente activo, satisfacción, testimonio."
-  }
-];
-
-const followUpSequence = [
-  {
-    day: "Día 0",
-    action: "Enviar propuesta"
-  },
-  {
-    day: "Día 1",
-    action: "Seguimiento suave"
-  },
-  {
-    day: "Día 3",
-    action: "Beneficio concreto"
-  },
-  {
-    day: "Día 5",
-    action: "Resolver objeciones"
-  },
-  {
-    day: "Día 7",
-    action: "Cierre elegante"
+      "Completar información del negocio, activar agentes y revisar primeras conversaciones.",
+    metric: "Agentes activados, clientes activos, retención."
   }
 ];
 
@@ -164,36 +129,36 @@ export default function EmbudoPage() {
       <section className="section-shell relative py-28">
         <div className="mx-auto max-w-5xl text-center">
           <p className="inline-flex rounded-full border border-nova-fuchsia/25 bg-nova-fuchsia/10 px-4 py-2 text-sm font-black uppercase tracking-[0.18em] text-nova-pink shadow-glow">
-            Embudo de Ventas OpenNovaIA v1
+            Embudo automatizado OpenNovaIA v1
           </p>
           <h1 className="mt-7 text-5xl font-black leading-[1.03] text-white sm:text-6xl lg:text-7xl">
-            Tráfico → Landing → Demo → Propuesta → Seguimiento → Pago → KronoCloud → Activación
+            Tráfico → Landing → Demo automática → Precios → Pago → KronoCloud → Activación
           </h1>
           <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 text-white/[0.72]">
-            Un mapa comercial claro para convertir visitantes en clientes activos con agentes IA
-            funcionando, seguimiento medible y activación ordenada.
+            OpenNovaIA debe convertir visitantes en clientes activos sin depender de conversaciones
+            manuales como flujo principal. La web explica, mide, vende y conecta con KronoCloud.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
             <TrackableLink
               href="/demo"
               eventName="demo_from_funnel_click"
-              eventLabel="Ver página de demo"
+              eventLabel="Ver demo automática"
               className="rounded-full bg-gradient-to-r from-nova-gold to-nova-amber px-7 py-4 text-center text-sm font-black text-nova-black shadow-gold transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_90px_rgba(251,191,36,0.42)]"
             >
-              Ver página de demo
+              Ver demo automática
             </TrackableLink>
             <TrackableLink
-              href="/propuesta"
-              eventName="proposal_from_funnel_click"
-              eventLabel="Ver propuesta comercial"
+              href="/#planes"
+              eventName="pricing_from_funnel_click"
+              eventLabel="Ver planes"
               className="rounded-full border border-nova-pink/35 bg-white/[0.045] px-7 py-4 text-center text-sm font-bold text-white shadow-glow transition duration-300 hover:-translate-y-1 hover:border-nova-fuchsia/70 hover:bg-nova-fuchsia/10"
             >
-              Ver propuesta comercial
+              Ver planes
             </TrackableLink>
           </div>
         </div>
 
-        <div className="mt-14 grid gap-3 lg:grid-cols-8">
+        <div className="mt-14 grid gap-3 lg:grid-cols-7">
           {phases.map((phase, index) => (
             <div
               key={phase.name}
@@ -210,14 +175,17 @@ export default function EmbudoPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(192,132,252,0.16),transparent_52%)]" />
         <div className="section-shell relative">
           <p className="text-center text-sm font-black uppercase tracking-[0.22em] text-nova-violet">
-            Fases del embudo
+            Fases del embudo automático
           </p>
           <h2 className="mx-auto mt-4 max-w-3xl text-center text-4xl font-black leading-tight sm:text-5xl">
-            Cada etapa tiene un objetivo, una acción y una métrica clara.
+            Cada etapa debe acercar al usuario al pago y a la activación.
           </h2>
           <div className="mt-12 grid gap-5">
             {phases.map((phase, index) => (
-              <article key={phase.name} className="rounded-lg border border-[#eadcff] bg-[#fbf7ff] p-6 shadow-[0_20px_60px_rgba(76,29,149,0.09)]">
+              <article
+                key={phase.name}
+                className="rounded-lg border border-[#eadcff] bg-[#fbf7ff] p-6 shadow-[0_20px_60px_rgba(76,29,149,0.09)]"
+              >
                 <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                   <div>
                     <p className="text-sm font-black uppercase tracking-[0.18em] text-nova-violet">
@@ -253,22 +221,6 @@ export default function EmbudoPage() {
                     <p className="mt-3 text-sm leading-6 text-[#5a476f]">{phase.client}</p>
                   </div>
                 </div>
-
-                {phase.name === "Seguimiento" && (
-                  <div className="mt-7 rounded-lg border border-nova-gold/25 bg-nova-gold/10 p-5">
-                    <p className="text-sm font-black uppercase tracking-[0.16em] text-[#6f4300]">
-                      Mini secuencia de seguimiento
-                    </p>
-                    <div className="mt-4 grid gap-3 md:grid-cols-5">
-                      {followUpSequence.map((item) => (
-                        <div key={item.day} className="rounded-lg border border-nova-gold/20 bg-white/70 p-4">
-                          <p className="text-sm font-black text-nova-violet">{item.day}</p>
-                          <p className="mt-2 text-sm font-bold leading-5 text-[#5a476f]">{item.action}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
               </article>
             ))}
           </div>
@@ -283,28 +235,29 @@ export default function EmbudoPage() {
             Objetivo del embudo
           </p>
           <h2 className="mx-auto mt-4 max-w-4xl text-4xl font-black leading-tight sm:text-5xl">
-            No vendemos tecnología. Convertimos conversaciones en clientes.
+            OpenNovaIA debe vender incluso cuando no estás conectada
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-white/70">
-            El objetivo no es vender tecnología. El objetivo es convertir conversaciones en clientes,
-            reducir trabajo manual y activar agentes IA que generen resultados reales para cada negocio.
+            El objetivo del embudo no es depender de llamadas manuales. El objetivo es que la página
+            explique, convenza, mida el interés, lleve al usuario al pago y conecte con KronoCloud
+            para activar su agente IA.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
             <TrackableLink
               href="/demo"
               eventName="demo_from_funnel_click"
-              eventLabel="Ver página de demo"
+              eventLabel="Ver demo automática"
               className="rounded-full bg-gradient-to-r from-nova-gold to-nova-amber px-8 py-4 text-sm font-black text-nova-black shadow-gold transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_90px_rgba(251,191,36,0.42)]"
             >
-              Ver página de demo
+              Ver demo automática
             </TrackableLink>
             <TrackableLink
-              href="/propuesta"
-              eventName="proposal_from_funnel_click"
-              eventLabel="Ver propuesta comercial"
+              href="/#planes"
+              eventName="pricing_from_funnel_click"
+              eventLabel="Ver planes"
               className="rounded-full border border-nova-pink/35 bg-white/[0.045] px-8 py-4 text-sm font-bold text-white shadow-glow transition duration-300 hover:-translate-y-1 hover:border-nova-fuchsia/70 hover:bg-nova-fuchsia/10"
             >
-              Ver propuesta comercial
+              Ver planes
             </TrackableLink>
           </div>
         </div>
