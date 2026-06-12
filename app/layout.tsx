@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { JsonLd } from "@/components/JsonLd";
 import { siteConfig } from "@/config/site";
 import "./globals.css";
@@ -74,6 +75,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={inter.variable}>
+        <GoogleAnalytics />
         <JsonLd />
         {children}
       </body>
