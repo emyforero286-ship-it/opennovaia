@@ -2,7 +2,9 @@ export type GA4EventName =
   | "reserve_demo_click"
   | "activate_agent_click"
   | "view_plans_click"
-  | "pricing_section_view";
+  | "pricing_section_view"
+  | "demo_page_view"
+  | "demo_cta_click";
 
 type GA4EventParams = Record<string, string | number | boolean | undefined>;
 
