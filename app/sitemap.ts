@@ -38,6 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9
+    },
+    {
+      url: "https://opennovaia.com/propuesta",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.85
     }
   ];
 
