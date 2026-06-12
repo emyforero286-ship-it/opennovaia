@@ -26,6 +26,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.85
+    },
+    {
+      url: "https://opennovaia.com/chatbots-ia",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.85
     }
   ];
 
