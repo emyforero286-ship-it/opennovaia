@@ -1,10 +1,10 @@
 # OpenNovaIA - Master Context
 
-Última actualización: 2026-06-12
+Última actualización: 2026-06-13
 
 ## Proyecto
 
-OpenNovaIA es una landing page premium para una agencia de Inteligencia Artificial enfocada en automatización empresarial mediante agentes de IA.
+OpenNovaIA es una agencia premium de Inteligencia Artificial enfocada en automatización empresarial mediante agentes de IA para ventas, atención al cliente, soporte y procesos internos.
 
 Stack actual:
 
@@ -36,13 +36,13 @@ Posicionamiento:
 
 - Agencia premium de IA para empresas.
 - Plataforma de agentes IA para vender, atender y automatizar procesos.
-- Automatización de ventas, soporte y procesos internos.
+- Automatización de ventas, soporte y operaciones.
 - Agentes de IA disponibles 24/7.
 - No comunicar OpenNovaIA como "otro chatbot".
 
 Mensaje principal:
 
-> Agentes IA listos para vender y atender por WhatsApp, web y CRM, con despliegue rápido, soporte local y control total.
+> Agentes IA listos para vender, atender y automatizar procesos empresariales 24/7.
 
 Mensajes comerciales:
 
@@ -51,36 +51,9 @@ Mensajes comerciales:
 - Automatiza ventas, soporte y seguimiento de clientes.
 - Convierte conversaciones en oportunidades reales.
 
-## Branding y Logo
-
-Assets públicos creados:
-
-- `public/logo.svg`
-- `public/logo.png`
-
-URLs públicas:
-
-- https://opennovaia.com/logo.svg
-- https://opennovaia.com/logo.png
-
-Implementación:
-
-- El logo del Navbar y Footer carga desde `/logo.svg` usando `next/image`.
-- Se agregó `alt="OpenNovaIA Logo"`.
-- Se agregó `aria-label="OpenNovaIA Logo"`.
-- El logo se usa en Organization Schema.
-- El logo se usa en Open Graph metadata.
-- El logo se usa en Twitter metadata.
-- No existe manifest web app actualmente.
-
-Uso recomendado:
-
-- Usar `https://opennovaia.com/logo.png` como imagen oficial en WhatsApp Channel, perfiles sociales y plataformas que requieran PNG.
-- Usar `https://opennovaia.com/logo.svg` para SEO, schema, branding web y assets vectoriales.
-
 ## Estilo Visual
 
-La landing principal ya está aprobada visualmente.
+La landing principal está aprobada visualmente.
 
 Lineamientos:
 
@@ -108,7 +81,7 @@ Evitar:
 - Exceso de elementos visuales.
 - Rediseñar secciones aprobadas sin autorización.
 
-## Paleta Visual OpenNovaIA
+## Paleta Visual
 
 Colores principales:
 
@@ -130,7 +103,36 @@ Gradiente principal:
 linear-gradient(135deg, #4C1D95 0%, #6D28D9 35%, #A855F7 70%, #F59E0B 100%)
 ```
 
+## Branding y Logo
+
+Assets públicos:
+
+- `public/logo.svg`
+- `public/logo.png`
+- `public/favicon.ico`
+- `public/apple-touch-icon.png`
+
+URLs públicas:
+
+- https://opennovaia.com/logo.svg
+- https://opennovaia.com/logo.png
+- https://opennovaia.com/favicon.ico
+- https://opennovaia.com/apple-touch-icon.png
+
+Implementación:
+
+- El logo del Navbar y Footer carga desde `/logo.svg`.
+- Se usa `alt="OpenNovaIA Logo"`.
+- Se usa `aria-label="OpenNovaIA Logo"`.
+- El logo se usa en Organization Schema.
+- El logo se usa en Open Graph metadata.
+- El logo se usa en Twitter metadata.
+
 ## Landing Principal
+
+Ruta:
+
+- `/`
 
 Estructura actual:
 
@@ -149,6 +151,7 @@ Regla principal:
 
 - No rediseñar la landing completa sin autorización.
 - Hacer cambios incrementales y específicos.
+- Mantener componentes visuales aprobados.
 
 ## Hero
 
@@ -177,6 +180,7 @@ Reglas Hero:
 - No usar robots caricaturescos.
 - No convertir el logo en protagonista.
 - No modificar Hero sin instrucción explícita.
+- No usar WhatsApp personal ni enlaces `wa.me` sin autorización.
 
 ## Celular Hero
 
@@ -202,215 +206,354 @@ Evitar:
 - Visual saturado.
 - Tarjetas que tapen el celular.
 
-## Páginas Actuales
+## SEO
 
-Rutas principales:
+### Páginas SEO existentes
 
 - `/`
 - `/agentes-ia`
 - `/automatizacion-whatsapp`
+- `/chatbots-ia`
+
+### Páginas comerciales
+
+- `/demo`
+- `/propuesta`
+- `/embudo`
+
+### Otras rutas públicas
+
 - `/casos-de-exito`
 - `/blog`
 - `/blog/[slug]`
 
-Páginas SEO principales completadas:
+Posts actuales del blog:
+
+- `/blog/que-es-un-agente-ia-para-whatsapp`
+- `/blog/automatizar-atencion-al-cliente-colombia`
+- `/blog/agentes-ia-para-clinicas`
+- `/blog/agentes-ia-para-inmobiliarias`
+- `/blog/agentes-ia-para-ecommerce`
+
+### SEO implementado
+
+- Metadata optimizada.
+- Canonical URLs.
+- Open Graph.
+- Twitter Cards.
+- Sitemap actualizado.
+- Robots.txt.
+- Schema Organization.
+- Schema Service.
+- FAQ Schema.
+- Enlaces internos SEO.
+- FAQ SEO.
+- Optimización de contenido.
+- Indexación manual en Search Console.
+
+Archivos SEO principales:
+
+- `app/layout.tsx`
+- `app/sitemap.ts`
+- `app/robots.ts`
+- `app/opengraph-image.tsx`
+- `components/JsonLd.tsx`
+
+Sitemap:
+
+- https://opennovaia.com/sitemap.xml
+
+Robots:
+
+- https://opennovaia.com/robots.txt
+
+### Estado SEO
+
+- SEO técnico considerado completado para fase inicial.
+- Se pausó la creación masiva de páginas SEO.
+- Prioridad futura: contenido, autoridad y backlinks.
+
+## Google Search Console
+
+Estado:
+
+- Search Console configurado.
+- Sitemap enviado.
+
+URLs indexadas manualmente:
 
 - `/`
 - `/agentes-ia`
 - `/automatizacion-whatsapp`
-
-Páginas SEO pendientes que todavía NO existen:
-
 - `/chatbots-ia`
-- `/agente-whatsapp-ia`
-- `/automatizacion-empresarial`
-- `/asistente-virtual-ia`
+- `/demo`
 
-Páginas SEO creadas/optimizadas:
+## Google Analytics 4
 
-- `app/agentes-ia/page.tsx`
-- `app/automatizacion-whatsapp/page.tsx`
-- `app/casos-de-exito/page.tsx`
-- `app/blog/page.tsx`
-- `app/blog/[slug]/page.tsx`
-- `data/blogPosts.ts`
+Propiedad:
 
-Enlaces internos SEO:
+- OpenNovaIA Web
 
-- La landing principal enlaza hacia `/agentes-ia`.
-- La landing principal enlaza hacia `/automatizacion-whatsapp`.
-- `/agentes-ia` enlaza hacia `/automatizacion-whatsapp` y `/`.
-- `/automatizacion-whatsapp` enlaza hacia `/agentes-ia` y `/`.
-- `/casos-de-exito` enlaza hacia `/`, `/agentes-ia` y `/automatizacion-whatsapp`.
-- El Footer enlaza hacia `/casos-de-exito`.
-- El Footer enlaza hacia `/blog`.
-- Los artículos del blog enlazan hacia `/`, `/agentes-ia`, `/automatizacion-whatsapp` y `/casos-de-exito`.
+Measurement ID:
 
-## Página Casos de Éxito
+- `G-G1HCYVBYWT`
+
+Integración:
+
+- `components/GoogleAnalytics.tsx`
+- `NEXT_PUBLIC_GA_ID`
+- Variable configurada en Vercel.
+- Integración en `app/layout.tsx`.
+- Analytics funcionando.
+
+Eventos configurados:
+
+- `reserve_demo_click`
+- `activate_agent_click`
+- `view_plans_click`
+- `pricing_section_view`
+- `demo_page_view`
+- `demo_cta_click`
+- `proposal_page_view`
+- `proposal_cta_click`
+- `funnel_page_view`
+- `demo_from_funnel_click`
+- `pricing_from_funnel_click`
+
+Pendiente:
+
+- Verificar eventos GA4 en tiempo real.
+- Revisar embudos y conversiones dentro de GA4.
+- Configurar eventos adicionales cuando el flujo de pago esté definido.
+
+## Google Business Profile
+
+Estado:
+
+- Perfil creado.
+- Categoría: Empresa de software.
+- Sitio web conectado.
+- Servicios configurados.
+- Horarios configurados.
+- Fotos corporativas agregadas.
+- Descripción optimizada.
+
+Pendiente:
+
+- Conseguir primeras reseñas reales.
+- Mantener publicaciones y fotos actualizadas.
+- Construir autoridad local.
+
+## Embudo de Ventas
+
+IMPORTANTE:
+
+El modelo comercial fue actualizado.
+
+Ya NO se usa como flujo principal:
+
+- Venta consultiva.
+- Seguimiento manual.
+- Propuesta personalizada manual.
+- Llamada obligatoria.
+
+Nuevo modelo oficial:
+
+```text
+Tráfico
+↓
+Landing
+↓
+Demo automática
+↓
+Precios
+↓
+Pago
+↓
+KronoCloud
+↓
+Activación
+```
+
+OpenNovaIA debe vender mediante marketing y automatización.
+
+Objetivo:
+
+- El usuario debe poder llegar desde Instagram, Google, Facebook, Google Business Profile, SEO o referidos.
+- Entrar a la landing.
+- Entender la oferta.
+- Ver la demo automática.
+- Elegir plan.
+- Pagar.
+- Activar su cuenta en KronoCloud.
+
+El flujo NO debe depender de que una persona de OpenNovaIA hable manualmente con el cliente.
+
+## Página /demo
 
 Ruta:
 
-- `/casos-de-exito`
-
-Archivo:
-
-- `app/casos-de-exito/page.tsx`
+- `/demo`
 
 Objetivo:
 
-- Aumentar confianza, autoridad y conversión mostrando casos piloto, escenarios de implementación y estructura de prueba social.
-- Preparar la página para publicar futuros casos reales de clientes cuando existan datos verificables.
+- Actuar como vendedor automático.
 
-Regla editorial:
+Debe explicar:
 
-- No inventar clientes reales.
-- No usar testimonios falsos.
-- No afirmar resultados reales si no existen.
-- Usar lenguaje prudente como "casos piloto", "escenarios de implementación", "resultados esperados", "casos modelo" y "próximamente publicaremos casos reales".
+- Problema.
+- Solución.
+- Beneficios.
+- Funcionamiento.
+- Resultado esperado.
+- CTA.
 
-Secciones creadas:
+Regla:
 
-- Hero con CTA a demo y planes.
-- Sección de confianza con métricas orientativas.
-- Casos modelo para e-commerce, clínica/salud e inmobiliaria.
-- Sección "Cómo medimos el éxito".
-- Sección de transparencia: "Resultados reales, no promesas vacías".
-- CTA final para solicitar demo.
+- Debe vender la demo y el valor de OpenNovaIA sin depender de reuniones humanas.
 
-Schema agregado:
+Analytics:
 
-- WebPage Schema.
-- BreadcrumbList Schema.
-- ItemList Schema para casos modelo.
+- `demo_page_view`
+- `reserve_demo_click`
+- `demo_cta_click`
 
-## Blog SEO
+## Página /propuesta
 
-Ruta principal:
+Ruta:
 
-- `/blog`
-
-Ruta dinámica:
-
-- `/blog/[slug]`
-
-Archivos:
-
-- `app/blog/page.tsx`
-- `app/blog/[slug]/page.tsx`
-- `data/blogPosts.ts`
+- `/propuesta`
 
 Objetivo:
 
-- Publicar guías, estrategias y casos de uso sobre agentes IA, automatización por WhatsApp y automatización empresarial en Colombia.
-- Aumentar autoridad SEO y enlazado interno hacia páginas comerciales.
+- Presentar beneficios, implementación y planes.
 
-Artículos iniciales:
+Uso:
 
-- `que-es-un-agente-ia-para-whatsapp`
-- `automatizar-atencion-al-cliente-colombia`
-- `agentes-ia-para-clinicas`
-- `agentes-ia-para-inmobiliarias`
-- `agentes-ia-para-ecommerce`
+- Apoyar el proceso de decisión.
+- Servir como página comercial reutilizable después de una interacción, campaña o lead interesado.
 
-SEO incluido:
+Analytics:
 
-- Metadata dinámica por artículo.
-- Canonical por artículo.
-- Open Graph por artículo.
-- Twitter Card por artículo.
-- Keywords por artículo.
-- Article JSON-LD por artículo.
-- BreadcrumbList JSON-LD por artículo.
-- FAQPage JSON-LD cuando el artículo incluye FAQ.
-- Sitemap actualizado con `/blog` y cada artículo.
+- `proposal_page_view`
+- `proposal_cta_click`
 
-Reglas para futuros artículos:
+## Página /embudo
 
-- No inventar estadísticas.
-- No afirmar resultados reales sin evidencia.
-- Mantener tono profesional, claro y comercial.
-- Incluir enlaces internos naturales hacia `/`, `/agentes-ia`, `/automatizacion-whatsapp` y `/casos-de-exito`.
-- Mantener H1 único, H2 claros y contenido orientado a intención de búsqueda.
-- Mantener foco inicial en Colombia, WhatsApp, web, CRM y procesos empresariales.
+Ruta:
+
+- `/embudo`
+
+Objetivo:
+
+- Documentar el embudo automático.
+
+Flujo oficial:
+
+```text
+Tráfico
+↓
+Landing
+↓
+Demo automática
+↓
+Precios
+↓
+Pago
+↓
+KronoCloud
+↓
+Activación
+```
+
+Analytics:
+
+- `funnel_page_view`
+- `demo_from_funnel_click`
+- `pricing_from_funnel_click`
+- `activate_agent_click`
+
+Regla:
+
+- Mantener esta página alineada con el modelo automático.
+- No volver al flujo anterior basado en venta consultiva manual.
 
 ## Pricing
 
-Moneda principal recomendada:
+Moneda principal:
 
 - Pesos colombianos COP.
-
-Motivo:
-
-- Genera más confianza local.
-- Evita dudas por TRM.
-- Facilita la decisión de compra.
-- Los precios en dólares pueden mostrarse solo como equivalencia secundaria.
 
 ### Starter
 
 - Precio: `$199.000 COP/mes`.
-- Incluye 1 agente IA.
 - Enfoque: primer empleado IA.
-- Ideal para freelancers, independientes, negocios pequeños, consultores y microempresas digitales.
 - Botón: Activar mi Agente IA.
 
 Incluye:
 
-- Agente IA entrenado con el negocio.
+- 1 Agente IA entrenado con tu negocio.
 - WhatsApp Business.
-- Widget web.
-- CRM inteligente.
+- Widget Web.
+- CRM Inteligente.
 - Captura automática de leads.
 - Atención 24/7.
 - Base de conocimiento.
+- Hasta 2.500 créditos mensuales.
 - Analítica básica.
 - 2 usuarios.
 - Soporte por correo.
 
-### Growth / Medium
+### Growth
 
 - Precio: `$599.000 COP/mes`.
-- Incluye 5 agentes IA.
 - Debe destacar como MÁS POPULAR.
+- Plan recomendado.
 - Borde y glow dorado.
-- Plan recomendado y más promocionado.
-- Ideal para pymes, startups, clínicas, academias, e-commerce y empresas en crecimiento.
+- Botón: Activar mi Agente IA.
 
 Incluye:
 
-- WhatsApp + widget web.
+- 5 Agentes IA.
+- WhatsApp + Widget Web.
 - CRM avanzado.
-- Embudos de venta.
+- Embudos de ventas.
 - Seguimiento automático.
 - Calificación automática de leads.
+- Hasta 8.000 créditos mensuales.
+- Hasta 10 subclientes.
 - Reportes avanzados.
-- Integraciones con Zapier y Make.
+- Integración con Zapier y Make.
+- Correo con tu marca.
 - Soporte prioritario.
 
-### Elite / Pro
+### Elite
 
-- Precio base recomendado: `$1.990.000 COP/mes`.
+- Precio: `$1.990.000 COP/mes`.
 - Enfoque: marca blanca, operación avanzada y nivel empresarial.
-- Ideal para empresas medianas, grandes, operaciones complejas y clientes que necesitan API, soporte dedicado y control avanzado.
-- Estilo morado premium oscuro.
+- Botón: Activar mi Agente IA.
 
-Decisión pendiente:
+Incluye:
 
-- Cantidad final de agentes IA.
-- En el estudio original se recomendaban 10 agentes IA.
-- En propuesta posterior se evaluó usar 15 agentes IA.
+- 15 Agentes IA.
+- WhatsApp.
+- Widget Web.
+- Instagram.
+- Facebook Messenger.
+- CRM empresarial.
+- Marca blanca completa.
+- Logo personalizado.
+- Colores personalizados.
+- Dominio propio.
+- 40.000 créditos mensuales.
+- Subclientes ilimitados.
+- API empresarial.
+- Soporte dedicado.
+- Onboarding personalizado.
 
 ### Agente adicional
 
-- Precio definido: `$120.000 COP/mes` por agente adicional.
-
-## Recomendación Comercial
-
-- Growth/Medium debe ser el plan más promocionado.
-- Starter sirve como entrada accesible.
-- Pro/Elite debe proyectar nivel empresarial y premium.
-- Evitar competir solo por precio.
-- Vender resultados, no solo características técnicas.
+- `$120.000 COP/mes`.
 
 ## Testimonios
 
@@ -430,198 +573,64 @@ Regla:
 
 - No cambiar fondo claro.
 - No oscurecer la sección.
+- No modificar testimonios sin instrucción explícita.
 
-## SEO Técnico
+## Estrategia Actual
 
-Estado:
+Prioridad:
 
-- SEO técnico base completado.
+1. Generar tráfico.
+2. Publicar contenido en Instagram.
+3. Analizar Analytics.
+4. Mejorar conversión.
+5. Conseguir primeras ventas.
 
-Archivos SEO actuales:
+NO prioridad:
 
-- `app/sitemap.ts`
-- `app/robots.ts`
-- `app/opengraph-image.tsx`
-- `app/layout.tsx`
-- `components/JsonLd.tsx`
+- Crear muchas más páginas SEO.
+- Rediseñar landing.
+- Cambiar branding.
+- Modificar estructura principal.
 
-Elementos completados:
+## Redes Sociales
 
-- Metadata optimizada.
-- `sitemap.xml`.
-- `robots.txt`.
-- Canonical.
-- Open Graph.
-- Twitter Cards.
-- Favicon.
-- Apple touch icon.
-- Schema.org Organization.
-- Schema.org Service.
-- FAQ Schema en páginas SEO.
-- Enlaces internos SEO.
+Instagram:
 
-Sitemap:
+Objetivo:
 
-- https://opennovaia.com/sitemap.xml
+- Reels.
+- Carruseles.
+- Historias.
 
-Robots:
+Temas:
 
-- https://opennovaia.com/robots.txt
+- Automatización.
+- Agentes IA.
+- Atención 24/7.
+- Ventas.
+- Productividad.
 
-Metadata principal:
+## Estado General
 
-- Title: OpenNovaIA | Agentes de IA para Automatizar Empresas 24/7
-- Description: Automatizamos ventas, atención al cliente y procesos empresariales mediante agentes de inteligencia artificial disponibles 24/7.
+- Infraestructura: 100%.
+- Landing: 100%.
+- SEO Técnico: 95%.
+- Google Business: 95%.
+- Analytics: 95%.
+- Embudo: 90%.
+- Ventas: pendiente validación real.
 
-Open Graph:
+## Próximos Pasos
 
-- Metadata actualizada con `/logo.svg`.
-- También existe `app/opengraph-image.tsx` como imagen generada 1200x630.
-- Estética: fondo oscuro premium, logo neural/infinito, texto OpenNovaIA y subtítulo comercial.
-
-Twitter Cards:
-
-- Metadata actualizada con `/logo.svg`.
-
-Schema:
-
-- Organization Schema actualizado con `https://opennovaia.com/logo.svg`.
-- Service Schema activo para agentes IA.
-- FAQPage JSON-LD específico para `/agentes-ia`.
-- FAQPage JSON-LD específico para `/automatizacion-whatsapp`.
-- WebPage, BreadcrumbList e ItemList JSON-LD específico para `/casos-de-exito`.
-- Article, BreadcrumbList y FAQPage JSON-LD para artículos de `/blog/[slug]`.
-
-Google Search Console:
-
-- Google Search Console verificado.
-- Sitemap enviado.
-- Ya se solicitó indexación de `/agentes-ia`.
-- Ya se solicitó indexación de `/automatizacion-whatsapp`.
-- Indexación solicitada para páginas SEO principales.
-
-Verificaciones recientes:
-
-- `npm run lint`: pasó.
-- `npm run build`: pasó.
-- Push a GitHub completado en `origin/main`.
-
-## Google Business Profile
-
-Estado:
-
-- Perfil creado para OpenNovaIA.
-
-Configuración:
-
-- Categoría: Empresa de software.
-- Sitio web conectado: https://opennovaia.com
-- Servicios agregados.
-- Fotos corporativas agregadas.
-- Descripción agregada.
-- Áreas de servicio configuradas para Colombia y ciudades principales.
-
-Pendiente relacionado:
-
-- Conseguir primeras reseñas reales.
-- Mantener publicaciones y fotos actualizadas.
-
-## Google Analytics 4
-
-Estado:
-
-- Google Analytics 4 implementado.
-
-Propiedad:
-
-- OpenNovaIA Web
-
-Measurement ID:
-
-- `G-G1HCYVBYWT`
-
-Implementación técnica:
-
-- Variable de entorno en Vercel: `NEXT_PUBLIC_GA_ID`.
-- Ejemplo local/documentación: `.env.example`.
-- Componente: `components/GoogleAnalytics.tsx`.
-- Integración en `app/layout.tsx`.
-- Carga mediante `next/script`.
-- Analytics solo carga si existe `NEXT_PUBLIC_GA_ID`.
-- Compatible con Vercel.
-
-Deploy:
-
-- Redeploy realizado.
-- Analytics empezó a recibir usuarios activos.
-
-Pendientes relacionados:
-
-- Verificar Analytics en tiempo real.
-- Medir eventos de conversión.
-- Configurar clics en CTAs como eventos.
-
-## Optimizaciones Realizadas
-
-- Corrección de encoding/mojibake UTF-8.
-- Optimización de imágenes de testimonios.
-- Accesibilidad básica mejorada.
-- Enlaces internos SEO entre `/`, `/agentes-ia` y `/automatizacion-whatsapp`.
-- Build y lint pasando correctamente.
-
-## Estudio de Mercado Colombia
-
-Enfoque inicial:
-
-- OpenNovaIA se enfocará inicialmente en Colombia.
-
-Oportunidad principal:
-
-- Vender agentes IA para WhatsApp, web y CRM.
-
-Sectores prioritarios:
-
-- E-commerce
-- Fintech
-- Atención al cliente/BPO
-- Salud
-- Educación
-- Inmobiliarias
-- Clínicas
-- Academias/cursos online
-
-Posicionamiento recomendado:
-
-- Premium.
-- Profesional.
-- Confiable.
-- Orientado a resultados empresariales.
-
-## Canal de WhatsApp
-
-Descripción aprobada:
-
-```text
-🤖 Open Nova IA | Automatización Inteligente para Empresas
-
-Descubre cómo vender más, atender mejor y ahorrar tiempo con agentes de Inteligencia Artificial. 🚀
-
-💬 IA para WhatsApp
-📈 Automatización de ventas
-⚡ Atención 24/7
-🏆 Estrategias de crecimiento
-🎯 Casos reales y novedades exclusivas
-
-Únete a las empresas que están construyendo el futuro con IA.
-
-🔥 Mientras tú lees esto, otras empresas ya están automatizando con IA.
-
-¿La tuya será la siguiente?
-
-🚀 Descubre cómo los agentes de IA pueden transformar tu negocio:
-
-🌐 https://opennovaia.com
-```
+- Verificar eventos GA4.
+- Optimizar página `/demo`.
+- Generar tráfico desde Instagram.
+- Conseguir primeras conversiones.
+- Conectar flujo final con KronoCloud cuando corresponda.
+- Conseguir reseñas y autoridad.
+- Conseguir backlinks.
+- Analizar comportamiento real de usuarios.
+- Medir clics en CTAs y visitas a precios.
 
 ## Contacto
 
@@ -629,7 +638,7 @@ Correo oficial:
 
 - hello@opennovaia.com
 
-Regla:
+Reglas:
 
 - No conectar WhatsApp personal.
 - No incluir números personales.
@@ -637,7 +646,7 @@ Regla:
 
 ## Deploy
 
-Plataforma objetivo:
+Plataforma:
 
 - Vercel
 
@@ -649,71 +658,11 @@ Rama:
 
 - `main`
 
-Comando build:
+Comandos:
 
+- `npm run lint`
 - `npm run build`
-
-Comando dev:
-
 - `npm run dev`
-
-## Commits Recientes
-
-- `b5ae8f1` Add Google Analytics 4
-- `6d1c070` feat: add SEO blog architecture
-- `cf684f4` feat: add case studies page
-- `d4fd8c8` Add FAQ SEO sections
-- `309dda7` feat: create public logo assets for branding and SEO
-
-## Próximos Pasos Recomendados
-
-- Crear LinkedIn Company Page.
-- Usar `https://opennovaia.com/logo.png` como imagen oficial en WhatsApp Channel y perfiles sociales.
-- Conseguir primeros casos piloto y testimonios.
-- Reemplazar casos modelo de `/casos-de-exito` por casos reales cuando existan datos verificables.
-- Ampliar el blog con nuevos artículos SEO por industria y por intención comercial.
-- Crear `/chatbots-ia`.
-- Crear `/agente-whatsapp-ia`.
-- Crear `/automatizacion-empresarial`.
-- Crear `/asistente-virtual-ia`.
-- Medir eventos de conversión.
-- Configurar clics en CTAs como eventos.
-- Conseguir primeras reseñas en Google Business Profile.
-- Conseguir backlinks.
-- Probar Open Graph en Facebook, LinkedIn y WhatsApp.
-- Revisar performance con Lighthouse.
-- Definir sistema de captación de leads.
-- Implementar formulario o CRM cuando se autorice.
-
-Primeros artículos recomendados:
-
-- Qué es un agente de IA para WhatsApp.
-- Cómo automatizar atención al cliente en Colombia.
-- Agentes IA para clínicas.
-- Agentes IA para inmobiliarias.
-- Agentes IA para ecommerce.
-
-## Reglas para Codex
-
-Antes de modificar:
-
-1. Leer este archivo.
-2. Confirmar que el cambio solicitado no toca secciones no autorizadas.
-3. Mantener consistencia visual.
-4. No rediseñar secciones aprobadas.
-5. Hacer cambios pequeños e incrementales.
-6. Ejecutar build al finalizar si el usuario lo pide o si el cambio afecta producción.
-7. Corregir errores antes de terminar.
-8. Mantener compatibilidad con Vercel.
-
-Reglas actuales:
-
-- No rediseñar la landing principal sin autorización.
-- Mantener identidad visual premium morado/lila/dorado.
-- No tocar componentes visuales aprobados salvo instrucción explícita.
-- Hacer cambios incrementales.
-- Ejecutar `npm run lint` y `npm run build` después de cambios SEO.
-- Subir cambios a GitHub cuando el usuario lo indique o cuando sea parte de la tarea.
 
 ## Archivos que no deben subirse
 
@@ -729,86 +678,81 @@ No subir:
 
 Estos deben permanecer en `.gitignore`.
 
-## Rutina de Actualización Diaria
+## Reglas para Codex
 
-Usar esta sección para registrar cambios diarios.
+Antes de modificar:
 
-Formato sugerido:
+1. Leer este archivo.
+2. Confirmar que el cambio solicitado no toca secciones no autorizadas.
+3. Mantener consistencia visual.
+4. No rediseñar secciones aprobadas.
+5. Hacer cambios pequeños e incrementales.
+6. Ejecutar `npm run lint` y `npm run build` después de cambios SEO, tracking, rutas o producción.
+7. Corregir errores antes de terminar.
+8. Mantener compatibilidad con Vercel.
+9. Subir cambios a GitHub cuando el usuario lo indique o cuando sea parte de la tarea.
 
-```md
-### YYYY-MM-DD
+Reglas actuales:
 
-- Cambio realizado:
-- Archivos modificados:
-- Build:
-- Deploy:
-- Pendientes:
-```
+- No rediseñar la landing principal sin autorización.
+- Mantener identidad visual premium morado/lila/dorado.
+- No tocar componentes visuales aprobados salvo instrucción explícita.
+- Hacer cambios incrementales.
+- No crear más páginas SEO masivamente sin validar estrategia.
+- Priorizar tráfico, analítica, conversión y ventas reales.
 
 ## Historial
 
+### 2026-06-13
+
+- MASTER_CONTEXT actualizado después de la implementación del embudo automático.
+- Se documentó que el modelo comercial cambió de venta consultiva manual a marketing y venta automatizada.
+- Se documentaron las páginas SEO actuales: `/`, `/agentes-ia`, `/automatizacion-whatsapp`, `/chatbots-ia`.
+- Se documentaron las páginas comerciales: `/demo`, `/propuesta`, `/embudo`.
+- Se documentaron eventos GA4 nuevos y existentes.
+- Se documentó el estado de Search Console, Google Business Profile y Analytics.
+- Se actualizó la estrategia actual: tráfico, Instagram, Analytics, conversión y primeras ventas.
+
 ### 2026-06-12
 
-- MASTER_CONTEXT actualizado con estado posterior a SEO técnico, Google Business Profile y Google Analytics 4.
-- Se documentó Google Search Console verificado, sitemap enviado e indexación solicitada.
-- Se documentó Google Business Profile creado para OpenNovaIA como Empresa de software.
-- Se documentó Google Analytics 4 con propiedad OpenNovaIA Web y Measurement ID `G-G1HCYVBYWT`.
-- Se documentó la variable de entorno `NEXT_PUBLIC_GA_ID`, `.env.example`, `components/GoogleAnalytics.tsx` y actualización de `app/layout.tsx`.
-- Se documentó que Analytics empezó a recibir usuarios activos.
-- Se aclaró que todavía no existen `/chatbots-ia`, `/agente-whatsapp-ia`, `/automatizacion-empresarial` ni `/asistente-virtual-ia`.
-- Se actualizaron reglas actuales y pendientes de conversión, reseñas, backlinks y futuras páginas SEO.
+- Google Analytics 4 implementado con `NEXT_PUBLIC_GA_ID`.
+- Search Console configurado.
+- Sitemap enviado.
+- Google Business Profile configurado.
+- SEO técnico inicial completado.
+- Se documentó la pausa en creación masiva de páginas SEO.
 
 ### 2026-06-11
 
-- Se creó la arquitectura SEO del blog con `/blog` y `/blog/[slug]`.
-- Se creó `data/blogPosts.ts` como fuente tipada para artículos.
-- Se publicaron 5 artículos iniciales sobre WhatsApp IA, atención al cliente, clínicas, inmobiliarias y ecommerce.
-- Se agregó metadata dinámica, Article Schema, BreadcrumbList Schema y FAQPage Schema para artículos.
-- Se agregó `/blog` y cada artículo al sitemap, además del enlace Blog en el Footer.
-- Se creó la página SEO `/casos-de-exito` con casos modelo, métricas prudentes, sección de transparencia y CTA final.
-- Se agregó schema WebPage, BreadcrumbList e ItemList para `/casos-de-exito`.
-- Se agregó `/casos-de-exito` al sitemap y al Footer como enlace interno SEO.
-- MASTER_CONTEXT actualizado con avances recientes de branding, SEO, estructura comercial, assets públicos, páginas actuales, estrategia Colombia y próximos pasos.
-- Se documentaron los assets públicos `public/logo.svg` y `public/logo.png`.
-- Se documentaron FAQ SEO, enlaces internos, schema y metadata con logo público.
+- Se creó arquitectura SEO de blog.
+- Se creó `/casos-de-exito`.
+- Se crearon assets públicos de logo.
+- Se mejoró metadata, schema y enlaces internos.
 
 ### 2026-06-10
 
-- Se agregaron enlaces internos SEO entre `/`, `/agentes-ia` y `/automatizacion-whatsapp`.
-- Se agregaron FAQ SEO en `/agentes-ia` y `/automatizacion-whatsapp`.
-- Se agregó FAQPage JSON-LD específico por ruta.
-- Se crearon assets públicos de logo para branding y SEO.
+- Se agregaron enlaces internos SEO.
+- Se agregaron FAQ SEO y FAQPage JSON-LD.
+- Se corrigieron problemas de encoding UTF-8.
 
 ### 2026-06-09
 
-- Landing OpenNovaIA preparada para Vercel.
+- Landing preparada para Vercel.
 - Repositorio GitHub configurado.
-- SEO técnico básico agregado.
 - Sitemap y robots creados.
-- Metadata optimizada.
-- Open Graph optimizado con identidad neural.
-- Sección Pricing actualizada con planes COP.
-- Testimonios mejorados con fotografías y rating visual.
+- Open Graph optimizado.
+- Pricing actualizado con planes COP.
+- Testimonios mejorados.
 
 ## Pendientes
 
-- Crear LinkedIn Company Page.
-- Crear más artículos para `/blog`.
-- Crear `/chatbots-ia`.
-- Crear `/agente-whatsapp-ia`.
-- Crear `/automatizacion-empresarial`.
-- Crear `/asistente-virtual-ia`.
 - Verificar Analytics en tiempo real.
-- Medir eventos de conversión.
-- Configurar clics en CTAs como eventos.
+- Optimizar página `/demo`.
+- Generar tráfico desde Instagram.
+- Conseguir primeras conversiones.
+- Conectar flujo final con KronoCloud cuando corresponda.
 - Conseguir primeras reseñas en Google Business Profile.
 - Conseguir backlinks.
-- Crear estrategia de contenido/blog más adelante.
-- Publicar casos reales en `/casos-de-exito` cuando existan resultados verificables.
-- Probar URLs públicas de logo después del redeploy:
-  - https://opennovaia.com/logo.svg
-  - https://opennovaia.com/logo.png
-- Probar Open Graph/Twitter Cards después del redeploy.
-- Ejecutar auditoría Lighthouse en producción.
-- Definir sistema de captación de leads.
-- Implementar formulario o CRM cuando se autorice.
+- Crear contenido social de forma constante.
+- Medir rendimiento de CTAs.
+- Evaluar nuevas páginas SEO solo después de validar tráfico y oportunidades reales.
