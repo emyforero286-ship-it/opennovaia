@@ -5,14 +5,14 @@ import { TrackableLink } from "@/components/TrackableLink";
 export const metadata: Metadata = {
   title: "Embudo Automatizado OpenNovaIA v1",
   description:
-    "Conoce el embudo automatizado de OpenNovaIA: tráfico, landing, demo automática, precios, pago, KronoCloud y activación de agentes IA.",
+    "Conoce el embudo automatizado de OpenNovaIA: tráfico, landing, demo automática, precios, pago, cuenta y activación de agentes IA.",
   alternates: {
     canonical: "https://opennovaia.com/embudo"
   },
   openGraph: {
     title: "Embudo Automatizado OpenNovaIA v1",
     description:
-      "Flujo automatizado para convertir visitantes en clientes activos con agentes IA, pago y activación en KronoCloud.",
+      "Flujo automatizado para convertir visitantes en clientes activos con agentes IA, pago y activación en la plataforma.",
     url: "https://opennovaia.com/embudo",
     siteName: "OpenNovaIA",
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Embudo Automatizado OpenNovaIA v1",
     description:
-      "Flujo automatizado para convertir visitantes en clientes activos con agentes IA, pago y activación en KronoCloud.",
+      "Flujo automatizado para convertir visitantes en clientes activos con agentes IA, pago y activación en la plataforma.",
     images: ["/logo.svg"]
   }
 };
@@ -93,11 +93,11 @@ const phases = [
     metric: "Clics de pago, pagos iniciados, pagos completados."
   },
   {
-    name: "KronoCloud",
+    name: "Cuenta",
     objective:
       "Llevar al cliente al sistema donde se registra, inicia sesión o activa su cuenta.",
     happens:
-      "Después del pago, el cliente accede a KronoCloud para gestionar su agente IA.",
+      "Después del pago, el cliente accede a la plataforma para gestionar su agente IA.",
     opennovaia:
       "Conectar pago, cuenta, acceso y configuración inicial dentro del flujo operativo.",
     client:
@@ -132,11 +132,11 @@ export default function EmbudoPage() {
             Embudo automatizado OpenNovaIA v1
           </p>
           <h1 className="mt-7 text-5xl font-black leading-[1.03] text-white sm:text-6xl lg:text-7xl">
-            Tráfico → Landing → Demo automática → Precios → Pago → KronoCloud → Activación
+            Tráfico → Landing → Demo automática → Precios → Pago → Cuenta → Activación
           </h1>
           <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 text-white/[0.72]">
             OpenNovaIA debe convertir visitantes en clientes activos sin depender de conversaciones
-            manuales como flujo principal. La web explica, mide, vende y conecta con KronoCloud.
+            manuales como flujo principal. La web explica, mide, vende y conecta con la plataforma.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
             <TrackableLink
@@ -239,7 +239,7 @@ export default function EmbudoPage() {
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-white/70">
             El objetivo del embudo no es depender de llamadas manuales. El objetivo es que la página
-            explique, convenza, mida el interés, lleve al usuario al pago y conecte con KronoCloud
+            explique, convenza, mida el interés, lleve al usuario al pago y conecte con la plataforma
             para activar su agente IA.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">

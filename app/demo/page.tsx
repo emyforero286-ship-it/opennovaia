@@ -90,7 +90,7 @@ const recommendedPlans = [
   },
   {
     name: "Elite",
-    copy: "Escala una operación completa con tu propia marca."
+    copy: "Expande una operación completa con automatización avanzada."
   }
 ];
 
