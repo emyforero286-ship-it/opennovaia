@@ -5,7 +5,7 @@ const agents = [
     name: "Nova Sales",
     label: "Ventas",
     icon: "01",
-    copy: "Captura leads, identifica intencion, califica prospectos y agenda seguimientos para aumentar conversiones."
+    copy: "Captura leads, identifica intención, califica prospectos y agenda seguimientos para aumentar conversiones."
   },
   {
     name: "Nova Support",

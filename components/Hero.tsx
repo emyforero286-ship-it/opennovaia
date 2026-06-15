@@ -39,7 +39,7 @@ export function Hero() {
               href="#proceso"
               className="rounded-full border border-nova-pink/35 bg-white/[0.045] px-7 py-4 text-center text-sm font-bold text-white shadow-glow transition duration-300 hover:-translate-y-1 hover:border-nova-fuchsia/70 hover:bg-nova-fuchsia/10"
             >
-              Ver como funciona
+              Ver cómo funciona
             </a>
           </div>
         </div>

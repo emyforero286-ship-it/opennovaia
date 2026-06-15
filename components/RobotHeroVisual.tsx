@@ -23,9 +23,9 @@ const conversations = [
     company: "Ferreteria Industrial",
     initials: "FI",
     messages: [
-      { text: "Muy bien, pueden entregar esta semana?", side: "out", time: "03:34 p. m." },
+      { text: "Muy bien, ¿pueden entregar esta semana?", side: "out", time: "03:34 p. m." },
       { text: "Sí. Tenemos stock completo. Entrega en 24-48 horas hábiles en toda la región.", side: "in", time: "03:34 p. m." },
-      { text: "Sí confirmo, necesito la cotización para mostrarsela al dueño de la obra.", side: "out", time: "03:34 p. m." },
+      { text: "Sí confirmo, necesito la cotización para mostrársela al dueño de la obra.", side: "out", time: "03:34 p. m." },
       { text: "Perfecto. Aquí tienes tu cotización oficial lista para presentar.", side: "in", time: "03:34 p. m." }
     ]
   }

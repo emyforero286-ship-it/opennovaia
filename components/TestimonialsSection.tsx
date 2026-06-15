@@ -5,15 +5,15 @@ import { SectionHeader } from "./SectionHeader";
 const testimonials = [
   {
     quote:
-      "OpenNovaIA redujo nuestro tiempo de respuesta de horas a minutos y aumento las solicitudes calificadas del equipo comercial.",
-    author: "Laura Mendez",
+      "OpenNovaIA redujo nuestro tiempo de respuesta de horas a minutos y aumentó las solicitudes calificadas del equipo comercial.",
+    author: "Laura Méndez",
     role: "Gerente Comercial",
     image: "/testimonials/laura-mendez-avatar.png"
   },
   {
     quote:
       "Ahora soporte responde 24/7, operaciones recibe resúmenes claros y ventas trabaja con prospectos mejor priorizados.",
-    author: "Andres Vidal",
+    author: "Andrés Vidal",
     role: "Director de Operaciones",
     image: "/testimonials/andres-vidal-avatar.png"
   }
