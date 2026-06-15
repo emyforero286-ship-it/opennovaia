@@ -140,7 +140,7 @@ export default function EmbudoPage() {
           </p>
           <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
             <TrackableLink
-              href="/demo"
+              href="/#proceso"
               eventName="demo_from_funnel_click"
               eventLabel="Ver demo automática"
               className="rounded-full bg-gradient-to-r from-nova-gold to-nova-amber px-7 py-4 text-center text-sm font-black text-nova-black shadow-gold transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_90px_rgba(251,191,36,0.42)]"
@@ -244,7 +244,7 @@ export default function EmbudoPage() {
           </p>
           <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
             <TrackableLink
-              href="/demo"
+              href="/#proceso"
               eventName="demo_from_funnel_click"
               eventLabel="Ver demo automática"
               className="rounded-full bg-gradient-to-r from-nova-gold to-nova-amber px-8 py-4 text-sm font-black text-nova-black shadow-gold transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_90px_rgba(251,191,36,0.42)]"

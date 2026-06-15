@@ -179,13 +179,13 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <Link
-              href="/agentes-ia"
+              href="/#agentes"
               className="rounded-full bg-gradient-to-r from-nova-gold to-nova-amber px-7 py-4 text-center text-sm font-black text-nova-black shadow-gold transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_90px_rgba(251,191,36,0.42)]"
             >
               Conocer Agentes IA
             </Link>
             <Link
-              href="/casos-de-exito"
+              href="/#testimonios"
               className="rounded-full border border-nova-pink/35 bg-white/[0.045] px-7 py-4 text-center text-sm font-bold text-white shadow-glow transition duration-300 hover:-translate-y-1 hover:border-nova-fuchsia/70 hover:bg-nova-fuchsia/10"
             >
               Ver casos modelo
@@ -309,7 +309,7 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
               Conocer OpenNovaIA
             </Link>
             <Link
-              href="/automatizacion-whatsapp"
+              href="/#proceso"
               className="rounded-full border border-nova-violet/25 px-8 py-4 text-sm font-black text-nova-violet transition duration-300 hover:-translate-y-1 hover:border-nova-gold hover:bg-nova-gold hover:text-nova-black"
             >
               Ver automatización WhatsApp

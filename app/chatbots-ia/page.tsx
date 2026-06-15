@@ -160,7 +160,7 @@ export default function ChatbotsIaPage() {
               Activar mi Agente IA
             </TrackableLink>
             <Link
-              href="/automatizacion-whatsapp"
+              href="/#proceso"
               className="rounded-full border border-nova-pink/35 bg-white/[0.045] px-7 py-4 text-center text-sm font-bold text-white shadow-glow transition duration-300 hover:-translate-y-1 hover:border-nova-fuchsia/70 hover:bg-nova-fuchsia/10"
             >
               Ver automatización WhatsApp
@@ -170,10 +170,10 @@ export default function ChatbotsIaPage() {
             <Link href="/" className="font-bold text-nova-lilac transition hover:text-white">
               Volver a OpenNovaIA
             </Link>
-            <Link href="/agentes-ia" className="font-bold text-nova-lilac transition hover:text-white">
+            <Link href="/#agentes" className="font-bold text-nova-lilac transition hover:text-white">
               Conoce nuestros Agentes de IA
             </Link>
-            <Link href="/automatizacion-whatsapp" className="font-bold text-nova-gold transition hover:text-white">
+            <Link href="/#proceso" className="font-bold text-nova-gold transition hover:text-white">
               Chatbot para WhatsApp
             </Link>
           </div>
@@ -326,7 +326,7 @@ export default function ChatbotsIaPage() {
               Activar mi Agente IA
             </TrackableLink>
             <Link
-              href="/agentes-ia"
+              href="/#agentes"
               className="rounded-full border border-nova-violet/25 px-8 py-4 text-sm font-black text-nova-violet transition duration-300 hover:-translate-y-1 hover:border-nova-gold hover:bg-nova-gold hover:text-nova-black"
             >
               Conocer Agentes IA

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { TrackableLink } from "./TrackableLink";
 
@@ -37,13 +38,13 @@ export function CTASection() {
             </div>
             <p className="mt-6 text-sm leading-6 text-white/55">
               Tambi&eacute;n puedes{" "}
-              <a href="/agentes-ia" className="font-bold text-nova-lilac transition hover:text-white">
+              <Link href="/#agentes" className="font-bold text-nova-lilac transition hover:text-white">
                 conocer nuestros Agentes de IA
-              </a>{" "}
+              </Link>{" "}
               o ver la{" "}
-              <a href="/automatizacion-whatsapp" className="font-bold text-nova-gold transition hover:text-white">
+              <Link href="/#proceso" className="font-bold text-nova-gold transition hover:text-white">
                 automatizaci&oacute;n de WhatsApp
-              </a>
+              </Link>
               .
             </p>
           </div>

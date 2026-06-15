@@ -182,10 +182,10 @@ export default function CasosDeExitoPage() {
             <Link href="/" className="font-bold text-nova-lilac transition hover:text-white">
               Volver a OpenNovaIA
             </Link>
-            <Link href="/agentes-ia" className="font-bold text-nova-lilac transition hover:text-white">
+            <Link href="/#agentes" className="font-bold text-nova-lilac transition hover:text-white">
               Conoce nuestros Agentes de IA
             </Link>
-            <Link href="/automatizacion-whatsapp" className="font-bold text-nova-gold transition hover:text-white">
+            <Link href="/#proceso" className="font-bold text-nova-gold transition hover:text-white">
               Ver automatización de WhatsApp
             </Link>
           </div>

@@ -248,7 +248,7 @@ export default function AgentesIaPage() {
           </p>
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-[#6c5b7d]">
             Si tu canal principal es WhatsApp, también puedes{" "}
-            <Link href="/automatizacion-whatsapp" className="font-black text-nova-violet transition hover:text-nova-bright">
+            <Link href="/#proceso" className="font-black text-nova-violet transition hover:text-nova-bright">
               ver automatización de WhatsApp
             </Link>
             . Para regresar a la experiencia principal,{" "}

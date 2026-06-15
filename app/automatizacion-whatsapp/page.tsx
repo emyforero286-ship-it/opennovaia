@@ -288,7 +288,7 @@ export default function AutomatizacionWhatsappPage() {
           </p>
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-[#6c5b7d]">
             Si quieres automatizar más canales y procesos,{" "}
-            <Link href="/agentes-ia" className="font-black text-nova-violet transition hover:text-nova-bright">
+            <Link href="/#agentes" className="font-black text-nova-violet transition hover:text-nova-bright">
               conoce nuestros Agentes de IA
             </Link>
             . También puedes{" "}
