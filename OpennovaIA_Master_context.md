@@ -1,10 +1,10 @@
 # OpenNovaIA - Master Context
 
-Última actualización: 2026-06-16
+Ultima actualizacion: 2026-06-16
 
 ## Proyecto
 
-OpenNovaIA es una plataforma premium de agentes IA para empresas, enfocada en automatizar ventas, atención al cliente y procesos internos mediante agentes inteligentes disponibles 24/7.
+OpenNovaIA es una plataforma premium de agentes IA para empresas, enfocada en automatizar ventas, atencion al cliente y procesos internos mediante agentes inteligentes disponibles 24/7.
 
 Stack actual:
 
@@ -22,22 +22,37 @@ Dominio principal:
 
 - https://opennovaia.com
 
-## Posicionamiento Actual
+## Estado Oficial Actual
+
+La landing principal esta aprobada visualmente y no debe redisenarse sin autorizacion explicita.
+
+Estado del proyecto:
+
+- Infraestructura: 100%
+- Landing principal: 100%
+- SEO tecnico inicial: estable
+- Google Business Profile: configurado
+- Google Analytics 4: funcionando
+- Embudo automatico: implementado
+- Planes conectados a pago: implementado
+- Ventas: pendiente validacion real con trafico y cliente piloto
+
+## Posicionamiento
 
 OpenNovaIA debe comunicarse como:
 
 - Plataforma premium de agentes IA para empresas.
-- Solución de automatización de ventas, atención al cliente y procesos.
+- Solucion de automatizacion de ventas, atencion al cliente y procesos.
 - Agentes IA disponibles 24/7.
-- Solución orientada a clientes finales.
-- Producto comercializado mediante marketing, contenido, SEO, Instagram y automatización.
+- Solucion orientada a clientes finales.
+- Producto comercializado mediante marketing, contenido, SEO, Instagram y automatizacion.
 
 OpenNovaIA NO debe comunicarse como:
 
-- Una herramienta técnica para desarrolladores.
-- Un chatbot genérico.
-- Una solución infantil o experimental.
-- Un producto orientado a intermediarios.
+- Una herramienta tecnica para desarrolladores.
+- Un chatbot generico.
+- Una solucion infantil o experimental.
+- Un producto centrado en configuraciones tecnicas complejas.
 
 Mensaje principal:
 
@@ -45,95 +60,53 @@ Mensaje principal:
 
 Mensajes comerciales:
 
-- Más ventas, menos chats perdidos.
-- Atención 24/7 sin contratar más personal.
+- Mas ventas, menos chats perdidos.
+- Atencion 24/7 sin contratar mas personal.
 - Automatiza ventas, soporte y seguimiento de clientes.
 - Convierte conversaciones en oportunidades reales.
 
 ## Identidad Visual
 
-La landing principal está aprobada visualmente.
-
 Lineamientos:
 
-- Estética premium, moderna y tecnológica.
-- Fondo oscuro en Hero.
-- Morados profundos, lilas brillantes, fucsia neón y acentos dorados.
-- Glassmorphism moderado.
+- Estetica premium, moderna y tecnologica.
+- Hero oscuro con morados profundos, lilas, fucsia y acentos dorados.
+- Glassmorphism elegante.
 - Bordes luminosos sutiles.
-- Sensación SaaS premium.
+- Sensacion SaaS premium.
+- Look profesional, limpio y confiable.
 
-Inspiración:
+Inspiracion:
 
 - OpenAI
 - Intercom
 - HubSpot
 - Salesforce
 - Stripe
-- Anthropic
 
 Evitar:
 
-- Robots caricaturescos.
-- Estética infantil.
-- Diseño gamer.
+- Aspecto infantil.
+- Robots caricaturescos como protagonista.
+- Diseno gamer.
 - Exceso de elementos visuales.
-- Rediseñar secciones aprobadas sin autorización.
+- Cambios de branding sin validacion.
 
-## Paleta Visual
+Paleta base:
 
-Colores principales:
-
-- Fondo premium: `#09090B`
-- Fondo alternativo: `#0F172A`
-- Morado principal: `#6D28D9`
-- Morado oscuro: `#4C1D95`
-- Lila premium: `#A855F7`
-- Lila claro: `#C084FC`
-- Dorado premium: `#F59E0B`
-- Dorado brillante: `#FBBF24`
-- Blanco: `#FFFFFF`
-- Texto secundario: `#CBD5E1`
-- Texto tenue: `#94A3B8`
-
-Gradiente principal:
-
-```css
-linear-gradient(135deg, #4C1D95 0%, #6D28D9 35%, #A855F7 70%, #F59E0B 100%)
-```
-
-## Branding y Logo
-
-Assets públicos:
-
-- `public/logo.svg`
-- `public/logo.png`
-- `public/favicon.ico`
-- `public/apple-touch-icon.png`
-
-URLs públicas:
-
-- https://opennovaia.com/logo.svg
-- https://opennovaia.com/logo.png
-- https://opennovaia.com/favicon.ico
-- https://opennovaia.com/apple-touch-icon.png
-
-Implementación:
-
-- El logo del Navbar y Footer carga desde `/logo.svg`.
-- Se usa `alt="OpenNovaIA Logo"`.
-- Se usa `aria-label="OpenNovaIA Logo"`.
-- El logo se usa en Organization Schema.
-- El logo se usa en Open Graph metadata.
-- El logo se usa en Twitter metadata.
+- Morado profundo.
+- Lila premium.
+- Fucsia neon.
+- Dorado elegante.
+- Negro profundo.
 
 ## Landing Principal
 
 Ruta:
 
-- `/`
+- /
 
-Estructura actual:
+Secciones actuales:
 
 - Navbar
 - Hero
@@ -146,268 +119,194 @@ Estructura actual:
 - CTASection
 - Footer
 
-Regla principal:
+Regla:
 
-- No rediseñar la landing completa sin autorización.
-- Hacer cambios incrementales y específicos.
-- Mantener componentes visuales aprobados.
+No modificar diseno, colores, layout, espaciados, responsive ni componentes aprobados salvo instruccion explicita.
 
 ## Hero
 
 Objetivo:
 
-- Comunicar agentes de IA para empresas.
-- Mostrar automatización, atención 24/7 y conversión de leads.
+Mostrar agentes IA trabajando para empresas y guiar al usuario hacia el proceso de compra automatico.
 
-Hero izquierdo:
+Estructura:
 
-- Badge de agencia de inteligencia artificial.
-- Título principal.
-- Subtítulo orientado a ventas, atención y procesos.
-- Botón primario: Activar mi Agente IA.
-- Botón secundario: Ver cómo funciona.
+- Izquierda: badge, titulo, descripcion y CTA.
+- Derecha: celular premium con conversacion empresarial tipo WhatsApp Business.
+- Animaciones: mensajes entrando, indicador escribiendo, cambio de conversacion, estado online y movimiento sutil.
 
-Hero derecho:
+Reglas:
 
-- Celular premium.
-- Simulación de chat empresarial tipo WhatsApp Business.
-- Conversaciones con cambio automático entre industrias.
-- Animación suave y profesional.
+- No usar robots caricaturescos como protagonista.
+- No convertir el Hero en una pieza centrada en el logo.
+- No conectar numeros personales.
+- No usar enlaces directos a WhatsApp personal.
 
-Reglas Hero:
+## CTA y Embudo Actual
 
-- No usar robots caricaturescos.
-- No convertir el logo en protagonista.
-- No modificar Hero sin instrucción explícita.
-- No usar WhatsApp personal ni enlaces `wa.me` sin autorización.
+OpenNovaIA utiliza demostracion automatica. El usuario debe poder entender la oferta, ver la demostracion, revisar planes, pagar y avanzar hacia la activacion sin depender de contacto manual.
 
-## Pricing Actual
+Flujo comercial oficial:
 
-### Starter
+```text
+Trafico
+↓
+Landing
+↓
+Ver demostracion
+↓
+Planes
+↓
+Mercado Pago
+↓
+Activacion
+```
 
-Precio:
+CTAs actuales:
 
-- `$199.000 COP/mes`
+Landing principal:
 
-Enfoque:
+- Activar mi Agente IA -> /#planes
+- Ver como funciona -> /#proceso
+- Ver demostracion -> /demo
 
-- Empieza
+Navbar:
 
-Subtítulo:
+- Ver demostracion -> /demo
 
-- "Tu primer empleado con IA."
+Pagina demo:
 
-Incluye:
+- Ver planes -> /#planes
+- Activar mi Agente IA -> /#planes
 
-- 1 Agente IA entrenado con tu negocio.
-- WhatsApp Business.
-- Widget Web.
-- CRM Inteligente.
-- Captura automática de leads.
-- Atención 24/7.
-- Base de conocimiento.
-- 1.200 créditos mensuales.
-- Analítica básica.
-- 2 usuarios.
-- Soporte por correo.
+Casos de exito:
 
-### Growth
+- Ver demostracion -> /demo
 
-Precio:
+Reglas:
 
-- `$599.000 COP/mes`
+- Centralizar la conversion en la landing principal.
+- Mantener los CTA principales alineados con planes, proceso y demostracion automatica.
+- No crear dependencias de contacto humano como flujo principal.
+- No modificar botones visualmente si solo se requiere cambiar destino o texto.
 
-Enfoque:
+## Mercado Pago
 
-- Escala
+Los planes de OpenNovaIA estan conectados a Mercado Pago mediante suscripciones.
 
-Subtítulo:
+Planes conectados:
 
-- "El plan ideal para escalar."
+- Starter: Mercado Pago Subscription.
+- Growth: Mercado Pago Subscription.
+- Elite: Mercado Pago Subscription.
 
-Incluye:
+Reglas:
 
-- 5 Agentes IA.
-- WhatsApp Business.
-- Widget Web.
-- CRM avanzado.
-- Embudos de ventas.
-- Seguimiento automático.
-- Calificación automática de leads.
-- 7.000 créditos mensuales.
-- Reportes avanzados.
-- Integraciones con Zapier.
-- Integraciones con Make.
-- Analítica avanzada.
-- Soporte prioritario.
+- Los botones de compra deben abrir el checkout correspondiente en una pestana nueva.
+- Mantener `target="_blank"` y `rel="noopener noreferrer"` en enlaces externos de pago.
+- Mantener el tracking GA4 existente en los botones de activacion.
+- El flujo de compra ya no depende de contacto manual.
 
-### Elite
+## Pricing Oficial Vigente
 
-Precio:
+Mantener el diseno visual aprobado de `PricingSection`.
 
-- `$1.990.000 COP/mes`
+Starter:
 
-Enfoque:
+- Precio: $199.000 COP/mes
+- Agentes incluidos: 1 Agente IA
+- Creditos: 1.200 creditos mensuales
+- Mensaje comercial: Tu primer empleado con IA
 
-- Expande toda tu operación
+Growth:
 
-Subtítulo:
+- Precio: $599.000 COP/mes
+- Agentes incluidos: 5 Agentes IA
+- Creditos: 7.000 creditos mensuales
+- Mensaje comercial: El plan ideal para escalar
+- Estado: plan destacado y mas importante comercialmente
 
-- "IA empresarial sin límites."
+Elite:
 
-Incluye:
+- Precio: $1.990.000 COP/mes
+- Agentes incluidos: 15 Agentes IA
+- Creditos: 20.000 creditos mensuales
+- Mensaje comercial: IA empresarial sin limites
 
-- 15 Agentes IA.
-- WhatsApp Business.
-- Widget Web.
-- Instagram.
-- Facebook Messenger.
-- CRM empresarial.
-- Automatizaciones avanzadas.
-- Integraciones ilimitadas.
-- API empresarial.
-- 20.000 créditos mensuales.
-- Usuarios ilimitados.
-- Dashboard ejecutivo.
-- Soporte dedicado.
-- Onboarding personalizado.
+Reglas de pricing:
 
-### Agente adicional
+- Growth debe seguir siendo la tarjeta destacada.
+- No cambiar estilos, colores, animaciones ni estructura salvo instruccion explicita.
+- Mantener enfoque en resultados: ventas, atencion, productividad y automatizacion.
+- No documentar beneficios antiguos que ya no forman parte de la oferta vigente.
 
-- `$120.000 COP/mes`
+## Paginas Publicas Actuales
 
-## CTA Centralizados
+Landing principal:
 
-Los CTA principales fueron centralizados hacia la landing principal.
+- /
 
-Mapa actual:
+Paginas SEO:
 
-- Activar mi Agente IA -> `/#planes`
-- Ver planes -> `/#planes`
-- Ver cómo funciona -> `/#proceso`
-- Agentes IA -> `/#agentes`
-- Automatización WhatsApp -> `/#proceso`
-- Demo automática -> `/#proceso`
-- Proceso -> `/#proceso`
-- Casos de éxito -> `/#testimonios`
-- Blog se mantiene activo.
+- /agentes-ia
+- /automatizacion-whatsapp
+- /chatbots-ia
 
-Objetivo:
+Paginas comerciales:
 
-- Mantener la conversión centralizada en la landing principal.
-- Evitar dispersar tráfico de CTA principales hacia páginas secundarias.
-- Mantener páginas SEO activas para posicionamiento y contenido.
+- /demo
+- /propuesta
+- /embudo
 
-## SEO Actual
+Blog:
 
-Páginas SEO existentes:
+- /blog
+- /blog/agentes-ia-para-clinicas
+- /blog/agentes-ia-para-ecommerce
+- /blog/agentes-ia-para-inmobiliarias
+- /blog/que-es-un-agente-ia-para-whatsapp
 
-- `/`
-- `/agentes-ia`
-- `/automatizacion-whatsapp`
-- `/chatbots-ia`
+Otras rutas publicas:
 
-Páginas comerciales:
+- /casos-de-exito
+- /sitemap.xml
+- /robots.txt
+- /opengraph-image
+- /icon.svg
+- /logo.svg
+- /logo.png
+- /favicon.ico
+- /apple-touch-icon.png
 
-- `/demo`
-- `/propuesta`
-- `/embudo`
+No existe dashboard, login, panel interno ni aplicacion web dentro del proyecto publico actual.
 
-Otras rutas públicas:
+## SEO
 
-- `/casos-de-exito`
-- `/blog`
-- `/blog/[slug]`
+Estado:
 
-Posts actuales del blog:
+- Auditoria SEO landing principal: 86/100.
+- SEO tecnico considerado estable para la fase actual.
+- Sitemap funcionando.
+- Robots funcionando.
+- Metadata funcionando.
+- Canonical URLs configuradas.
+- Open Graph funcionando.
+- Twitter Cards funcionando.
+- Blog activo.
+- Enlaces internos SEO implementados.
+- FAQ SEO implementado en paginas relevantes.
+- Schema.org implementado.
 
-- `/blog/que-es-un-agente-ia-para-whatsapp`
-- `/blog/automatizar-atencion-al-cliente-colombia`
-- `/blog/agentes-ia-para-clinicas`
-- `/blog/agentes-ia-para-inmobiliarias`
-- `/blog/agentes-ia-para-ecommerce`
+Schema activo:
 
-SEO implementado:
+- Organization
+- Service
+- FAQ Schema en paginas SEO
 
-- Metadata optimizada.
-- Canonical URLs.
-- Open Graph.
-- Twitter Cards.
-- Sitemap actualizado.
-- Robots.txt.
-- Schema Organization.
-- Schema Service.
-- FAQ Schema.
-- Enlaces internos SEO.
-- FAQ SEO.
-- Optimización de contenido.
-- Indexación manual en Search Console.
+Pausas estrategicas:
 
-Archivos SEO principales:
-
-- `app/layout.tsx`
-- `app/sitemap.ts`
-- `app/robots.ts`
-- `app/opengraph-image.tsx`
-- `components/JsonLd.tsx`
-
-Sitemap:
-
-- https://opennovaia.com/sitemap.xml
-
-Robots:
-
-- https://opennovaia.com/robots.txt
-
-## Auditoría SEO Landing Principal
-
-Score estimado:
-
-- 86/100
-
-Diagnóstico:
-
-- SEO técnico en buen estado.
-- No hay problemas graves de estructura.
-- H1 único correcto.
-- H2/H3 bien organizados.
-- Metadata base correcta.
-- Schema activo.
-- CTA centralizados correctamente hacia la landing.
-
-Mejoras futuras recomendadas:
-
-- Usar una imagen Open Graph 1200x630 más comercial.
-- Reforzar texto visible con frases como "automatización empresarial", "inteligencia artificial para empresas" y "atención al cliente con IA".
-- Agregar tracking a CTA de correo si se requiere medición completa.
-- Evaluar FAQ visible en la landing si no afecta diseño.
-
-## Diagnóstico Search Console
-
-Search Console reportó redirecciones en varias rutas.
-
-Diagnóstico de código:
-
-- No hay redirects configurados en `next.config.mjs`.
-- No existe `middleware.ts` propio generando redirecciones.
-- No hay redirecciones entre páginas ni hacia la home.
-- No hay loops de redirección.
-- Las rutas reportadas están incluidas en sitemap y existen en el build.
-- `metadataBase`, canonicals y alternates no generan redirecciones HTTP.
-
-Causa probable:
-
-- Normalización de URLs con slash final.
-- Diferencias `http`/`https`.
-- Diferencias `www`/sin `www`.
-- Datos antiguos de Google.
-
-Reglas actuales:
-
-- No modificar redirects.
-- No modificar `trailingSlash`.
-- Mantener sitemap sin slash final.
-- Reenviar sitemap y solicitar indexación cuando corresponda.
+- Se pauso la creacion masiva de paginas SEO.
+- La prioridad futura no es crear mas URLs, sino mejorar contenido, autoridad, backlinks y conversion.
 
 ## Google Search Console
 
@@ -415,14 +314,18 @@ Estado:
 
 - Search Console configurado.
 - Sitemap enviado.
+- Indexacion manual solicitada para URLs principales.
+- Se investigaron errores de redireccion reportados por Google Search Console.
+- No se encontraron redirects en configuracion de Next.js.
+- No se encontro `middleware.ts` generando redirecciones.
+- No se encontraron loops problematicos.
+- Las URLs revisadas funcionan correctamente.
 
-URLs indexadas o enviadas manualmente:
+Diagnostico:
 
-- `/`
-- `/agentes-ia`
-- `/automatizacion-whatsapp`
-- `/chatbots-ia`
-- `/demo`
+- La causa probable de los reportes es normalizacion de URLs o datos historicos de Google.
+- No realizar cambios de redirects ni `trailingSlash` sin evidencia real.
+- Evitar tocar configuracion de redirecciones si las URLs publicas responden correctamente.
 
 ## Google Analytics 4
 
@@ -432,19 +335,18 @@ Propiedad:
 
 Measurement ID:
 
-- `G-G1HCYVBYWT`
+- G-G1HCYVBYWT
 
-Integración:
+Integracion:
 
 - `components/GoogleAnalytics.tsx`
 - `NEXT_PUBLIC_GA_ID`
-- Variable configurada en Vercel.
-- Integración en `app/layout.tsx`.
-- Analytics funcionando.
+- Variable configurada en Vercel
+- `.env.example` actualizado
+- Analytics funcionando
 
 Eventos configurados:
 
-- `reserve_demo_click`
 - `activate_agent_click`
 - `view_plans_click`
 - `pricing_section_view`
@@ -458,124 +360,88 @@ Eventos configurados:
 
 Pendiente:
 
-- Verificar eventos GA4 en tiempo real.
-- Revisar embudos y conversiones dentro de GA4.
-- Configurar eventos adicionales cuando el flujo de pago esté definido.
+- Verificar calidad de datos con trafico real.
+- Configurar eventos de pago cuando el flujo lo permita.
+- Medir conversion desde redes sociales.
 
 ## Google Business Profile
 
 Estado:
 
-- Perfil creado.
-- Categoría: Empresa de software.
-- Sitio web conectado.
+- Perfil creado para OpenNovaIA.
+- Categoria: Empresa de software.
+- Sitio web conectado: https://opennovaia.com
 - Servicios configurados.
 - Horarios configurados.
 - Fotos corporativas agregadas.
-- Descripción optimizada.
+- Descripcion optimizada.
+- Areas de servicio configuradas para Colombia y ciudades principales.
 
 Pendiente:
 
-- Conseguir primeras reseñas reales.
-- Mantener publicaciones y fotos actualizadas.
-- Construir autoridad local.
+- Conseguir primeras resenas.
+- Publicar actualizaciones periodicas.
+- Medir trafico desde el perfil.
 
-## Embudo Actual
+## Pagina /demo
 
-Modelo oficial:
+Objetivo:
+
+Actuar como vendedor automatico y demostracion comercial.
+
+Debe explicar:
+
+- Problema.
+- Solucion.
+- Beneficios.
+- Funcionamiento.
+- Resultado esperado.
+- Camino hacia planes.
+
+Reglas:
+
+- No depender de reuniones humanas.
+- No usar numeros personales.
+- No usar enlaces directos a WhatsApp personal.
+- Guiar hacia /#planes.
+
+## Pagina /propuesta
+
+Objetivo:
+
+Presentar beneficios, implementacion y planes como apoyo al proceso de decision.
+
+Uso:
+
+- Refuerzo comercial.
+- Explicacion clara de valor.
+- Soporte para usuarios que necesitan revisar la oferta con mas detalle.
+
+## Pagina /embudo
+
+Objetivo:
+
+Documentar el embudo automatico de marketing y venta.
+
+Flujo oficial:
 
 ```text
-Tráfico
+Trafico
 ↓
 Landing
 ↓
-Demo automática
+Demo automatica
 ↓
 Precios
 ↓
 Pago
 ↓
-KronoCloud
-↓
-Activación
+Activacion
 ```
 
-KronoCloud se mantiene únicamente como parte interna del flujo final.
+Principio:
 
-Objetivo:
-
-- El usuario debe poder llegar desde Instagram, Google, Facebook, Google Business Profile, SEO o referidos.
-- Entrar a la landing.
-- Entender la oferta.
-- Ver el proceso.
-- Elegir plan.
-- Pagar.
-- Activar su cuenta.
-
-El flujo no debe depender de conversaciones manuales como flujo principal.
-
-## Estrategia Actual
-
-Prioridad actual:
-
-1. Marketing orgánico.
-2. Reels de Instagram.
-3. Historias y encuestas.
-4. Threads.
-5. Canal de WhatsApp.
-6. Cliente piloto.
-7. Primer testimonio.
-8. Primer caso de éxito.
-9. Analizar Analytics y Search Console después de unos días.
-
-NO prioridad:
-
-- Crear más páginas SEO.
-- Rediseñar landing.
-- Cambiar branding.
-- Tocar Vercel sin necesidad.
-- Cambiar estructura técnica.
-- Modificar redirects sin evidencia real.
-
-## Redes Sociales
-
-Instagram:
-
-- Reels.
-- Carruseles.
-- Historias.
-- Encuestas.
-
-Threads:
-
-- Publicaciones cortas sobre automatización, IA para negocios y atención 24/7.
-
-Canal de WhatsApp:
-
-- Contenido educativo.
-- Tips de automatización.
-- Casos de uso.
-- Novedades de OpenNovaIA.
-
-Temas:
-
-- Automatización.
-- Agentes IA.
-- Atención 24/7.
-- Ventas.
-- Productividad.
-- Procesos internos.
-
-## Estado General
-
-- Infraestructura: 100%.
-- Landing: 100%.
-- SEO Técnico: 95%.
-- Google Business: 95%.
-- Analytics: 95%.
-- Embudo: 90%.
-- Marketing orgánico: en curso.
-- Ventas: pendiente validación real.
+OpenNovaIA debe vender mediante marketing, contenido, demostracion automatica, medicion y pago digital.
 
 ## Contacto
 
@@ -585,9 +451,62 @@ Correo oficial:
 
 Reglas:
 
-- No conectar WhatsApp personal.
-- No incluir números personales.
-- No usar enlaces `wa.me` sin autorización.
+- No incluir numeros personales.
+- No conectar botones a WhatsApp personal.
+- Usar correo oficial si se requiere contacto visible.
+
+## Correcciones Recientes
+
+Historial reciente:
+
+- CTAs actualizados al flujo de demostracion automatica.
+- Se reemplazo el lenguaje de agenda manual por demostracion automatica.
+- Tracking `demo_cta_click` implementado.
+- Correcciones ortograficas visibles realizadas.
+- CTAs centralizados hacia landing principal.
+- Planes conectados a Mercado Pago.
+- Diagnostico de Search Console realizado.
+- Estrategia actual enfocada en marketing organico.
+
+## Estrategia Actual
+
+Prioridad maxima:
+
+1. Instagram.
+2. Reels.
+3. Historias.
+4. Threads.
+5. Canal de WhatsApp.
+6. Cliente piloto.
+7. Primer testimonio.
+8. Primer caso de exito.
+9. Analitica y conversiones.
+
+No prioridad:
+
+- Mas paginas SEO.
+- Redisenar la landing.
+- Cambios de branding.
+- Cambios de infraestructura.
+- Modificaciones innecesarias de Vercel.
+
+## Redes Sociales
+
+Instagram:
+
+- Reels.
+- Carruseles.
+- Historias.
+
+Temas:
+
+- Automatizacion empresarial.
+- Agentes IA.
+- Atencion 24/7.
+- Ventas.
+- Productividad.
+- Antes/despues de procesos manuales.
+- Errores comunes en atencion al cliente.
 
 ## Deploy
 
@@ -595,131 +514,52 @@ Plataforma:
 
 - Vercel
 
-Repositorio:
+Dominio:
 
-- https://github.com/emyforero286-ship-it/opennovaia
+- opennovaia.com
 
-Rama:
+Reglas:
 
-- `main`
-
-Comandos:
-
-- `npm run lint`
-- `npm run build`
-- `npm run dev`
-
-## Archivos que no deben subirse
-
-No subir:
-
-- `node_modules`
-- `.next`
-- `.vercel`
-- `dev-server.log`
-- `dev-server.err.log`
-- `out`
-- `dist`
-
-Estos deben permanecer en `.gitignore`.
+- Mantener compatibilidad con Vercel.
+- Validar build antes de cambios importantes.
+- No subir `node_modules`, `.next`, `.vercel`, logs ni carpetas de salida.
 
 ## Reglas para Codex
 
 Antes de modificar:
 
 1. Leer este archivo.
-2. Confirmar que el cambio solicitado no toca secciones no autorizadas.
-3. Mantener consistencia visual.
-4. No rediseñar secciones aprobadas.
-5. Hacer cambios pequeños e incrementales.
-6. Ejecutar `npm run lint` y `npm run build` después de cambios SEO, tracking, rutas o producción.
-7. Corregir errores antes de terminar.
-8. Mantener compatibilidad con Vercel.
-9. Subir cambios a GitHub cuando el usuario lo indique o cuando sea parte de la tarea.
+2. Mantener consistencia visual.
+3. No redisenar secciones aprobadas.
+4. Hacer cambios pequenos e incrementales.
+5. Ejecutar `npm run lint` y `npm run build` despues de cambios de codigo o SEO.
+6. Corregir errores antes de terminar.
+7. Subir cambios a GitHub cuando el usuario lo indique o cuando sea parte de la tarea.
 
-Reglas actuales:
+Reglas visuales:
 
-- No rediseñar la landing principal sin autorización.
-- Mantener identidad visual premium morado/lila/dorado.
-- No tocar componentes visuales aprobados salvo instrucción explícita.
-- Hacer cambios incrementales.
-- No crear más páginas SEO masivamente sin validar estrategia.
-- Priorizar tráfico, analítica, conversión y ventas reales.
+- No modificar diseno aprobado sin autorizacion.
+- No cambiar colores globales.
+- No cambiar layout general.
+- No alterar responsive.
+- No tocar secciones aprobadas si la tarea es puntual.
 
-## Historial
+Reglas comerciales:
 
-### 2026-06-16
-
-- Se actualizaron planes y créditos:
-  - Starter: 1.200 créditos mensuales.
-  - Growth: 7.000 créditos mensuales.
-  - Elite: 20.000 créditos mensuales.
-- Se eliminaron referencias visibles a beneficios no autorizados.
-- Se centralizaron CTA hacia la landing principal.
-- Se corrigieron acentos y ortografía visible:
-  - Ver cómo funciona.
-  - Diseñamos.
-  - intención.
-  - aumentó.
-  - Laura Méndez.
-  - Andrés Vidal.
-- Se revisaron errores de redirección de Search Console y no se detectaron problemas reales en el código.
-- Se inició fase de marketing orgánico en Instagram, Threads y WhatsApp.
-- Se están creando reels, historias y encuestas para generar tráfico.
-
-### 2026-06-13
-
-- MASTER_CONTEXT actualizado después de la implementación del embudo automático.
-- Se documentó el modelo comercial basado en marketing y automatización.
-- Se documentaron las páginas SEO actuales.
-- Se documentaron las páginas comerciales.
-- Se documentaron eventos GA4 nuevos y existentes.
-- Se actualizó la estrategia: tráfico, Instagram, Analytics, conversión y primeras ventas.
-
-### 2026-06-12
-
-- Google Analytics 4 implementado con `NEXT_PUBLIC_GA_ID`.
-- Search Console configurado.
-- Sitemap enviado.
-- Google Business Profile configurado.
-- SEO técnico inicial completado.
-- Se pausó la creación masiva de páginas SEO.
-
-### 2026-06-11
-
-- Se creó arquitectura SEO de blog.
-- Se creó `/casos-de-exito`.
-- Se crearon assets públicos de logo.
-- Se mejoró metadata, schema y enlaces internos.
-
-### 2026-06-10
-
-- Se agregaron enlaces internos SEO.
-- Se agregaron FAQ SEO y FAQPage JSON-LD.
-- Se corrigieron problemas de encoding UTF-8.
-
-### 2026-06-09
-
-- Landing preparada para Vercel.
-- Repositorio GitHub configurado.
-- Sitemap y robots creados.
-- Open Graph optimizado.
-- Pricing actualizado con planes COP.
-- Testimonios mejorados.
+- Mantener flujo automatico.
+- Mantener conversion hacia planes y Mercado Pago.
+- Mantener demostracion automatica como pieza comercial.
+- No introducir dependencias de contacto manual como flujo principal.
 
 ## Pendientes
 
-- Verificar Analytics en tiempo real.
-- Analizar Search Console después de nuevos rastreos.
-- Generar tráfico desde Instagram.
-- Publicar reels, historias y encuestas.
-- Activar contenido en Threads.
-- Mantener canal de WhatsApp.
-- Conseguir cliente piloto.
-- Conseguir primer testimonio real.
-- Conseguir primer caso de éxito real.
-- Conectar flujo final cuando corresponda.
-- Conseguir reseñas y autoridad.
-- Conseguir backlinks.
-- Medir rendimiento de CTAs.
-- Evaluar nuevas páginas SEO solo después de validar tráfico y oportunidades reales.
+- Verificar eventos GA4 con trafico real.
+- Optimizar pagina /demo segun comportamiento de usuarios.
+- Generar trafico desde Instagram.
+- Conseguir primeras conversiones.
+- Validar Mercado Pago con compras reales.
+- Conectar flujo final de activacion cuando corresponda.
+- Conseguir primeras resenas.
+- Conseguir autoridad y backlinks.
+- Crear contenido organico de forma constante.
+
