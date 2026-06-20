@@ -24,7 +24,9 @@ const plans = [
       "2 usuarios",
       "Soporte por correo"
     ],
-    additionalAgent: "$120.000 COP/mes"
+    additionalAgent: "$120.000 COP/mes",
+    checkoutUrl:
+      "https://www.mercadopago.com.co/subscriptions/checkout?preapproval_plan_id=4da5cd5830d249298c9ac09010784859"
   },
   {
     icon: "⭐",
@@ -50,7 +52,9 @@ const plans = [
       "Analítica avanzada",
       "Soporte prioritario"
     ],
-    additionalAgent: "$120.000 COP/mes"
+    additionalAgent: "$120.000 COP/mes",
+    checkoutUrl:
+      "https://www.mercadopago.com.co/subscriptions/checkout?preapproval_plan_id=1b892279d6fd414c9f5c65c08300e4a8"
   },
   {
     icon: "👑",
@@ -77,7 +81,9 @@ const plans = [
       "Soporte dedicado",
       "Onboarding personalizado"
     ],
-    additionalAgent: "$120.000 COP/mes"
+    additionalAgent: "$120.000 COP/mes",
+    checkoutUrl:
+      "https://www.mercadopago.com.co/subscriptions/checkout?preapproval_plan_id=8da49abf8b074f41b6d47492507fb7f1"
   }
 ];
 
@@ -196,7 +202,9 @@ export function PricingSection() {
               </div>
 
               <TrackableLink
-                href="#contacto"
+                href={plan.checkoutUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 eventName="activate_agent_click"
                 eventLabel={`Activar mi Agente IA - ${plan.name}`}
                 className={`mt-auto block rounded-full px-5 py-3 text-center text-sm font-black transition duration-300 ${
