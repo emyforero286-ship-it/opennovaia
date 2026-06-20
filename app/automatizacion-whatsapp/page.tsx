@@ -166,7 +166,7 @@ export default function AutomatizacionWhatsappPage() {
                 Hola, quiero información sobre sus servicios.
               </div>
               <div className="ml-auto max-w-[88%] rounded-2xl rounded-tr-sm bg-gradient-to-r from-[#6a00ff] to-[#b200ff] px-4 py-3 text-sm leading-6 text-white shadow-[0_10px_24px_rgba(106,0,255,0.22)]">
-                Claro. Te ayudo a elegir la solución ideal y puedo agendar una demo con el equipo.
+                Claro. Te ayudo a elegir la solución ideal y ver cómo funcionaría el flujo automático.
               </div>
               <div className="max-w-[78%] rounded-2xl rounded-tl-sm bg-[#263142] px-4 py-3 text-sm leading-6 text-white">
                 Perfecto, somos una clínica y recibimos muchos mensajes.

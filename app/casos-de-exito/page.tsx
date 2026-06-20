@@ -164,10 +164,10 @@ export default function CasosDeExitoPage() {
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <Link
-              href="/#contacto"
+              href="/demo"
               className="rounded-full bg-gradient-to-r from-nova-gold to-nova-amber px-7 py-4 text-center text-sm font-black text-nova-black shadow-gold transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_90px_rgba(251,191,36,0.42)]"
             >
-              Solicitar demo
+              Ver demostración
             </Link>
             <TrackableLink
               href="/#planes"
@@ -345,10 +345,10 @@ export default function CasosDeExitoPage() {
             Implementa un agente IA para tu empresa y empieza a medir resultados desde tus conversaciones.
           </p>
           <Link
-            href="/#contacto"
+            href="/demo"
             className="mt-9 inline-flex rounded-full bg-gradient-to-r from-nova-gold to-nova-amber px-8 py-4 text-sm font-black text-nova-black shadow-gold transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_90px_rgba(251,191,36,0.42)]"
           >
-            Solicitar demo
+            Ver demostración
           </Link>
         </div>
       </section>

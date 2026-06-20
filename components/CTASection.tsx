@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { siteConfig } from "@/config/site";
 import { TrackableLink } from "./TrackableLink";
 
 export function CTASection() {
@@ -18,15 +17,17 @@ export function CTASection() {
               Convierte tu operación en una red de agentes IA.
             </h2>
             <p className="mt-5 text-lg leading-8 text-white/[0.72]">
-              Agenda una demo y recibe una propuesta clara para automatizar ventas, soporte y tareas operativas con agentes neurales.
+              Mira la demostración automática y descubre cómo automatizar ventas, soporte y tareas operativas con agentes neurales.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <a
-                href={`mailto:${siteConfig.contactEmail}`}
+              <TrackableLink
+                href="/demo"
+                eventName="demo_cta_click"
+                eventLabel="Ver demostración"
                 className="inline-flex rounded-full bg-gradient-to-r from-nova-gold to-nova-amber px-7 py-4 text-sm font-black text-nova-black shadow-gold transition duration-300 hover:-translate-y-1"
               >
-                Agendar demo gratis
-              </a>
+                Ver demostración
+              </TrackableLink>
               <TrackableLink
                 href="#planes"
                 eventName="view_plans_click"

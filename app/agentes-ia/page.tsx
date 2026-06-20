@@ -47,7 +47,7 @@ const benefits = [
 const useCases = [
   {
     title: "Ventas",
-    copy: "Agentes que responden consultas, califican prospectos, resuelven objeciones y ayudan a agendar demos o citas comerciales."
+    copy: "Agentes que responden consultas, califican prospectos, resuelven objeciones y guían al siguiente paso comercial."
   },
   {
     title: "Atención al cliente",
@@ -145,7 +145,7 @@ export default function AgentesIaPage() {
         <div className="premium-border gradient-border relative rounded-lg p-7">
           <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-nova-fuchsia/25 blur-3xl" />
           <div className="relative space-y-4">
-            {["Lead capturado", "Cliente calificado", "Respuesta automática", "Demo agendada"].map((item, index) => (
+            {["Lead capturado", "Cliente calificado", "Respuesta automática", "Proceso automatizado"].map((item, index) => (
               <div
                 key={item}
                 className="rounded-lg border border-white/10 bg-white/[0.06] p-5 shadow-[0_18px_60px_rgba(106,0,255,0.16)]"

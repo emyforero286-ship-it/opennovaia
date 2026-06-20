@@ -5,14 +5,14 @@ import { TrackableLink } from "@/components/TrackableLink";
 export const metadata: Metadata = {
   title: "Demo OpenNovaIA | Agentes de IA para Empresas",
   description:
-    "Agenda una demo de OpenNovaIA y descubre cómo los agentes de IA pueden automatizar ventas, atención al cliente y procesos empresariales 24/7.",
+    "Mira la demostración de OpenNovaIA y descubre cómo los agentes de IA pueden automatizar ventas, atención al cliente y procesos empresariales 24/7.",
   alternates: {
     canonical: "https://opennovaia.com/demo"
   },
   openGraph: {
     title: "Demo OpenNovaIA | Agentes de IA para Empresas",
     description:
-      "Agenda una demo de OpenNovaIA y descubre cómo los agentes de IA pueden automatizar ventas, atención al cliente y procesos empresariales 24/7.",
+      "Mira la demostración de OpenNovaIA y descubre cómo los agentes de IA pueden automatizar ventas, atención al cliente y procesos empresariales 24/7.",
     url: "https://opennovaia.com/demo",
     siteName: "OpenNovaIA",
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Demo OpenNovaIA | Agentes de IA para Empresas",
     description:
-      "Agenda una demo de OpenNovaIA y descubre cómo los agentes de IA pueden automatizar ventas, atención al cliente y procesos empresariales 24/7.",
+      "Mira la demostración de OpenNovaIA y descubre cómo los agentes de IA pueden automatizar ventas, atención al cliente y procesos empresariales 24/7.",
     images: ["/logo.svg"]
   }
 };
@@ -98,12 +98,12 @@ const faqs = [
   {
     question: "¿La demo de OpenNovaIA tiene costo?",
     answer:
-      "No. La demo comercial está pensada para entender tu negocio y mostrarte cómo un agente IA puede ayudarte a automatizar conversaciones y procesos."
+      "No. La demostración está pensada para mostrarte cómo un agente IA puede ayudarte a automatizar conversaciones y procesos."
   },
   {
     question: "¿Cuánto dura la demo?",
     answer:
-      "La demo dura aproximadamente 15 minutos y se enfoca en oportunidades concretas de automatización para tu empresa."
+      "La demostración dura aproximadamente 15 minutos y se enfoca en oportunidades concretas de automatización para tu empresa."
   },
   {
     question: "¿Necesito tener conocimientos técnicos?",
@@ -116,9 +116,9 @@ const faqs = [
       "Sí. OpenNovaIA puede ayudarte a diseñar agentes IA para WhatsApp, web y otros canales comerciales según el flujo de tu negocio."
   },
   {
-    question: "¿Qué pasa después de la demo?",
+    question: "¿Qué pasa después de la demostración?",
     answer:
-      "Después de la demo definimos el plan recomendado, el primer flujo a automatizar y el siguiente paso para implementar tu agente IA."
+      "Después de la demostración puedes revisar los planes y activar el agente IA que mejor se ajuste a tu negocio."
   }
 ];
 
@@ -151,10 +151,10 @@ export default function DemoPage() {
       <section className="section-shell relative grid min-h-[88vh] items-center gap-12 py-28 lg:grid-cols-[1.04fr_0.96fr]">
         <div>
           <p className="inline-flex rounded-full border border-nova-fuchsia/25 bg-nova-fuchsia/10 px-4 py-2 text-sm font-black uppercase tracking-[0.18em] text-nova-pink shadow-glow">
-            Demo comercial OpenNovaIA v1
+            Demostración OpenNovaIA v1
           </p>
           <h1 className="mt-7 max-w-4xl text-5xl font-black leading-[1.03] text-white sm:text-6xl lg:text-7xl">
-            Agenda una demo y descubre cómo un Agente IA puede trabajar por tu negocio 24/7
+            Mira la demostración y descubre cómo un Agente IA puede trabajar por tu negocio 24/7
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-white/[0.72]">
             En 15 minutos te mostramos cómo OpenNovaIA puede automatizar atención al cliente,
@@ -162,12 +162,12 @@ export default function DemoPage() {
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <TrackableLink
-              href="mailto:hello@opennovaia.com?subject=Quiero%20reservar%20una%20demo%20de%20OpenNovaIA"
-              eventName="reserve_demo_click"
-              eventLabel="Reservar demo"
+              href="/#planes"
+              eventName="demo_cta_click"
+              eventLabel="Ver planes"
               className="rounded-full bg-gradient-to-r from-nova-gold to-nova-amber px-7 py-4 text-center text-sm font-black text-nova-black shadow-gold transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_90px_rgba(251,191,36,0.42)]"
             >
-              Reservar demo
+              Ver planes
             </TrackableLink>
             <TrackableLink
               href="/#proceso"
@@ -185,7 +185,7 @@ export default function DemoPage() {
             Lead capturado
           </div>
           <div className="absolute -right-5 top-28 hidden rounded-lg border border-nova-lilac/25 bg-[#120720]/80 px-4 py-3 text-sm font-black text-nova-lilac shadow-glow backdrop-blur-xl sm:block">
-            Demo agendada
+            Demo automática
           </div>
           <div className="absolute -left-4 bottom-24 hidden rounded-lg border border-emerald-300/25 bg-[#120720]/80 px-4 py-3 text-sm font-black text-emerald-200 shadow-[0_18px_60px_rgba(16,185,129,0.2)] backdrop-blur-xl sm:block">
             Cliente calificado
@@ -239,7 +239,7 @@ export default function DemoPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(192,132,252,0.16),transparent_52%)]" />
         <div className="section-shell relative">
           <p className="text-center text-sm font-black uppercase tracking-[0.22em] text-nova-violet">
-            Qué verás en la demo
+            Qué verás en la demostración
           </p>
           <h2 className="mx-auto mt-4 max-w-3xl text-center text-4xl font-black leading-tight sm:text-5xl">
             Una visión clara de cómo un agente IA trabaja dentro de tu negocio.
@@ -262,7 +262,7 @@ export default function DemoPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(178,0,255,0.34),transparent_54%)]" />
         <div className="section-shell relative">
           <p className="text-center text-sm font-black uppercase tracking-[0.22em] text-nova-pink">
-            La demo dura 15 minutos
+            Demostración en 15 minutos
           </p>
           <h2 className="mx-auto mt-4 max-w-3xl text-center text-4xl font-black leading-tight sm:text-5xl">
             Corta, práctica y enfocada en oportunidades reales de automatización.
@@ -287,7 +287,7 @@ export default function DemoPage() {
               Preguntas que resolvemos
             </p>
             <h2 className="mt-4 text-4xl font-black leading-tight sm:text-5xl">
-              Sales de la demo con claridad sobre qué automatizar primero.
+              Sales de la demostración con claridad sobre qué automatizar primero.
             </h2>
           </div>
           <div className="grid gap-4">
@@ -333,16 +333,16 @@ export default function DemoPage() {
             Tu negocio no necesita responder más rápido. Necesita no dejar escapar oportunidades.
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-white/70">
-            Cada mensaje sin responder puede ser un cliente perdido. En la demo veremos cómo un
+            Cada mensaje sin responder puede ser un cliente perdido. En la demostración verás cómo un
             agente IA puede ayudarte a atender, calificar y convertir más conversaciones en oportunidades reales.
           </p>
           <TrackableLink
-            href="mailto:hello@opennovaia.com?subject=Quiero%20reservar%20mi%20demo%20de%20OpenNovaIA"
+            href="/#planes"
             eventName="demo_cta_click"
-            eventLabel="Reservar mi demo"
+            eventLabel="Activar mi Agente IA"
             className="mt-9 inline-flex rounded-full bg-gradient-to-r from-nova-gold to-nova-amber px-8 py-4 text-sm font-black text-nova-black shadow-gold transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_90px_rgba(251,191,36,0.42)]"
           >
-            Reservar mi demo
+            Activar mi Agente IA
           </TrackableLink>
         </div>
       </section>
@@ -354,7 +354,7 @@ export default function DemoPage() {
             Preguntas frecuentes
           </p>
           <h2 className="mx-auto mt-4 max-w-3xl text-center text-4xl font-black leading-tight sm:text-5xl">
-            Lo que debes saber antes de reservar tu demo.
+            Lo que debes saber antes de activar tu agente IA.
           </h2>
           <div className="mx-auto mt-12 grid max-w-4xl gap-4">
             {faqs.map((faq) => (
