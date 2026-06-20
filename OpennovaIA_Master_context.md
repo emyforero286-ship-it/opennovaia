@@ -1,10 +1,10 @@
 # OpenNovaIA - Master Context
 
-Última actualización: 2026-06-13
+Última actualización: 2026-06-16
 
 ## Proyecto
 
-OpenNovaIA es una agencia premium de Inteligencia Artificial enfocada en automatización empresarial mediante agentes de IA para ventas, atención al cliente, soporte y procesos internos.
+OpenNovaIA es una plataforma premium de agentes IA para empresas, enfocada en automatizar ventas, atención al cliente y procesos internos mediante agentes inteligentes disponibles 24/7.
 
 Stack actual:
 
@@ -22,23 +22,22 @@ Dominio principal:
 
 - https://opennovaia.com
 
-## Identidad de Marca
+## Posicionamiento Actual
 
-Nombre:
+OpenNovaIA debe comunicarse como:
 
-- OpenNovaIA
+- Plataforma premium de agentes IA para empresas.
+- Solución de automatización de ventas, atención al cliente y procesos.
+- Agentes IA disponibles 24/7.
+- Solución orientada a clientes finales.
+- Producto comercializado mediante marketing, contenido, SEO, Instagram y automatización.
 
-Submarca:
+OpenNovaIA NO debe comunicarse como:
 
-- Neural Intelligence
-
-Posicionamiento:
-
-- Agencia premium de IA para empresas.
-- Plataforma de agentes IA para vender, atender y automatizar procesos.
-- Automatización de ventas, soporte y operaciones.
-- Agentes de IA disponibles 24/7.
-- No comunicar OpenNovaIA como "otro chatbot".
+- Una herramienta técnica para desarrolladores.
+- Un chatbot genérico.
+- Una solución infantil o experimental.
+- Un producto orientado a intermediarios.
 
 Mensaje principal:
 
@@ -51,7 +50,7 @@ Mensajes comerciales:
 - Automatiza ventas, soporte y seguimiento de clientes.
 - Convierte conversaciones en oportunidades reales.
 
-## Estilo Visual
+## Identidad Visual
 
 La landing principal está aprobada visualmente.
 
@@ -182,46 +181,139 @@ Reglas Hero:
 - No modificar Hero sin instrucción explícita.
 - No usar WhatsApp personal ni enlaces `wa.me` sin autorización.
 
-## Celular Hero
+## Pricing Actual
 
-Estado:
+### Starter
 
-- Refinado como demo visual de chat empresarial.
+Precio:
 
-Debe mantener:
+- `$199.000 COP/mes`
 
-- Header tipo app móvil.
-- Nombre de empresa.
-- Estado online o escribiendo.
-- Conversaciones empresariales.
-- Mensajes entrantes y salientes.
-- Indicador de escribiendo.
-- Tabs de industrias visibles.
-- Animaciones discretas.
+Enfoque:
 
-Evitar:
+- Empieza
 
-- Mensajes superpuestos.
-- `position: absolute` para mensajes del chat.
-- Visual saturado.
-- Tarjetas que tapen el celular.
+Subtítulo:
 
-## SEO
+- "Tu primer empleado con IA."
 
-### Páginas SEO existentes
+Incluye:
+
+- 1 Agente IA entrenado con tu negocio.
+- WhatsApp Business.
+- Widget Web.
+- CRM Inteligente.
+- Captura automática de leads.
+- Atención 24/7.
+- Base de conocimiento.
+- 1.200 créditos mensuales.
+- Analítica básica.
+- 2 usuarios.
+- Soporte por correo.
+
+### Growth
+
+Precio:
+
+- `$599.000 COP/mes`
+
+Enfoque:
+
+- Escala
+
+Subtítulo:
+
+- "El plan ideal para escalar."
+
+Incluye:
+
+- 5 Agentes IA.
+- WhatsApp Business.
+- Widget Web.
+- CRM avanzado.
+- Embudos de ventas.
+- Seguimiento automático.
+- Calificación automática de leads.
+- 7.000 créditos mensuales.
+- Reportes avanzados.
+- Integraciones con Zapier.
+- Integraciones con Make.
+- Analítica avanzada.
+- Soporte prioritario.
+
+### Elite
+
+Precio:
+
+- `$1.990.000 COP/mes`
+
+Enfoque:
+
+- Expande toda tu operación
+
+Subtítulo:
+
+- "IA empresarial sin límites."
+
+Incluye:
+
+- 15 Agentes IA.
+- WhatsApp Business.
+- Widget Web.
+- Instagram.
+- Facebook Messenger.
+- CRM empresarial.
+- Automatizaciones avanzadas.
+- Integraciones ilimitadas.
+- API empresarial.
+- 20.000 créditos mensuales.
+- Usuarios ilimitados.
+- Dashboard ejecutivo.
+- Soporte dedicado.
+- Onboarding personalizado.
+
+### Agente adicional
+
+- `$120.000 COP/mes`
+
+## CTA Centralizados
+
+Los CTA principales fueron centralizados hacia la landing principal.
+
+Mapa actual:
+
+- Activar mi Agente IA -> `/#planes`
+- Ver planes -> `/#planes`
+- Ver cómo funciona -> `/#proceso`
+- Agentes IA -> `/#agentes`
+- Automatización WhatsApp -> `/#proceso`
+- Demo automática -> `/#proceso`
+- Proceso -> `/#proceso`
+- Casos de éxito -> `/#testimonios`
+- Blog se mantiene activo.
+
+Objetivo:
+
+- Mantener la conversión centralizada en la landing principal.
+- Evitar dispersar tráfico de CTA principales hacia páginas secundarias.
+- Mantener páginas SEO activas para posicionamiento y contenido.
+
+## SEO Actual
+
+Páginas SEO existentes:
 
 - `/`
 - `/agentes-ia`
 - `/automatizacion-whatsapp`
 - `/chatbots-ia`
 
-### Páginas comerciales
+Páginas comerciales:
 
 - `/demo`
 - `/propuesta`
 - `/embudo`
 
-### Otras rutas públicas
+Otras rutas públicas:
 
 - `/casos-de-exito`
 - `/blog`
@@ -235,7 +327,7 @@ Posts actuales del blog:
 - `/blog/agentes-ia-para-inmobiliarias`
 - `/blog/agentes-ia-para-ecommerce`
 
-### SEO implementado
+SEO implementado:
 
 - Metadata optimizada.
 - Canonical URLs.
@@ -267,11 +359,55 @@ Robots:
 
 - https://opennovaia.com/robots.txt
 
-### Estado SEO
+## Auditoría SEO Landing Principal
 
-- SEO técnico considerado completado para fase inicial.
-- Se pausó la creación masiva de páginas SEO.
-- Prioridad futura: contenido, autoridad y backlinks.
+Score estimado:
+
+- 86/100
+
+Diagnóstico:
+
+- SEO técnico en buen estado.
+- No hay problemas graves de estructura.
+- H1 único correcto.
+- H2/H3 bien organizados.
+- Metadata base correcta.
+- Schema activo.
+- CTA centralizados correctamente hacia la landing.
+
+Mejoras futuras recomendadas:
+
+- Usar una imagen Open Graph 1200x630 más comercial.
+- Reforzar texto visible con frases como "automatización empresarial", "inteligencia artificial para empresas" y "atención al cliente con IA".
+- Agregar tracking a CTA de correo si se requiere medición completa.
+- Evaluar FAQ visible en la landing si no afecta diseño.
+
+## Diagnóstico Search Console
+
+Search Console reportó redirecciones en varias rutas.
+
+Diagnóstico de código:
+
+- No hay redirects configurados en `next.config.mjs`.
+- No existe `middleware.ts` propio generando redirecciones.
+- No hay redirecciones entre páginas ni hacia la home.
+- No hay loops de redirección.
+- Las rutas reportadas están incluidas en sitemap y existen en el build.
+- `metadataBase`, canonicals y alternates no generan redirecciones HTTP.
+
+Causa probable:
+
+- Normalización de URLs con slash final.
+- Diferencias `http`/`https`.
+- Diferencias `www`/sin `www`.
+- Datos antiguos de Google.
+
+Reglas actuales:
+
+- No modificar redirects.
+- No modificar `trailingSlash`.
+- Mantener sitemap sin slash final.
+- Reenviar sitemap y solicitar indexación cuando corresponda.
 
 ## Google Search Console
 
@@ -280,7 +416,7 @@ Estado:
 - Search Console configurado.
 - Sitemap enviado.
 
-URLs indexadas manualmente:
+URLs indexadas o enviadas manualmente:
 
 - `/`
 - `/agentes-ia`
@@ -344,20 +480,9 @@ Pendiente:
 - Mantener publicaciones y fotos actualizadas.
 - Construir autoridad local.
 
-## Embudo de Ventas
+## Embudo Actual
 
-IMPORTANTE:
-
-El modelo comercial fue actualizado.
-
-Ya NO se usa como flujo principal:
-
-- Venta consultiva.
-- Seguimiento manual.
-- Propuesta personalizada manual.
-- Llamada obligatoria.
-
-Nuevo modelo oficial:
+Modelo oficial:
 
 ```text
 Tráfico
@@ -375,232 +500,62 @@ KronoCloud
 Activación
 ```
 
-OpenNovaIA debe vender mediante marketing y automatización.
+KronoCloud se mantiene únicamente como parte interna del flujo final.
 
 Objetivo:
 
 - El usuario debe poder llegar desde Instagram, Google, Facebook, Google Business Profile, SEO o referidos.
 - Entrar a la landing.
 - Entender la oferta.
-- Ver la demo automática.
+- Ver el proceso.
 - Elegir plan.
 - Pagar.
-- Activar su cuenta en KronoCloud.
+- Activar su cuenta.
 
-El flujo NO debe depender de que una persona de OpenNovaIA hable manualmente con el cliente.
-
-## Página /demo
-
-Ruta:
-
-- `/demo`
-
-Objetivo:
-
-- Actuar como vendedor automático.
-
-Debe explicar:
-
-- Problema.
-- Solución.
-- Beneficios.
-- Funcionamiento.
-- Resultado esperado.
-- CTA.
-
-Regla:
-
-- Debe vender la demo y el valor de OpenNovaIA sin depender de reuniones humanas.
-
-Analytics:
-
-- `demo_page_view`
-- `reserve_demo_click`
-- `demo_cta_click`
-
-## Página /propuesta
-
-Ruta:
-
-- `/propuesta`
-
-Objetivo:
-
-- Presentar beneficios, implementación y planes.
-
-Uso:
-
-- Apoyar el proceso de decisión.
-- Servir como página comercial reutilizable después de una interacción, campaña o lead interesado.
-
-Analytics:
-
-- `proposal_page_view`
-- `proposal_cta_click`
-
-## Página /embudo
-
-Ruta:
-
-- `/embudo`
-
-Objetivo:
-
-- Documentar el embudo automático.
-
-Flujo oficial:
-
-```text
-Tráfico
-↓
-Landing
-↓
-Demo automática
-↓
-Precios
-↓
-Pago
-↓
-KronoCloud
-↓
-Activación
-```
-
-Analytics:
-
-- `funnel_page_view`
-- `demo_from_funnel_click`
-- `pricing_from_funnel_click`
-- `activate_agent_click`
-
-Regla:
-
-- Mantener esta página alineada con el modelo automático.
-- No volver al flujo anterior basado en venta consultiva manual.
-
-## Pricing
-
-Moneda principal:
-
-- Pesos colombianos COP.
-
-### Starter
-
-- Precio: `$199.000 COP/mes`.
-- Enfoque: primer empleado IA.
-- Botón: Activar mi Agente IA.
-
-Incluye:
-
-- 1 Agente IA entrenado con tu negocio.
-- WhatsApp Business.
-- Widget Web.
-- CRM Inteligente.
-- Captura automática de leads.
-- Atención 24/7.
-- Base de conocimiento.
-- Hasta 2.500 créditos mensuales.
-- Analítica básica.
-- 2 usuarios.
-- Soporte por correo.
-
-### Growth
-
-- Precio: `$599.000 COP/mes`.
-- Debe destacar como MÁS POPULAR.
-- Plan recomendado.
-- Borde y glow dorado.
-- Botón: Activar mi Agente IA.
-
-Incluye:
-
-- 5 Agentes IA.
-- WhatsApp + Widget Web.
-- CRM avanzado.
-- Embudos de ventas.
-- Seguimiento automático.
-- Calificación automática de leads.
-- Hasta 8.000 créditos mensuales.
-- Hasta 10 subclientes.
-- Reportes avanzados.
-- Integración con Zapier y Make.
-- Correo con tu marca.
-- Soporte prioritario.
-
-### Elite
-
-- Precio: `$1.990.000 COP/mes`.
-- Enfoque: marca blanca, operación avanzada y nivel empresarial.
-- Botón: Activar mi Agente IA.
-
-Incluye:
-
-- 15 Agentes IA.
-- WhatsApp.
-- Widget Web.
-- Instagram.
-- Facebook Messenger.
-- CRM empresarial.
-- Marca blanca completa.
-- Logo personalizado.
-- Colores personalizados.
-- Dominio propio.
-- 40.000 créditos mensuales.
-- Subclientes ilimitados.
-- API empresarial.
-- Soporte dedicado.
-- Onboarding personalizado.
-
-### Agente adicional
-
-- `$120.000 COP/mes`.
-
-## Testimonios
-
-Estado:
-
-- Fondo claro/lila aprobado.
-- Cards premium con borde lila suave.
-- Fotos reales como avatar circular.
-- Rating visual 5.0 con estrellas SVG doradas.
-
-Clientes actuales:
-
-- Laura Méndez: Gerente Comercial.
-- Andrés Vidal: Director de Operaciones.
-
-Regla:
-
-- No cambiar fondo claro.
-- No oscurecer la sección.
-- No modificar testimonios sin instrucción explícita.
+El flujo no debe depender de conversaciones manuales como flujo principal.
 
 ## Estrategia Actual
 
-Prioridad:
+Prioridad actual:
 
-1. Generar tráfico.
-2. Publicar contenido en Instagram.
-3. Analizar Analytics.
-4. Mejorar conversión.
-5. Conseguir primeras ventas.
+1. Marketing orgánico.
+2. Reels de Instagram.
+3. Historias y encuestas.
+4. Threads.
+5. Canal de WhatsApp.
+6. Cliente piloto.
+7. Primer testimonio.
+8. Primer caso de éxito.
+9. Analizar Analytics y Search Console después de unos días.
 
 NO prioridad:
 
-- Crear muchas más páginas SEO.
+- Crear más páginas SEO.
 - Rediseñar landing.
 - Cambiar branding.
-- Modificar estructura principal.
+- Tocar Vercel sin necesidad.
+- Cambiar estructura técnica.
+- Modificar redirects sin evidencia real.
 
 ## Redes Sociales
 
 Instagram:
 
-Objetivo:
-
 - Reels.
 - Carruseles.
 - Historias.
+- Encuestas.
+
+Threads:
+
+- Publicaciones cortas sobre automatización, IA para negocios y atención 24/7.
+
+Canal de WhatsApp:
+
+- Contenido educativo.
+- Tips de automatización.
+- Casos de uso.
+- Novedades de OpenNovaIA.
 
 Temas:
 
@@ -609,6 +564,7 @@ Temas:
 - Atención 24/7.
 - Ventas.
 - Productividad.
+- Procesos internos.
 
 ## Estado General
 
@@ -618,19 +574,8 @@ Temas:
 - Google Business: 95%.
 - Analytics: 95%.
 - Embudo: 90%.
+- Marketing orgánico: en curso.
 - Ventas: pendiente validación real.
-
-## Próximos Pasos
-
-- Verificar eventos GA4.
-- Optimizar página `/demo`.
-- Generar tráfico desde Instagram.
-- Conseguir primeras conversiones.
-- Conectar flujo final con KronoCloud cuando corresponda.
-- Conseguir reseñas y autoridad.
-- Conseguir backlinks.
-- Analizar comportamiento real de usuarios.
-- Medir clics en CTAs y visitas a precios.
 
 ## Contacto
 
@@ -703,15 +648,33 @@ Reglas actuales:
 
 ## Historial
 
+### 2026-06-16
+
+- Se actualizaron planes y créditos:
+  - Starter: 1.200 créditos mensuales.
+  - Growth: 7.000 créditos mensuales.
+  - Elite: 20.000 créditos mensuales.
+- Se eliminaron referencias visibles a beneficios no autorizados.
+- Se centralizaron CTA hacia la landing principal.
+- Se corrigieron acentos y ortografía visible:
+  - Ver cómo funciona.
+  - Diseñamos.
+  - intención.
+  - aumentó.
+  - Laura Méndez.
+  - Andrés Vidal.
+- Se revisaron errores de redirección de Search Console y no se detectaron problemas reales en el código.
+- Se inició fase de marketing orgánico en Instagram, Threads y WhatsApp.
+- Se están creando reels, historias y encuestas para generar tráfico.
+
 ### 2026-06-13
 
 - MASTER_CONTEXT actualizado después de la implementación del embudo automático.
-- Se documentó que el modelo comercial cambió de venta consultiva manual a marketing y venta automatizada.
-- Se documentaron las páginas SEO actuales: `/`, `/agentes-ia`, `/automatizacion-whatsapp`, `/chatbots-ia`.
-- Se documentaron las páginas comerciales: `/demo`, `/propuesta`, `/embudo`.
+- Se documentó el modelo comercial basado en marketing y automatización.
+- Se documentaron las páginas SEO actuales.
+- Se documentaron las páginas comerciales.
 - Se documentaron eventos GA4 nuevos y existentes.
-- Se documentó el estado de Search Console, Google Business Profile y Analytics.
-- Se actualizó la estrategia actual: tráfico, Instagram, Analytics, conversión y primeras ventas.
+- Se actualizó la estrategia: tráfico, Instagram, Analytics, conversión y primeras ventas.
 
 ### 2026-06-12
 
@@ -720,7 +683,7 @@ Reglas actuales:
 - Sitemap enviado.
 - Google Business Profile configurado.
 - SEO técnico inicial completado.
-- Se documentó la pausa en creación masiva de páginas SEO.
+- Se pausó la creación masiva de páginas SEO.
 
 ### 2026-06-11
 
@@ -747,12 +710,16 @@ Reglas actuales:
 ## Pendientes
 
 - Verificar Analytics en tiempo real.
-- Optimizar página `/demo`.
+- Analizar Search Console después de nuevos rastreos.
 - Generar tráfico desde Instagram.
-- Conseguir primeras conversiones.
-- Conectar flujo final con KronoCloud cuando corresponda.
-- Conseguir primeras reseñas en Google Business Profile.
+- Publicar reels, historias y encuestas.
+- Activar contenido en Threads.
+- Mantener canal de WhatsApp.
+- Conseguir cliente piloto.
+- Conseguir primer testimonio real.
+- Conseguir primer caso de éxito real.
+- Conectar flujo final cuando corresponda.
+- Conseguir reseñas y autoridad.
 - Conseguir backlinks.
-- Crear contenido social de forma constante.
 - Medir rendimiento de CTAs.
 - Evaluar nuevas páginas SEO solo después de validar tráfico y oportunidades reales.
