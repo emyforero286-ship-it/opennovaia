@@ -30,12 +30,13 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          {/* TODO: Conectar al sistema de autenticacion cuando este disponible. */}
           <a
-            href="#"
+            href="https://opennovaia.kronocloud.com/login"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full border border-nova-lilac/35 bg-white/[0.045] px-5 py-3 text-sm font-bold text-white transition duration-300 hover:-translate-y-0.5 hover:border-nova-fuchsia/60 hover:bg-nova-fuchsia/10"
           >
-            Acceso
+            Acceder
           </a>
 
           {/* TODO: Conectar este boton al sistema de registro cuando este disponible. */}
