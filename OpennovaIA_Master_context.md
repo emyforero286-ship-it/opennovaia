@@ -1,6 +1,6 @@
 # OpenNovaIA - Master Context
 
-Ultima actualizacion: 2026-06-16
+Ultima actualizacion: 2026-06-22
 
 ## Proyecto
 
@@ -34,7 +34,9 @@ Estado del proyecto:
 - Google Business Profile: configurado
 - Google Analytics 4: funcionando
 - Embudo automatico: implementado
-- Planes conectados a pago: implementado
+- Planes conectados a Mercado Pago: implementado
+- Navbar preparada para clientes existentes y nuevos clientes
+- Estrategia de cliente piloto: iniciada
 - Ventas: pendiente validacion real con trafico y cliente piloto
 
 ## Posicionamiento
@@ -45,7 +47,7 @@ OpenNovaIA debe comunicarse como:
 - Solucion de automatizacion de ventas, atencion al cliente y procesos.
 - Agentes IA disponibles 24/7.
 - Solucion orientada a clientes finales.
-- Producto comercializado mediante marketing, contenido, SEO, Instagram y automatizacion.
+- Producto comercializado mediante marketing, contenido, SEO, Instagram, Threads, Canal de WhatsApp y automatizacion.
 
 OpenNovaIA NO debe comunicarse como:
 
@@ -64,6 +66,7 @@ Mensajes comerciales:
 - Atencion 24/7 sin contratar mas personal.
 - Automatiza ventas, soporte y seguimiento de clientes.
 - Convierte conversaciones en oportunidades reales.
+- No vendemos IA. Vendemos tiempo, productividad y crecimiento.
 
 ## Identidad Visual
 
@@ -123,6 +126,33 @@ Regla:
 
 No modificar diseno, colores, layout, espaciados, responsive ni componentes aprobados salvo instruccion explicita.
 
+## Navbar
+
+Estado actual:
+
+- Existe boton `Acceder`.
+- `Acceder` apunta a `https://opennovaia.kronocloud.com/login`.
+- `Acceder` abre en una nueva pestana con `target="_blank"` y `rel="noopener noreferrer"`.
+- `Acceder` esta destinado a clientes existentes.
+- Existe boton `Registrarse`.
+- `Registrarse` apunta al checkout principal de Mercado Pago del plan Growth.
+- `Registrarse` abre en una nueva pestana con `target="_blank"` y `rel="noopener noreferrer"`.
+- `Registrarse` esta destinado a nuevos clientes.
+
+Orden actual:
+
+```text
+[Acceder] [Registrarse]
+```
+
+Reglas:
+
+- `Acceder` es secundario y para clientes existentes.
+- `Registrarse` es el CTA principal y debe conducir a compra.
+- No conectar `Acceder` a rutas internas inexistentes.
+- No conectar `Registrarse` a demo ni a anchors internos mientras el checkout Growth sea el flujo vigente.
+- Mantener el diseno visual actual de la Navbar.
+
 ## Hero
 
 Objetivo:
@@ -142,23 +172,25 @@ Reglas:
 - No conectar numeros personales.
 - No usar enlaces directos a WhatsApp personal.
 
-## CTA y Embudo Actual
+## CTA y Conversion
 
-OpenNovaIA utiliza demostracion automatica. El usuario debe poder entender la oferta, ver la demostracion, revisar planes, pagar y avanzar hacia la activacion sin depender de contacto manual.
+OpenNovaIA utiliza demostracion automatica y compra digital. El usuario debe poder entender la oferta, ver la demostracion cuando aplique, revisar planes, pagar y avanzar hacia la activacion sin depender de reuniones manuales.
+
+El modelo actual NO utiliza "Agendar Demo" como CTA principal.
 
 Flujo comercial oficial:
 
 ```text
 Trafico
-↓
+->
 Landing
-↓
-Ver demostracion
-↓
-Planes
-↓
+->
+Checkout
+->
+Demo automatica cuando aplique
+->
 Mercado Pago
-↓
+->
 Activacion
 ```
 
@@ -166,13 +198,14 @@ CTAs actuales:
 
 Landing principal:
 
-- Activar mi Agente IA -> /#planes
-- Ver como funciona -> /#proceso
-- Ver demostracion -> /demo
+- Registrarse -> checkout Growth de Mercado Pago
+- Acceder -> https://opennovaia.kronocloud.com/login
+- Ver demostracion -> /demo cuando aplique
 
 Navbar:
 
-- Ver demostracion -> /demo
+- Acceder -> https://opennovaia.kronocloud.com/login
+- Registrarse -> checkout Growth de Mercado Pago
 
 Pagina demo:
 
@@ -185,8 +218,8 @@ Casos de exito:
 
 Reglas:
 
-- Centralizar la conversion en la landing principal.
-- Mantener los CTA principales alineados con planes, proceso y demostracion automatica.
+- Centralizar la conversion en compra, demostracion automatica y activacion.
+- Mantener los CTA principales alineados con checkout, proceso y demostracion automatica.
 - No crear dependencias de contacto humano como flujo principal.
 - No modificar botones visualmente si solo se requiere cambiar destino o texto.
 
@@ -196,9 +229,15 @@ Los planes de OpenNovaIA estan conectados a Mercado Pago mediante suscripciones.
 
 Planes conectados:
 
-- Starter: Mercado Pago Subscription.
-- Growth: Mercado Pago Subscription.
-- Elite: Mercado Pago Subscription.
+- Plan Starter: Mercado Pago Subscription.
+- Plan Growth: Mercado Pago Subscription.
+- Plan Elite: Mercado Pago Subscription.
+
+Estado actual:
+
+- Los botones principales de las tarjetas de precios abren el checkout correspondiente de cada plan.
+- El boton `Registrarse` de la Navbar reutiliza el checkout principal de Growth.
+- Los checkouts externos deben abrir en nueva pestana.
 
 Reglas:
 
@@ -238,7 +277,21 @@ Reglas de pricing:
 - Growth debe seguir siendo la tarjeta destacada.
 - No cambiar estilos, colores, animaciones ni estructura salvo instruccion explicita.
 - Mantener enfoque en resultados: ventas, atencion, productividad y automatizacion.
+- Mantener unicamente la version comercial actual de los planes.
 - No documentar beneficios antiguos que ya no forman parte de la oferta vigente.
+
+## Eliminaciones y Funcionalidades No Vigentes
+
+Estado:
+
+- Los botones `Comprar Agente Adicional` fueron eliminados de Starter, Growth y Elite.
+- No existe CTA secundario de compra de agentes adicionales en las tarjetas.
+- No existen placeholders activos para esa funcionalidad en PricingSection.
+- Las tarjetas de precios deben mostrar solo su CTA principal vigente.
+
+Regla:
+
+- No documentar ni mostrar funcionalidades futuras que no esten listas para uso actual.
 
 ## Paginas Publicas Actuales
 
@@ -427,21 +480,58 @@ Flujo oficial:
 
 ```text
 Trafico
-↓
+->
 Landing
-↓
+->
 Demo automatica
-↓
+->
 Precios
-↓
+->
 Pago
-↓
+->
 Activacion
 ```
 
 Principio:
 
 OpenNovaIA debe vender mediante marketing, contenido, demostracion automatica, medicion y pago digital.
+
+## Marketing Actual
+
+Prioridades:
+
+1. Instagram Reels.
+2. Historias de Instagram.
+3. Threads.
+4. Canal de WhatsApp.
+5. Formularios para clientes piloto.
+
+Contenido recomendado:
+
+- Automatizacion.
+- Ventas.
+- Atencion al cliente.
+- Productividad.
+- Tiempo ahorrado.
+
+Evitar:
+
+- Hablar unicamente de tecnologia.
+- Hablar unicamente de IA.
+- Contenido excesivamente tecnico.
+
+Principio:
+
+> No vendemos IA. Vendemos tiempo, productividad y crecimiento.
+
+## Cliente Piloto
+
+Estado:
+
+- Se inicio busqueda de clientes piloto.
+- Se creo formulario de validacion.
+- Profesora del colegio virtual contactada como posible cliente piloto.
+- Objetivo actual: recopilar feedback real antes de escalar.
 
 ## Contacto
 
@@ -455,9 +545,9 @@ Reglas:
 - No conectar botones a WhatsApp personal.
 - Usar correo oficial si se requiere contacto visible.
 
-## Correcciones Recientes
+## Historial
 
-Historial reciente:
+Historial anterior:
 
 - CTAs actualizados al flujo de demostracion automatica.
 - Se reemplazo el lenguaje de agenda manual por demostracion automatica.
@@ -468,19 +558,27 @@ Historial reciente:
 - Diagnostico de Search Console realizado.
 - Estrategia actual enfocada en marketing organico.
 
+Entrada 2026-06-22:
+
+- Integracion de Mercado Pago en planes.
+- Incorporacion de botones `Acceder` y `Registrarse` en Navbar.
+- `Acceder` configurado para clientes existentes.
+- `Registrarse` conectado al checkout Growth.
+- Cambio de CTAs de demo hacia flujo automatico.
+- Inicio de estrategia de clientes piloto.
+- Inicio de estrategia de contenido en Instagram, Threads y Canal de WhatsApp.
+- Eliminacion de botones `Comprar Agente Adicional`.
+
 ## Estrategia Actual
 
 Prioridad maxima:
 
-1. Instagram.
-2. Reels.
-3. Historias.
-4. Threads.
-5. Canal de WhatsApp.
-6. Cliente piloto.
-7. Primer testimonio.
-8. Primer caso de exito.
-9. Analitica y conversiones.
+1. Conseguir formularios completados.
+2. Conseguir cliente piloto.
+3. Publicar contenido constantemente.
+4. Analizar Analytics.
+5. Optimizar conversion.
+6. Conseguir primeras ventas.
 
 No prioridad:
 
@@ -497,6 +595,19 @@ Instagram:
 - Reels.
 - Carruseles.
 - Historias.
+
+Threads:
+
+- Ideas cortas.
+- Opiniones sobre automatizacion.
+- Aprendizajes de clientes piloto.
+- Contenido ligero y frecuente.
+
+Canal de WhatsApp:
+
+- Distribucion de contenido.
+- Educacion de prospectos.
+- Seguimiento no invasivo.
 
 Temas:
 
@@ -547,15 +658,19 @@ Reglas visuales:
 Reglas comerciales:
 
 - Mantener flujo automatico.
-- Mantener conversion hacia planes y Mercado Pago.
-- Mantener demostracion automatica como pieza comercial.
+- Mantener conversion hacia checkout, demostracion automatica y activacion.
+- Mantener Mercado Pago como flujo de compra vigente.
 - No introducir dependencias de contacto manual como flujo principal.
+- No mostrar funcionalidades que no esten listas para uso actual.
 
 ## Pendientes
 
 - Verificar eventos GA4 con trafico real.
 - Optimizar pagina /demo segun comportamiento de usuarios.
-- Generar trafico desde Instagram.
+- Generar trafico desde Instagram, Threads y Canal de WhatsApp.
+- Conseguir formularios completados.
+- Conseguir cliente piloto.
+- Recopilar feedback real antes de escalar.
 - Conseguir primeras conversiones.
 - Validar Mercado Pago con compras reales.
 - Conectar flujo final de activacion cuando corresponda.
