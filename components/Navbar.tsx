@@ -41,7 +41,9 @@ export function Navbar() {
 
           {/* TODO: Conectar este boton al sistema de registro cuando este disponible. */}
           <TrackableLink
-            href="#"
+            href="https://www.mercadopago.com.co/subscriptions/checkout?preapproval_plan_id=1b892279d6fd414c9f5c65c08300e4a8"
+            target="_blank"
+            rel="noopener noreferrer"
             eventName="demo_cta_click"
             eventLabel="Registrarse"
             className="rounded-full border border-nova-gold/45 bg-gradient-to-r from-nova-gold to-nova-amber px-5 py-3 text-sm font-bold text-nova-black shadow-gold transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_70px_rgba(251,191,36,0.42)]"
