@@ -217,17 +217,6 @@ export function PricingSection() {
               >
                 Activar mi Agente IA
               </TrackableLink>
-              {/* TODO: Conectar compra de agentes adicionales cuando este disponible. */}
-              <button
-                type="button"
-                className={`mt-3 block w-full rounded-full border px-5 py-3 text-center text-sm font-black transition duration-300 hover:-translate-y-1 ${
-                  plan.dark
-                    ? "border-nova-lilac/35 bg-white/[0.04] text-white hover:border-nova-fuchsia/60 hover:bg-nova-fuchsia/10"
-                    : "border-nova-lilac/35 bg-white text-nova-violet hover:border-nova-fuchsia/50 hover:bg-nova-fuchsia/10"
-                }`}
-              >
-                Comprar Agente Adicional
-              </button>
             </article>
           ))}
         </div>
